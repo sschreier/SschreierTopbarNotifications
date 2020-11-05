@@ -1,0 +1,4421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>top bar</title>
+        <title lang="de-DE">Topbar</title>
+
+        <input-field type="colorpicker">
+            <name>backgroundColorTopBar</name>
+            <label>background color of the top bar</label>
+            <label lang="de-DE">Hintergrundfarbe der Topbar</label>
+            <defaultValue>#efefef</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>paddingTopTopBarAreas</name>
+            <label>distance of the areas upwards in pixels</label>
+            <label lang="de-DE">Abstand der Bereiche nach oben in Pixeln</label>
+            <defaultValue>8px</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>paddingBottomTopBarAreas</name>
+            <label>distance of the areas downwards in pixels</label>
+            <label lang="de-DE">Abstand der Bereiche nach unten in Pixeln</label>
+            <defaultValue>8px</defaultValue>
+        </input-field>
+
+         <input-field type="bool">
+            <name>fiftyPercentWidthInSmTopBarAreas</name>
+            <label>50% width of the areas in the viewport smartphone landscape (SM)</label>
+            <label lang="de-DE">50% Breite der Bereiche in der Auflösung Smartphone Querformat (SM)</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+    </card>
+
+     <card>
+        <title>area 1 of the top bar</title>
+        <title lang="de-DE">Bereich 1 der Topbar</title>
+
+        <input-field type="bool">
+            <name>showTopBarArea1</name>
+            <label>show the area</label>
+            <label lang="de-DE">Bereich anzeigen</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+
+        <input-field type="multi-select">
+            <name>showInViewportTopBarArea1</name>
+            <options>
+                <option>
+                    <id>xs</id>
+                    <name>smartphone portrait (XS)</name>
+                    <name lang="de-DE">Smartphone Hochformat (XS)</name>
+                </option>
+                <option>
+                    <id>sm</id>
+                    <name>smartphone landscape (SM)</name>
+                    <name lang="de-DE">Smartphone Querformat (SM)</name>
+                </option>
+                <option>
+                    <id>md</id>
+                    <name>tablet portrait (MD)</name>
+                    <name lang="de-DE">Tablet Hochformat (MD)</name>
+                </option>
+                <option>
+                    <id>lg</id>
+                    <name>tablet landscape (LG)</name>
+                    <name lang="de-DE">Tablet Querformat (LG)</name>
+                </option>
+                <option>
+                    <id>xl</id>
+                    <name>desktop (XL)</name>
+                    <name lang="de-DE">Desktop (XL)</name>
+                </option>
+            </options>
+            <label>viewports in which the area should be shown</label>
+            <label lang="de-DE">Auflösungen, in denen der Bereich angezeigt werden soll</label>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>iconTypeTopBarArea1</name>
+            <options>
+                <option>
+                    <id>select</id>
+                    <name>following select field</name>
+                    <name lang="de-DE">nachfolgendem Auswahlfeld</name>
+                </option>
+                <option>
+                    <id>snippet</id>
+                    <name>a snippet</name>
+                    <name lang="de-DE">einem Textbaustein</name>
+                </option>
+            </options>
+            <label>icon obtain from</label>
+            <label lang="de-DE">Icon beziehen aus</label>
+            <defaultValue>select</defaultValue>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>iconTopBarArea1</name>
+            <options>
+                <option>
+                    <id>address</id>
+                    <name>address</name>
+                    <name lang="de-DE">address</name>
+                </option>
+                <option>
+                    <id>alert</id>
+                    <name>alert</name>
+                    <name lang="de-DE">alert</name>
+                </option>
+                <option>
+                    <id>arrow-360-left</id>
+                    <name>arrow-360-left</name>
+                    <name lang="de-DE">arrow-360-left</name>
+                </option>
+                <option>
+                    <id>arrow-360-right</id>
+                    <name>arrow-360-right</name>
+                    <name lang="de-DE">arrow-360-right</name>
+                </option>
+                <option>
+                    <id>arrow-circle-down</id>
+                    <name>arrow-circle-down</name>
+                    <name lang="de-DE">arrow-circle-down</name>
+                </option>
+                <option>
+                    <id>arrow-circle-left</id>
+                    <name>arrow-circle-left</name>
+                    <name lang="de-DE">arrow-circle-left</name>
+                </option>
+                <option>
+                    <id>arrow-circle-right</id>
+                    <name>arrow-circle-right</name>
+                    <name lang="de-DE">arrow-circle-right</name>
+                </option>
+                <option>
+                    <id>arrow-circle-up</id>
+                    <name>arrow-circle-up</name>
+                    <name lang="de-DE">arrow-circle-up</name>
+                </option>
+                <option>
+                    <id>arrow-down</id>
+                    <name>arrow-down</name>
+                    <name lang="de-DE">arrow-down</name>
+                </option>
+                <option>
+                    <id>arrow-head-down</id>
+                    <name>arrow-head-down</name>
+                    <name lang="de-DE">arrow-head-down</name>
+                </option>
+                <option>
+                    <id>arrow-head-left</id>
+                    <name>arrow-head-left</name>
+                    <name lang="de-DE">arrow-head-left</name>
+                </option>
+                <option>
+                    <id>arrow-head-right</id>
+                    <name>arrow-head-right</name>
+                    <name lang="de-DE">arrow-head-right</name>
+                </option>
+                <option>
+                    <id>arrow-head-up</id>
+                    <name>arrow-head-up</name>
+                    <name lang="de-DE">arrow-head-up</name>
+                </option>
+                <option>
+                    <id>arrow-left</id>
+                    <name>arrow-left</name>
+                    <name lang="de-DE">arrow-left</name>
+                </option>
+                <option>
+                    <id>arrow-right</id>
+                    <name>arrow-right</name>
+                    <name lang="de-DE">arrow-right</name>
+                </option>
+                <option>
+                    <id>arrow-scroll</id>
+                    <name>arrow-scroll</name>
+                    <name lang="de-DE">arrow-scroll</name>
+                </option>
+                <option>
+                    <id>arrow-simple-long-right</id>
+                    <name>arrow-simple-long-right</name>
+                    <name lang="de-DE">arrow-simple-long-right</name>
+                </option>
+                <option>
+                    <id>arrow-switch</id>
+                    <name>arrow-switch</name>
+                    <name lang="de-DE">arrow-switch</name>
+                </option>
+                <option>
+                    <id>arrow-turn-left</id>
+                    <name>arrow-turn-left</name>
+                    <name lang="de-DE">arrow-turn-left</name>
+                </option>
+                <option>
+                    <id>arrow-turn-right</id>
+                    <name>arrow-turn-right</name>
+                    <name lang="de-DE">arrow-turn-right</name>
+                </option>
+                <option>
+                    <id>arrow-up-down</id>
+                    <name>arrow-up-down</name>
+                    <name lang="de-DE">arrow-up-down</name>
+                </option>
+                <option>
+                    <id>arrow-up</id>
+                    <name>arrow-up</name>
+                    <name lang="de-DE">arrow-up</name>
+                </option>
+                <option>
+                    <id>avatar-multiple</id>
+                    <name>avatar-multiple</name>
+                    <name lang="de-DE">avatar-multiple</name>
+                </option>
+                <option>
+                    <id>avatar</id>
+                    <name>avatar</name>
+                    <name lang="de-DE">avatar</name>
+                </option>
+                <option>
+                    <id>bag-product</id>
+                    <name>bag-product</name>
+                    <name lang="de-DE">bag-product</name>
+                </option>
+                <option>
+                    <id>bag</id>
+                    <name>bag</name>
+                    <name lang="de-DE">bag</name>
+                </option>
+                <option>
+                    <id>basket</id>
+                    <name>basket</name>
+                    <name lang="de-DE">basket</name>
+                </option>
+                <option>
+                    <id>beer</id>
+                    <name>beer</name>
+                    <name lang="de-DE">beer</name>
+                </option>
+                <option>
+                    <id>bell-bell</id>
+                    <name>bell-bell</name>
+                    <name lang="de-DE">bell-bell</name>
+                </option>
+                <option>
+                    <id>bell-crossed</id>
+                    <name>bell-crossed</name>
+                    <name lang="de-DE">bell-crossed</name>
+                </option>
+                <option>
+                    <id>blocked</id>
+                    <name>blocked</name>
+                    <name lang="de-DE">blocked</name>
+                </option>
+                <option>
+                    <id>bookmark</id>
+                    <name>bookmark</name>
+                    <name lang="de-DE">bookmark</name>
+                </option>
+                <option>
+                    <id>books</id>
+                    <name>books</name>
+                    <name lang="de-DE">books</name>
+                </option>
+                <option>
+                    <id>briefcase</id>
+                    <name>briefcase</name>
+                    <name lang="de-DE">briefcase</name>
+                </option>
+                <option>
+                    <id>browser</id>
+                    <name>browser</name>
+                    <name lang="de-DE">browser</name>
+                </option>
+                <option>
+                    <id>bug</id>
+                    <name>bug</name>
+                    <name lang="de-DE">bug</name>
+                </option>
+                <option>
+                    <id>bulk-edit</id>
+                    <name>bulk-edit</name>
+                    <name lang="de-DE">bulk-edit</name>
+                </option>
+                <option>
+                    <id>calendar-empty</id>
+                    <name>calendar-empty</name>
+                    <name lang="de-DE">calendar-empty</name>
+                </option>
+                <option>
+                    <id>calendar</id>
+                    <name>calendar</name>
+                    <name lang="de-DE">calendar</name>
+                </option>
+                <option>
+                    <id>cart</id>
+                    <name>cart</name>
+                    <name lang="de-DE">cart</name>
+                </option>
+                <option>
+                    <id>chart-bar-filled</id>
+                    <name>chart-bar-filled</name>
+                    <name lang="de-DE">chart-bar-filled</name>
+                </option>
+                <option>
+                    <id>chart-bar</id>
+                    <name>chart-bar</name>
+                    <name lang="de-DE">chart-bar</name>
+                </option>
+                <option>
+                    <id>chart-pie</id>
+                    <name>chart-pie</name>
+                    <name lang="de-DE">chart-pie</name>
+                </option>
+                <option>
+                    <id>chart-sales</id>
+                    <name>chart-sales</name>
+                    <name lang="de-DE">chart-sales</name>
+                </option>
+                <option>
+                    <id>chart</id>
+                    <name>chart</name>
+                    <name lang="de-DE">chart</name>
+                </option>
+                <option>
+                    <id>checkmark-block</id>
+                    <name>checkmark-block</name>
+                    <name lang="de-DE">checkmark-block</name>
+                </option>
+                <option>
+                    <id>checkmark-circle</id>
+                    <name>checkmark-circle</name>
+                    <name lang="de-DE">checkmark-circle</name>
+                </option>
+                <option>
+                    <id>checkmark-wide-block</id>
+                    <name>checkmark-wide-block</name>
+                    <name lang="de-DE">checkmark-wide-block</name>
+                </option>
+                <option>
+                    <id>checkmark-wide</id>
+                    <name>checkmark-wide</name>
+                    <name lang="de-DE">checkmark-wide</name>
+                </option>
+                <option>
+                    <id>checkmark</id>
+                    <name>checkmark</name>
+                    <name lang="de-DE">checkmark</name>
+                </option>
+                <option>
+                    <id>circle-download</id>
+                    <name>circle-download</name>
+                    <name lang="de-DE">circle-download</name>
+                </option>
+                <option>
+                    <id>circle</id>
+                    <name>circle</name>
+                    <name lang="de-DE">circle</name>
+                </option>
+                <option>
+                    <id>clock</id>
+                    <name>clock</name>
+                    <name lang="de-DE">clock</name>
+                </option>
+                <option>
+                    <id>cloud-download</id>
+                    <name>cloud-download</name>
+                    <name lang="de-DE">cloud-download</name>
+                </option>
+                <option>
+                    <id>cloud-upload</id>
+                    <name>cloud-upload</name>
+                    <name lang="de-DE">cloud-upload</name>
+                </option>
+                <option>
+                    <id>cockpit</id>
+                    <name>cockpit</name>
+                    <name lang="de-DE">cockpit</name>
+                </option>
+                <option>
+                    <id>desktop</id>
+                    <name>desktop</name>
+                    <name lang="de-DE">desktop</name>
+                </option>
+                <option>
+                    <id>document-view</id>
+                    <name>document-view</name>
+                    <name lang="de-DE">document-view</name>
+                </option>
+                <option>
+                    <id>duplicate</id>
+                    <name>duplicate</name>
+                    <name lang="de-DE">duplicate</name>
+                </option>
+                <option>
+                    <id>emoji</id>
+                    <name>emoji</name>
+                    <name lang="de-DE">emoji</name>
+                </option>
+                <option>
+                    <id>envelope</id>
+                    <name>envelope</name>
+                    <name lang="de-DE">envelope</name>
+                </option>
+                <option>
+                    <id>error</id>
+                    <name>error</name>
+                    <name lang="de-DE">error</name>
+                </option>
+                <option>
+                    <id>external</id>
+                    <name>external</name>
+                    <name lang="de-DE">external</name>
+                </option>
+                <option>
+                    <id>eye-crossed</id>
+                    <name>eye-crossed</name>
+                    <name lang="de-DE">eye-crossed</name>
+                </option>
+                <option>
+                    <id>eye-open</id>
+                    <name>eye-open</name>
+                    <name lang="de-DE">eye-open</name>
+                </option>
+                <option>
+                    <id>file</id>
+                    <name>file</name>
+                    <name lang="de-DE">file</name>
+                </option>
+                <option>
+                    <id>flag</id>
+                    <name>flag</name>
+                    <name lang="de-DE">flag</name>
+                </option>
+                <option>
+                    <id>forward</id>
+                    <name>forward</name>
+                    <name lang="de-DE">forward</name>
+                </option>
+                <option>
+                    <id>gamecontroler</id>
+                    <name>gamecontroler</name>
+                    <name lang="de-DE">gamecontroler</name>
+                </option>
+                <option>
+                    <id>globe</id>
+                    <name>globe</name>
+                    <name lang="de-DE">globe</name>
+                </option>
+                <option>
+                    <id>gps</id>
+                    <name>gps</name>
+                    <name lang="de-DE">gps</name>
+                </option>
+                <option>
+                    <id>graduate-cap</id>
+                    <name>graduate-cap</name>
+                    <name lang="de-DE">graduate-cap</name>
+                </option>
+                <option>
+                    <id>harddisk</id>
+                    <name>harddisk</name>
+                    <name lang="de-DE">harddisk</name>
+                </option>
+                <option>
+                    <id>headset</id>
+                    <name>headset</name>
+                    <name lang="de-DE">headset</name>
+                </option>
+                <option>
+                    <id>heart</id>
+                    <name>heart</name>
+                    <name lang="de-DE">heart</name>
+                </option>
+                <option>
+                    <id>help</id>
+                    <name>help</name>
+                    <name lang="de-DE">help</name>
+                </option>
+                <option>
+                    <id>history</id>
+                    <name>history</name>
+                    <name lang="de-DE">history</name>
+                </option>
+                <option>
+                    <id>home</id>
+                    <name>home</name>
+                    <name lang="de-DE">home</name>
+                </option>
+                <option>
+                    <id>hourglass</id>
+                    <name>hourglass</name>
+                    <name lang="de-DE">hourglass</name>
+                </option>
+                <option>
+                    <id>image</id>
+                    <name>image</name>
+                    <name lang="de-DE">image</name>
+                </option>
+                <option>
+                    <id>inbox</id>
+                    <name>inbox</name>
+                    <name lang="de-DE">inbox</name>
+                </option>
+                <option>
+                    <id>info</id>
+                    <name>info</name>
+                    <name lang="de-DE">info</name>
+                </option>
+                <option>
+                    <id>keyboard</id>
+                    <name>keyboard</name>
+                    <name lang="de-DE">keyboard</name>
+                </option>
+                <option>
+                    <id>lab-flask</id>
+                    <name>lab-flask</name>
+                    <name lang="de-DE">lab-flask</name>
+                </option>
+                <option>
+                    <id>laptop</id>
+                    <name>laptop</name>
+                    <name lang="de-DE">laptop</name>
+                </option>
+                <option>
+                    <id>layers</id>
+                    <name>layers</name>
+                    <name lang="de-DE">layers</name>
+                </option>
+                <option>
+                    <id>lightbulb</id>
+                    <name>lightbulb</name>
+                    <name lang="de-DE">lightbulb</name>
+                </option>
+                <option>
+                    <id>link</id>
+                    <name>link</name>
+                    <name lang="de-DE">link</name>
+                </option>
+                <option>
+                    <id>list</id>
+                    <name>list</name>
+                    <name lang="de-DE">list</name>
+                </option>
+                <option>
+                    <id>loading-circle</id>
+                    <name>loading-circle</name>
+                    <name lang="de-DE">loading-circle</name>
+                </option>
+                <option>
+                    <id>loading-star</id>
+                    <name>loading-star</name>
+                    <name lang="de-DE">loading-star</name>
+                </option>
+                <option>
+                    <id>lock-closed</id>
+                    <name>lock-closed</name>
+                    <name lang="de-DE">lock-closed</name>
+                </option>
+                <option>
+                    <id>lock-fingerprint</id>
+                    <name>lock-fingerprint</name>
+                    <name lang="de-DE">lock-fingerprint</name>
+                </option>
+                <option>
+                    <id>lock-key</id>
+                    <name>lock-key</name>
+                    <name lang="de-DE">lock-key</name>
+                </option>
+                <option>
+                    <id>lock-open</id>
+                    <name>lock-open</name>
+                    <name lang="de-DE">lock-open</name>
+                </option>
+                <option>
+                    <id>log-in</id>
+                    <name>log-in</name>
+                    <name lang="de-DE">log-in</name>
+                </option>
+                <option>
+                    <id>log-out</id>
+                    <name>log-out</name>
+                    <name lang="de-DE">log-out</name>
+                </option>
+                <option>
+                    <id>map-closed</id>
+                    <name>map-closed</name>
+                    <name lang="de-DE">map-closed</name>
+                </option>
+                <option>
+                    <id>map-open</id>
+                    <name>map-open</name>
+                    <name lang="de-DE">map-open</name>
+                </option>
+                <option>
+                    <id>map</id>
+                    <name>map</name>
+                    <name lang="de-DE">map</name>
+                </option>
+                <option>
+                    <id>marker</id>
+                    <name>marker</name>
+                    <name lang="de-DE">marker</name>
+                </option>
+                <option>
+                    <id>marketing</id>
+                    <name>marketing</name>
+                    <name lang="de-DE">marketing</name>
+                </option>
+                <option>
+                    <id>medal</id>
+                    <name>medal</name>
+                    <name lang="de-DE">medal</name>
+                </option>
+                <option>
+                    <id>micophone</id>
+                    <name>micophone</name>
+                    <name lang="de-DE">micophone</name>
+                </option>
+                <option>
+                    <id>minus-block</id>
+                    <name>minus-block</name>
+                    <name lang="de-DE">minus-block</name>
+                </option>
+                <option>
+                    <id>minus-circle</id>
+                    <name>minus-circle</name>
+                    <name lang="de-DE">minus-circle</name>
+                </option>
+                <option>
+                    <id>minus-wide</id>
+                    <name>minus-wide</name>
+                    <name lang="de-DE">minus-wide</name>
+                </option>
+                <option>
+                    <id>minus</id>
+                    <name>minus</name>
+                    <name lang="de-DE">minus</name>
+                </option>
+                <option>
+                    <id>mobile</id>
+                    <name>mobile</name>
+                    <name lang="de-DE">mobile</name>
+                </option>
+                <option>
+                    <id>money-card</id>
+                    <name>money-card</name>
+                    <name lang="de-DE">money-card</name>
+                </option>
+                <option>
+                    <id>money-cash</id>
+                    <name>money-cash</name>
+                    <name lang="de-DE">money-cash</name>
+                </option>
+                <option>
+                    <id>money-wallet</id>
+                    <name>money-wallet</name>
+                    <name lang="de-DE">money-wallet</name>
+                </option>
+                <option>
+                    <id>moon</id>
+                    <name>moon</name>
+                    <name lang="de-DE">moon</name>
+                </option>
+                <option>
+                    <id>move-file</id>
+                    <name>move-file</name>
+                    <name lang="de-DE">move-file</name>
+                </option>
+                <option>
+                    <id>package-closed</id>
+                    <name>package-closed</name>
+                    <name lang="de-DE">package-closed</name>
+                </option>
+                <option>
+                    <id>package-gift</id>
+                    <name>package-gift</name>
+                    <name lang="de-DE">package-gift</name>
+                </option>
+                <option>
+                    <id>package-open</id>
+                    <name>package-open</name>
+                    <name lang="de-DE">package-open</name>
+                </option>
+                <option>
+                    <id>paint</id>
+                    <name>paint</name>
+                    <name lang="de-DE">paint</name>
+                </option>
+                <option>
+                    <id>paper-pencil-signed</id>
+                    <name>paper-pencil-signed</name>
+                    <name lang="de-DE">paper-pencil-signed</name>
+                </option>
+                <option>
+                    <id>paper-pencil</id>
+                    <name>paper-pencil</name>
+                    <name lang="de-DE">paper-pencil</name>
+                </option>
+                <option>
+                    <id>paperclip</id>
+                    <name>paperclip</name>
+                    <name lang="de-DE">paperclip</name>
+                </option>
+                <option>
+                    <id>paperplane</id>
+                    <name>paperplane</name>
+                    <name lang="de-DE">paperplane</name>
+                </option>
+                <option>
+                    <id>pawn</id>
+                    <name>pawn</name>
+                    <name lang="de-DE">pawn</name>
+                </option>
+                <option>
+                    <id>pencil-brush</id>
+                    <name>pencil-brush</name>
+                    <name lang="de-DE">pencil-brush</name>
+                </option>
+                <option>
+                    <id>photocamera</id>
+                    <name>photocamera</name>
+                    <name lang="de-DE">photocamera</name>
+                </option>
+                <option>
+                    <id>plastic-bag</id>
+                    <name>plastic-bag</name>
+                    <name lang="de-DE">plastic-bag</name>
+                </option>
+                <option>
+                    <id>plug</id>
+                    <name>plug</name>
+                    <name lang="de-DE">plug</name>
+                </option>
+                <option>
+                    <id>plus-block</id>
+                    <name>plus-block</name>
+                    <name lang="de-DE">plus-block</name>
+                </option>
+                <option>
+                    <id>plus-circle</id>
+                    <name>plus-circle</name>
+                    <name lang="de-DE">plus-circle</name>
+                </option>
+                <option>
+                    <id>plus-wide</id>
+                    <name>plus-wide</name>
+                    <name lang="de-DE">plus-wide</name>
+                </option>
+                <option>
+                    <id>plus</id>
+                    <name>plus</name>
+                    <name lang="de-DE">plus</name>
+                </option>
+                <option>
+                    <id>printer</id>
+                    <name>printer</name>
+                    <name lang="de-DE">printer</name>
+                </option>
+                <option>
+                    <id>products</id>
+                    <name>products</name>
+                    <name lang="de-DE">products</name>
+                </option>
+                <option>
+                    <id>pulse</id>
+                    <name>pulse</name>
+                    <name lang="de-DE">pulse</name>
+                </option>
+                <option>
+                    <id>pushpin</id>
+                    <name>pushpin</name>
+                    <name lang="de-DE">pushpin</name>
+                </option>
+                <option>
+                    <id>puzzle-piece</id>
+                    <name>puzzle-piece</name>
+                    <name lang="de-DE">puzzle-piece</name>
+                </option>
+                <option>
+                    <id>quickjump</id>
+                    <name>quickjump</name>
+                    <name lang="de-DE">quickjump</name>
+                </option>
+                <option>
+                    <id>replace</id>
+                    <name>replace</name>
+                    <name lang="de-DE">replace</name>
+                </option>
+                <option>
+                    <id>reply</id>
+                    <name>reply</name>
+                    <name lang="de-DE">reply</name>
+                </option>
+                <option>
+                    <id>rocket</id>
+                    <name>rocket</name>
+                    <name lang="de-DE">rocket</name>
+                </option>
+                <option>
+                    <id>ruler-pencil</id>
+                    <name>ruler-pencil</name>
+                    <name lang="de-DE">ruler-pencil</name>
+                </option>
+                <option>
+                    <id>save</id>
+                    <name>save</name>
+                    <name lang="de-DE">save</name>
+                </option>
+                <option>
+                    <id>screen-full</id>
+                    <name>screen-full</name>
+                    <name lang="de-DE">screen-full</name>
+                </option>
+                <option>
+                    <id>screen-minimize</id>
+                    <name>screen-minimize</name>
+                    <name lang="de-DE">screen-minimize</name>
+                </option>
+                <option>
+                    <id>search</id>
+                    <name>search</name>
+                    <name lang="de-DE">search</name>
+                </option>
+                <option>
+                    <id>server</id>
+                    <name>server</name>
+                    <name lang="de-DE">server</name>
+                </option>
+                <option>
+                    <id>settings</id>
+                    <name>settings</name>
+                    <name lang="de-DE">settings</name>
+                </option>
+                <option>
+                    <id>share</id>
+                    <name>share</name>
+                    <name lang="de-DE">share</name>
+                </option>
+                <option>
+                    <id>shield</id>
+                    <name>shield</name>
+                    <name lang="de-DE">shield</name>
+                </option>
+                <option>
+                    <id>shop</id>
+                    <name>shop</name>
+                    <name lang="de-DE">shop</name>
+                </option>
+                <option>
+                    <id>sofa</id>
+                    <name>sofa</name>
+                    <name lang="de-DE">sofa</name>
+                </option>
+                <option>
+                    <id>speech-bubble</id>
+                    <name>speech-bubble</name>
+                    <name lang="de-DE">speech-bubble</name>
+                </option>
+                <option>
+                    <id>speech-bubbles</id>
+                    <name>speech-bubbles</name>
+                    <name lang="de-DE">speech-bubbles</name>
+                </option>
+                <option>
+                    <id>stack-block</id>
+                    <name>stack-block</name>
+                    <name lang="de-DE">stack-block</name>
+                </option>
+                <option>
+                    <id>stack-circle</id>
+                    <name>stack-circle</name>
+                    <name lang="de-DE">stack-circle</name>
+                </option>
+                <option>
+                    <id>stack</id>
+                    <name>stack</name>
+                    <name lang="de-DE">stack</name>
+                </option>
+                <option>
+                    <id>star</id>
+                    <name>star</name>
+                    <name lang="de-DE">star</name>
+                </option>
+                <option>
+                    <id>sun</id>
+                    <name>sun</name>
+                    <name lang="de-DE">sun</name>
+                </option>
+                <option>
+                    <id>tablet</id>
+                    <name>tablet</name>
+                    <name lang="de-DE">tablet</name>
+                </option>
+                <option>
+                    <id>tags</id>
+                    <name>tags</name>
+                    <name lang="de-DE">tags</name>
+                </option>
+                <option>
+                    <id>target-big</id>
+                    <name>target-big</name>
+                    <name lang="de-DE">target-big</name>
+                </option>
+                <option>
+                    <id>target-with-block</id>
+                    <name>target-with-block</name>
+                    <name lang="de-DE">target-with-block</name>
+                </option>
+                <option>
+                    <id>terminal</id>
+                    <name>terminal</name>
+                    <name lang="de-DE">terminal</name>
+                </option>
+                <option>
+                    <id>thumb-down</id>
+                    <name>thumb-down</name>
+                    <name lang="de-DE">thumb-down</name>
+                </option>
+                <option>
+                    <id>thumb-up</id>
+                    <name>thumb-up</name>
+                    <name lang="de-DE">thumb-up</name>
+                </option>
+                <option>
+                    <id>tools</id>
+                    <name>tools</name>
+                    <name lang="de-DE">tools</name>
+                </option>
+                <option>
+                    <id>traffic-pawn</id>
+                    <name>traffic-pawn</name>
+                    <name lang="de-DE">traffic-pawn</name>
+                </option>
+                <option>
+                    <id>trash</id>
+                    <name>trash</name>
+                    <name lang="de-DE">trash</name>
+                </option>
+                <option>
+                    <id>tray-down</id>
+                    <name>tray-down</name>
+                    <name lang="de-DE">tray-down</name>
+                </option>
+                <option>
+                    <id>tray-up</id>
+                    <name>tray-up</name>
+                    <name lang="de-DE">tray-up</name>
+                </option>
+                <option>
+                    <id>trophy</id>
+                    <name>trophy</name>
+                    <name lang="de-DE">trophy</name>
+                </option>
+                <option>
+                    <id>video-camera</id>
+                    <name>video-camera</name>
+                    <name lang="de-DE">video-camera</name>
+                </option>
+                <option>
+                    <id>warning</id>
+                    <name>warning</name>
+                    <name lang="de-DE">warning</name>
+                </option>
+                <option>
+                    <id>x-block</id>
+                    <name>x-block</name>
+                    <name lang="de-DE">x-block</name>
+                </option>
+                <option>
+                    <id>x-circle</id>
+                    <name>x-circle</name>
+                    <name lang="de-DE">x-circle</name>
+                </option>
+                <option>
+                    <id>x-wide</id>
+                    <name>x-wide</name>
+                    <name lang="de-DE">x-wide</name>
+                </option>
+                <option>
+                    <id>x</id>
+                    <name>x</name>
+                    <name lang="de-DE">x</name>
+                </option>
+            </options>
+            <label>icon</label>
+            <label lang="de-DE">Icon</label>
+            <defaultValue>clock</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>iconViaSnippetTopBarArea1</name>
+            <label>icon alternatively maintainable via snippet</label>
+            <label lang="de-DE">Icon alternativ pflegbar über Textbaustein</label>
+            <disabled>true</disabled>
+            <defaultValue>IconTopBarArea1</defaultValue>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>iconColorTopBarArea1</name>
+            <label>icon color</label>
+            <label lang="de-DE">Iconfarbe</label>
+            <defaultValue>#4a545b</defaultValue>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>hoverIconColorTopBarArea1</name>
+            <label>hover icon color</label>
+            <label lang="de-DE">Hover - Iconfarbe</label>
+            <defaultValue>#4a545b</defaultValue>
+        </input-field>
+
+        <input-field type="int">
+            <name>iconWidthTopBarArea1</name>
+            <label>icon width in pixels</label>
+            <label lang="de-DE">Iconbreite in Pixeln</label>
+            <defaultValue>22</defaultValue>
+        </input-field>
+
+        <input-field type="int">
+            <name>iconHeightTopBarArea1</name>
+            <label>icon height in pixels</label>
+            <label lang="de-DE">Iconhöhe in Pixeln</label>
+            <defaultValue>22</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>iconMarginTopBarArea1</name>
+            <label>distance between the icon and the content</label>
+            <label lang="de-DE">Abstand des Icons zum Inhalt</label>
+            <defaultValue>1%</defaultValue>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>fontColorTopBarArea1</name>
+            <label>font color of the content</label>
+            <label lang="de-DE">Schriftfarbe des Inhalts</label>
+            <defaultValue>#4a545b</defaultValue>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>hoverFontColorTopBarArea1</name>
+            <label>hover font color of the content</label>
+            <label lang="de-DE">Hover - Schriftfarbe des Inhalts</label>
+            <defaultValue>#4a545b</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>contentTopBarArea1</name>
+            <label>content maintainable via snippet</label>
+            <label lang="de-DE">Inhalt pflegbar über Textbaustein</label>
+            <disabled>true</disabled>
+            <defaultValue>ContentTopBarArea1</defaultValue>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>positionContentTopBarArea1</name>
+            <options>
+                <option>
+                    <id>iconleft</id>
+                    <name>icon on the left and content on the right</name>
+                    <name lang="de-DE">Icon links und Inhalt rechts</name>
+                </option>
+                <option>
+                    <id>iconright</id>
+                    <name>icon on the right and content on the left</name>
+                    <name lang="de-DE">Icon rechts und Inhalt links</name>
+                </option>
+            </options>
+            <label>position of the content</label>
+            <label lang="de-DE">Position des Inhalts</label>
+            <defaultValue>iconleft</defaultValue>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>orientationTopBarArea1</name>
+            <options>
+                <option>
+                    <id>left</id>
+                    <name>left</name>
+                    <name lang="de-DE">links</name>
+                </option>
+                <option>
+                    <id>center</id>
+                    <name>center</name>
+                    <name lang="de-DE">mittig</name>
+                </option>
+                <option>
+                    <id>right</id>
+                    <name>right</name>
+                    <name lang="de-DE">rechts</name>
+                </option>
+            </options>
+            <label>orientation of the area</label>
+            <label lang="de-DE">Ausrichtung des Bereichs</label>
+            <defaultValue>left</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>linkTopBarArea1</name>
+            <label>link of the area (link or the cms id of the shopping experience)</label>
+            <label lang="de-DE">Link des Bereichs (Link oder CMS ID der Erlebniswelt)</label>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>linkTargetTopBarArea1</name>
+            <options>
+                <option>
+                    <id>current</id>
+                    <name>in current tab</name>
+                    <name lang="de-DE">im gleichen Fenster</name>
+                </option>
+                <option>
+                    <id>blank</id>
+                    <name>in new tab</name>
+                    <name lang="de-DE">in einem neuen Fenster</name>
+                </option>
+                <option>
+                    <id>modalbox</id>
+                    <name>in a modalbox</name>
+                    <name lang="de-DE">in einer Modalbox</name>
+                </option>
+            </options>
+            <label>link target of the area</label>
+            <label lang="de-DE">Linkziel des Bereichs</label>
+            <defaultValue>current</defaultValue>
+        </input-field>
+    </card>
+
+    <card>
+        <title>area 2 of the top bar</title>
+        <title lang="de-DE">Bereich 2 der Topbar</title>
+
+        <input-field type="bool">
+            <name>showTopBarArea2</name>
+            <label>show the area</label>
+            <label lang="de-DE">Bereich anzeigen</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+
+        <input-field type="multi-select">
+            <name>showInViewportTopBarArea2</name>
+            <options>
+                <option>
+                    <id>xs</id>
+                    <name>smartphone portrait (XS)</name>
+                    <name lang="de-DE">Smartphone Hochformat (XS)</name>
+                </option>
+                <option>
+                    <id>sm</id>
+                    <name>smartphone landscape (SM)</name>
+                    <name lang="de-DE">Smartphone Querformat (SM)</name>
+                </option>
+                <option>
+                    <id>md</id>
+                    <name>tablet portrait (MD)</name>
+                    <name lang="de-DE">Tablet Hochformat (MD)</name>
+                </option>
+                <option>
+                    <id>lg</id>
+                    <name>tablet landscape (LG)</name>
+                    <name lang="de-DE">Tablet Querformat (LG)</name>
+                </option>
+                <option>
+                    <id>xl</id>
+                    <name>desktop (XL)</name>
+                    <name lang="de-DE">Desktop (XL)</name>
+                </option>
+            </options>
+            <label>viewports in which the area should be shown</label>
+            <label lang="de-DE">Auflösungen, in denen der Bereich angezeigt werden soll</label>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>iconTypeTopBarArea2</name>
+            <options>
+                <option>
+                    <id>select</id>
+                    <name>following select field</name>
+                    <name lang="de-DE">nachfolgendem Auswahlfeld</name>
+                </option>
+                <option>
+                    <id>snippet</id>
+                    <name>a snippet</name>
+                    <name lang="de-DE">einem Textbaustein</name>
+                </option>
+            </options>
+            <label>icon obtain from</label>
+            <label lang="de-DE">Icon beziehen aus</label>
+            <defaultValue>select</defaultValue>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>iconTopBarArea2</name>
+            <options>
+                <option>
+                    <id>address</id>
+                    <name>address</name>
+                    <name lang="de-DE">address</name>
+                </option>
+                <option>
+                    <id>alert</id>
+                    <name>alert</name>
+                    <name lang="de-DE">alert</name>
+                </option>
+                <option>
+                    <id>arrow-360-left</id>
+                    <name>arrow-360-left</name>
+                    <name lang="de-DE">arrow-360-left</name>
+                </option>
+                <option>
+                    <id>arrow-360-right</id>
+                    <name>arrow-360-right</name>
+                    <name lang="de-DE">arrow-360-right</name>
+                </option>
+                <option>
+                    <id>arrow-circle-down</id>
+                    <name>arrow-circle-down</name>
+                    <name lang="de-DE">arrow-circle-down</name>
+                </option>
+                <option>
+                    <id>arrow-circle-left</id>
+                    <name>arrow-circle-left</name>
+                    <name lang="de-DE">arrow-circle-left</name>
+                </option>
+                <option>
+                    <id>arrow-circle-right</id>
+                    <name>arrow-circle-right</name>
+                    <name lang="de-DE">arrow-circle-right</name>
+                </option>
+                <option>
+                    <id>arrow-circle-up</id>
+                    <name>arrow-circle-up</name>
+                    <name lang="de-DE">arrow-circle-up</name>
+                </option>
+                <option>
+                    <id>arrow-down</id>
+                    <name>arrow-down</name>
+                    <name lang="de-DE">arrow-down</name>
+                </option>
+                <option>
+                    <id>arrow-head-down</id>
+                    <name>arrow-head-down</name>
+                    <name lang="de-DE">arrow-head-down</name>
+                </option>
+                <option>
+                    <id>arrow-head-left</id>
+                    <name>arrow-head-left</name>
+                    <name lang="de-DE">arrow-head-left</name>
+                </option>
+                <option>
+                    <id>arrow-head-right</id>
+                    <name>arrow-head-right</name>
+                    <name lang="de-DE">arrow-head-right</name>
+                </option>
+                <option>
+                    <id>arrow-head-up</id>
+                    <name>arrow-head-up</name>
+                    <name lang="de-DE">arrow-head-up</name>
+                </option>
+                <option>
+                    <id>arrow-left</id>
+                    <name>arrow-left</name>
+                    <name lang="de-DE">arrow-left</name>
+                </option>
+                <option>
+                    <id>arrow-right</id>
+                    <name>arrow-right</name>
+                    <name lang="de-DE">arrow-right</name>
+                </option>
+                <option>
+                    <id>arrow-scroll</id>
+                    <name>arrow-scroll</name>
+                    <name lang="de-DE">arrow-scroll</name>
+                </option>
+                <option>
+                    <id>arrow-simple-long-right</id>
+                    <name>arrow-simple-long-right</name>
+                    <name lang="de-DE">arrow-simple-long-right</name>
+                </option>
+                <option>
+                    <id>arrow-switch</id>
+                    <name>arrow-switch</name>
+                    <name lang="de-DE">arrow-switch</name>
+                </option>
+                <option>
+                    <id>arrow-turn-left</id>
+                    <name>arrow-turn-left</name>
+                    <name lang="de-DE">arrow-turn-left</name>
+                </option>
+                <option>
+                    <id>arrow-turn-right</id>
+                    <name>arrow-turn-right</name>
+                    <name lang="de-DE">arrow-turn-right</name>
+                </option>
+                <option>
+                    <id>arrow-up-down</id>
+                    <name>arrow-up-down</name>
+                    <name lang="de-DE">arrow-up-down</name>
+                </option>
+                <option>
+                    <id>arrow-up</id>
+                    <name>arrow-up</name>
+                    <name lang="de-DE">arrow-up</name>
+                </option>
+                <option>
+                    <id>avatar-multiple</id>
+                    <name>avatar-multiple</name>
+                    <name lang="de-DE">avatar-multiple</name>
+                </option>
+                <option>
+                    <id>avatar</id>
+                    <name>avatar</name>
+                    <name lang="de-DE">avatar</name>
+                </option>
+                <option>
+                    <id>bag-product</id>
+                    <name>bag-product</name>
+                    <name lang="de-DE">bag-product</name>
+                </option>
+                <option>
+                    <id>bag</id>
+                    <name>bag</name>
+                    <name lang="de-DE">bag</name>
+                </option>
+                <option>
+                    <id>basket</id>
+                    <name>basket</name>
+                    <name lang="de-DE">basket</name>
+                </option>
+                <option>
+                    <id>beer</id>
+                    <name>beer</name>
+                    <name lang="de-DE">beer</name>
+                </option>
+                <option>
+                    <id>bell-bell</id>
+                    <name>bell-bell</name>
+                    <name lang="de-DE">bell-bell</name>
+                </option>
+                <option>
+                    <id>bell-crossed</id>
+                    <name>bell-crossed</name>
+                    <name lang="de-DE">bell-crossed</name>
+                </option>
+                <option>
+                    <id>blocked</id>
+                    <name>blocked</name>
+                    <name lang="de-DE">blocked</name>
+                </option>
+                <option>
+                    <id>bookmark</id>
+                    <name>bookmark</name>
+                    <name lang="de-DE">bookmark</name>
+                </option>
+                <option>
+                    <id>books</id>
+                    <name>books</name>
+                    <name lang="de-DE">books</name>
+                </option>
+                <option>
+                    <id>briefcase</id>
+                    <name>briefcase</name>
+                    <name lang="de-DE">briefcase</name>
+                </option>
+                <option>
+                    <id>browser</id>
+                    <name>browser</name>
+                    <name lang="de-DE">browser</name>
+                </option>
+                <option>
+                    <id>bug</id>
+                    <name>bug</name>
+                    <name lang="de-DE">bug</name>
+                </option>
+                <option>
+                    <id>bulk-edit</id>
+                    <name>bulk-edit</name>
+                    <name lang="de-DE">bulk-edit</name>
+                </option>
+                <option>
+                    <id>calendar-empty</id>
+                    <name>calendar-empty</name>
+                    <name lang="de-DE">calendar-empty</name>
+                </option>
+                <option>
+                    <id>calendar</id>
+                    <name>calendar</name>
+                    <name lang="de-DE">calendar</name>
+                </option>
+                <option>
+                    <id>cart</id>
+                    <name>cart</name>
+                    <name lang="de-DE">cart</name>
+                </option>
+                <option>
+                    <id>chart-bar-filled</id>
+                    <name>chart-bar-filled</name>
+                    <name lang="de-DE">chart-bar-filled</name>
+                </option>
+                <option>
+                    <id>chart-bar</id>
+                    <name>chart-bar</name>
+                    <name lang="de-DE">chart-bar</name>
+                </option>
+                <option>
+                    <id>chart-pie</id>
+                    <name>chart-pie</name>
+                    <name lang="de-DE">chart-pie</name>
+                </option>
+                <option>
+                    <id>chart-sales</id>
+                    <name>chart-sales</name>
+                    <name lang="de-DE">chart-sales</name>
+                </option>
+                <option>
+                    <id>chart</id>
+                    <name>chart</name>
+                    <name lang="de-DE">chart</name>
+                </option>
+                <option>
+                    <id>checkmark-block</id>
+                    <name>checkmark-block</name>
+                    <name lang="de-DE">checkmark-block</name>
+                </option>
+                <option>
+                    <id>checkmark-circle</id>
+                    <name>checkmark-circle</name>
+                    <name lang="de-DE">checkmark-circle</name>
+                </option>
+                <option>
+                    <id>checkmark-wide-block</id>
+                    <name>checkmark-wide-block</name>
+                    <name lang="de-DE">checkmark-wide-block</name>
+                </option>
+                <option>
+                    <id>checkmark-wide</id>
+                    <name>checkmark-wide</name>
+                    <name lang="de-DE">checkmark-wide</name>
+                </option>
+                <option>
+                    <id>checkmark</id>
+                    <name>checkmark</name>
+                    <name lang="de-DE">checkmark</name>
+                </option>
+                <option>
+                    <id>circle-download</id>
+                    <name>circle-download</name>
+                    <name lang="de-DE">circle-download</name>
+                </option>
+                <option>
+                    <id>circle</id>
+                    <name>circle</name>
+                    <name lang="de-DE">circle</name>
+                </option>
+                <option>
+                    <id>clock</id>
+                    <name>clock</name>
+                    <name lang="de-DE">clock</name>
+                </option>
+                <option>
+                    <id>cloud-download</id>
+                    <name>cloud-download</name>
+                    <name lang="de-DE">cloud-download</name>
+                </option>
+                <option>
+                    <id>cloud-upload</id>
+                    <name>cloud-upload</name>
+                    <name lang="de-DE">cloud-upload</name>
+                </option>
+                <option>
+                    <id>cockpit</id>
+                    <name>cockpit</name>
+                    <name lang="de-DE">cockpit</name>
+                </option>
+                <option>
+                    <id>desktop</id>
+                    <name>desktop</name>
+                    <name lang="de-DE">desktop</name>
+                </option>
+                <option>
+                    <id>document-view</id>
+                    <name>document-view</name>
+                    <name lang="de-DE">document-view</name>
+                </option>
+                <option>
+                    <id>duplicate</id>
+                    <name>duplicate</name>
+                    <name lang="de-DE">duplicate</name>
+                </option>
+                <option>
+                    <id>emoji</id>
+                    <name>emoji</name>
+                    <name lang="de-DE">emoji</name>
+                </option>
+                <option>
+                    <id>envelope</id>
+                    <name>envelope</name>
+                    <name lang="de-DE">envelope</name>
+                </option>
+                <option>
+                    <id>error</id>
+                    <name>error</name>
+                    <name lang="de-DE">error</name>
+                </option>
+                <option>
+                    <id>external</id>
+                    <name>external</name>
+                    <name lang="de-DE">external</name>
+                </option>
+                <option>
+                    <id>eye-crossed</id>
+                    <name>eye-crossed</name>
+                    <name lang="de-DE">eye-crossed</name>
+                </option>
+                <option>
+                    <id>eye-open</id>
+                    <name>eye-open</name>
+                    <name lang="de-DE">eye-open</name>
+                </option>
+                <option>
+                    <id>file</id>
+                    <name>file</name>
+                    <name lang="de-DE">file</name>
+                </option>
+                <option>
+                    <id>flag</id>
+                    <name>flag</name>
+                    <name lang="de-DE">flag</name>
+                </option>
+                <option>
+                    <id>forward</id>
+                    <name>forward</name>
+                    <name lang="de-DE">forward</name>
+                </option>
+                <option>
+                    <id>gamecontroler</id>
+                    <name>gamecontroler</name>
+                    <name lang="de-DE">gamecontroler</name>
+                </option>
+                <option>
+                    <id>globe</id>
+                    <name>globe</name>
+                    <name lang="de-DE">globe</name>
+                </option>
+                <option>
+                    <id>gps</id>
+                    <name>gps</name>
+                    <name lang="de-DE">gps</name>
+                </option>
+                <option>
+                    <id>graduate-cap</id>
+                    <name>graduate-cap</name>
+                    <name lang="de-DE">graduate-cap</name>
+                </option>
+                <option>
+                    <id>harddisk</id>
+                    <name>harddisk</name>
+                    <name lang="de-DE">harddisk</name>
+                </option>
+                <option>
+                    <id>headset</id>
+                    <name>headset</name>
+                    <name lang="de-DE">headset</name>
+                </option>
+                <option>
+                    <id>heart</id>
+                    <name>heart</name>
+                    <name lang="de-DE">heart</name>
+                </option>
+                <option>
+                    <id>help</id>
+                    <name>help</name>
+                    <name lang="de-DE">help</name>
+                </option>
+                <option>
+                    <id>history</id>
+                    <name>history</name>
+                    <name lang="de-DE">history</name>
+                </option>
+                <option>
+                    <id>home</id>
+                    <name>home</name>
+                    <name lang="de-DE">home</name>
+                </option>
+                <option>
+                    <id>hourglass</id>
+                    <name>hourglass</name>
+                    <name lang="de-DE">hourglass</name>
+                </option>
+                <option>
+                    <id>image</id>
+                    <name>image</name>
+                    <name lang="de-DE">image</name>
+                </option>
+                <option>
+                    <id>inbox</id>
+                    <name>inbox</name>
+                    <name lang="de-DE">inbox</name>
+                </option>
+                <option>
+                    <id>info</id>
+                    <name>info</name>
+                    <name lang="de-DE">info</name>
+                </option>
+                <option>
+                    <id>keyboard</id>
+                    <name>keyboard</name>
+                    <name lang="de-DE">keyboard</name>
+                </option>
+                <option>
+                    <id>lab-flask</id>
+                    <name>lab-flask</name>
+                    <name lang="de-DE">lab-flask</name>
+                </option>
+                <option>
+                    <id>laptop</id>
+                    <name>laptop</name>
+                    <name lang="de-DE">laptop</name>
+                </option>
+                <option>
+                    <id>layers</id>
+                    <name>layers</name>
+                    <name lang="de-DE">layers</name>
+                </option>
+                <option>
+                    <id>lightbulb</id>
+                    <name>lightbulb</name>
+                    <name lang="de-DE">lightbulb</name>
+                </option>
+                <option>
+                    <id>link</id>
+                    <name>link</name>
+                    <name lang="de-DE">link</name>
+                </option>
+                <option>
+                    <id>list</id>
+                    <name>list</name>
+                    <name lang="de-DE">list</name>
+                </option>
+                <option>
+                    <id>loading-circle</id>
+                    <name>loading-circle</name>
+                    <name lang="de-DE">loading-circle</name>
+                </option>
+                <option>
+                    <id>loading-star</id>
+                    <name>loading-star</name>
+                    <name lang="de-DE">loading-star</name>
+                </option>
+                <option>
+                    <id>lock-closed</id>
+                    <name>lock-closed</name>
+                    <name lang="de-DE">lock-closed</name>
+                </option>
+                <option>
+                    <id>lock-fingerprint</id>
+                    <name>lock-fingerprint</name>
+                    <name lang="de-DE">lock-fingerprint</name>
+                </option>
+                <option>
+                    <id>lock-key</id>
+                    <name>lock-key</name>
+                    <name lang="de-DE">lock-key</name>
+                </option>
+                <option>
+                    <id>lock-open</id>
+                    <name>lock-open</name>
+                    <name lang="de-DE">lock-open</name>
+                </option>
+                <option>
+                    <id>log-in</id>
+                    <name>log-in</name>
+                    <name lang="de-DE">log-in</name>
+                </option>
+                <option>
+                    <id>log-out</id>
+                    <name>log-out</name>
+                    <name lang="de-DE">log-out</name>
+                </option>
+                <option>
+                    <id>map-closed</id>
+                    <name>map-closed</name>
+                    <name lang="de-DE">map-closed</name>
+                </option>
+                <option>
+                    <id>map-open</id>
+                    <name>map-open</name>
+                    <name lang="de-DE">map-open</name>
+                </option>
+                <option>
+                    <id>map</id>
+                    <name>map</name>
+                    <name lang="de-DE">map</name>
+                </option>
+                <option>
+                    <id>marker</id>
+                    <name>marker</name>
+                    <name lang="de-DE">marker</name>
+                </option>
+                <option>
+                    <id>marketing</id>
+                    <name>marketing</name>
+                    <name lang="de-DE">marketing</name>
+                </option>
+                <option>
+                    <id>medal</id>
+                    <name>medal</name>
+                    <name lang="de-DE">medal</name>
+                </option>
+                <option>
+                    <id>micophone</id>
+                    <name>micophone</name>
+                    <name lang="de-DE">micophone</name>
+                </option>
+                <option>
+                    <id>minus-block</id>
+                    <name>minus-block</name>
+                    <name lang="de-DE">minus-block</name>
+                </option>
+                <option>
+                    <id>minus-circle</id>
+                    <name>minus-circle</name>
+                    <name lang="de-DE">minus-circle</name>
+                </option>
+                <option>
+                    <id>minus-wide</id>
+                    <name>minus-wide</name>
+                    <name lang="de-DE">minus-wide</name>
+                </option>
+                <option>
+                    <id>minus</id>
+                    <name>minus</name>
+                    <name lang="de-DE">minus</name>
+                </option>
+                <option>
+                    <id>mobile</id>
+                    <name>mobile</name>
+                    <name lang="de-DE">mobile</name>
+                </option>
+                <option>
+                    <id>money-card</id>
+                    <name>money-card</name>
+                    <name lang="de-DE">money-card</name>
+                </option>
+                <option>
+                    <id>money-cash</id>
+                    <name>money-cash</name>
+                    <name lang="de-DE">money-cash</name>
+                </option>
+                <option>
+                    <id>money-wallet</id>
+                    <name>money-wallet</name>
+                    <name lang="de-DE">money-wallet</name>
+                </option>
+                <option>
+                    <id>moon</id>
+                    <name>moon</name>
+                    <name lang="de-DE">moon</name>
+                </option>
+                <option>
+                    <id>move-file</id>
+                    <name>move-file</name>
+                    <name lang="de-DE">move-file</name>
+                </option>
+                <option>
+                    <id>package-closed</id>
+                    <name>package-closed</name>
+                    <name lang="de-DE">package-closed</name>
+                </option>
+                <option>
+                    <id>package-gift</id>
+                    <name>package-gift</name>
+                    <name lang="de-DE">package-gift</name>
+                </option>
+                <option>
+                    <id>package-open</id>
+                    <name>package-open</name>
+                    <name lang="de-DE">package-open</name>
+                </option>
+                <option>
+                    <id>paint</id>
+                    <name>paint</name>
+                    <name lang="de-DE">paint</name>
+                </option>
+                <option>
+                    <id>paper-pencil-signed</id>
+                    <name>paper-pencil-signed</name>
+                    <name lang="de-DE">paper-pencil-signed</name>
+                </option>
+                <option>
+                    <id>paper-pencil</id>
+                    <name>paper-pencil</name>
+                    <name lang="de-DE">paper-pencil</name>
+                </option>
+                <option>
+                    <id>paperclip</id>
+                    <name>paperclip</name>
+                    <name lang="de-DE">paperclip</name>
+                </option>
+                <option>
+                    <id>paperplane</id>
+                    <name>paperplane</name>
+                    <name lang="de-DE">paperplane</name>
+                </option>
+                <option>
+                    <id>pawn</id>
+                    <name>pawn</name>
+                    <name lang="de-DE">pawn</name>
+                </option>
+                <option>
+                    <id>pencil-brush</id>
+                    <name>pencil-brush</name>
+                    <name lang="de-DE">pencil-brush</name>
+                </option>
+                <option>
+                    <id>photocamera</id>
+                    <name>photocamera</name>
+                    <name lang="de-DE">photocamera</name>
+                </option>
+                <option>
+                    <id>plastic-bag</id>
+                    <name>plastic-bag</name>
+                    <name lang="de-DE">plastic-bag</name>
+                </option>
+                <option>
+                    <id>plug</id>
+                    <name>plug</name>
+                    <name lang="de-DE">plug</name>
+                </option>
+                <option>
+                    <id>plus-block</id>
+                    <name>plus-block</name>
+                    <name lang="de-DE">plus-block</name>
+                </option>
+                <option>
+                    <id>plus-circle</id>
+                    <name>plus-circle</name>
+                    <name lang="de-DE">plus-circle</name>
+                </option>
+                <option>
+                    <id>plus-wide</id>
+                    <name>plus-wide</name>
+                    <name lang="de-DE">plus-wide</name>
+                </option>
+                <option>
+                    <id>plus</id>
+                    <name>plus</name>
+                    <name lang="de-DE">plus</name>
+                </option>
+                <option>
+                    <id>printer</id>
+                    <name>printer</name>
+                    <name lang="de-DE">printer</name>
+                </option>
+                <option>
+                    <id>products</id>
+                    <name>products</name>
+                    <name lang="de-DE">products</name>
+                </option>
+                <option>
+                    <id>pulse</id>
+                    <name>pulse</name>
+                    <name lang="de-DE">pulse</name>
+                </option>
+                <option>
+                    <id>pushpin</id>
+                    <name>pushpin</name>
+                    <name lang="de-DE">pushpin</name>
+                </option>
+                <option>
+                    <id>puzzle-piece</id>
+                    <name>puzzle-piece</name>
+                    <name lang="de-DE">puzzle-piece</name>
+                </option>
+                <option>
+                    <id>quickjump</id>
+                    <name>quickjump</name>
+                    <name lang="de-DE">quickjump</name>
+                </option>
+                <option>
+                    <id>replace</id>
+                    <name>replace</name>
+                    <name lang="de-DE">replace</name>
+                </option>
+                <option>
+                    <id>reply</id>
+                    <name>reply</name>
+                    <name lang="de-DE">reply</name>
+                </option>
+                <option>
+                    <id>rocket</id>
+                    <name>rocket</name>
+                    <name lang="de-DE">rocket</name>
+                </option>
+                <option>
+                    <id>ruler-pencil</id>
+                    <name>ruler-pencil</name>
+                    <name lang="de-DE">ruler-pencil</name>
+                </option>
+                <option>
+                    <id>save</id>
+                    <name>save</name>
+                    <name lang="de-DE">save</name>
+                </option>
+                <option>
+                    <id>screen-full</id>
+                    <name>screen-full</name>
+                    <name lang="de-DE">screen-full</name>
+                </option>
+                <option>
+                    <id>screen-minimize</id>
+                    <name>screen-minimize</name>
+                    <name lang="de-DE">screen-minimize</name>
+                </option>
+                <option>
+                    <id>search</id>
+                    <name>search</name>
+                    <name lang="de-DE">search</name>
+                </option>
+                <option>
+                    <id>server</id>
+                    <name>server</name>
+                    <name lang="de-DE">server</name>
+                </option>
+                <option>
+                    <id>settings</id>
+                    <name>settings</name>
+                    <name lang="de-DE">settings</name>
+                </option>
+                <option>
+                    <id>share</id>
+                    <name>share</name>
+                    <name lang="de-DE">share</name>
+                </option>
+                <option>
+                    <id>shield</id>
+                    <name>shield</name>
+                    <name lang="de-DE">shield</name>
+                </option>
+                <option>
+                    <id>shop</id>
+                    <name>shop</name>
+                    <name lang="de-DE">shop</name>
+                </option>
+                <option>
+                    <id>sofa</id>
+                    <name>sofa</name>
+                    <name lang="de-DE">sofa</name>
+                </option>
+                <option>
+                    <id>speech-bubble</id>
+                    <name>speech-bubble</name>
+                    <name lang="de-DE">speech-bubble</name>
+                </option>
+                <option>
+                    <id>speech-bubbles</id>
+                    <name>speech-bubbles</name>
+                    <name lang="de-DE">speech-bubbles</name>
+                </option>
+                <option>
+                    <id>stack-block</id>
+                    <name>stack-block</name>
+                    <name lang="de-DE">stack-block</name>
+                </option>
+                <option>
+                    <id>stack-circle</id>
+                    <name>stack-circle</name>
+                    <name lang="de-DE">stack-circle</name>
+                </option>
+                <option>
+                    <id>stack</id>
+                    <name>stack</name>
+                    <name lang="de-DE">stack</name>
+                </option>
+                <option>
+                    <id>star</id>
+                    <name>star</name>
+                    <name lang="de-DE">star</name>
+                </option>
+                <option>
+                    <id>sun</id>
+                    <name>sun</name>
+                    <name lang="de-DE">sun</name>
+                </option>
+                <option>
+                    <id>tablet</id>
+                    <name>tablet</name>
+                    <name lang="de-DE">tablet</name>
+                </option>
+                <option>
+                    <id>tags</id>
+                    <name>tags</name>
+                    <name lang="de-DE">tags</name>
+                </option>
+                <option>
+                    <id>target-big</id>
+                    <name>target-big</name>
+                    <name lang="de-DE">target-big</name>
+                </option>
+                <option>
+                    <id>target-with-block</id>
+                    <name>target-with-block</name>
+                    <name lang="de-DE">target-with-block</name>
+                </option>
+                <option>
+                    <id>terminal</id>
+                    <name>terminal</name>
+                    <name lang="de-DE">terminal</name>
+                </option>
+                <option>
+                    <id>thumb-down</id>
+                    <name>thumb-down</name>
+                    <name lang="de-DE">thumb-down</name>
+                </option>
+                <option>
+                    <id>thumb-up</id>
+                    <name>thumb-up</name>
+                    <name lang="de-DE">thumb-up</name>
+                </option>
+                <option>
+                    <id>tools</id>
+                    <name>tools</name>
+                    <name lang="de-DE">tools</name>
+                </option>
+                <option>
+                    <id>traffic-pawn</id>
+                    <name>traffic-pawn</name>
+                    <name lang="de-DE">traffic-pawn</name>
+                </option>
+                <option>
+                    <id>trash</id>
+                    <name>trash</name>
+                    <name lang="de-DE">trash</name>
+                </option>
+                <option>
+                    <id>tray-down</id>
+                    <name>tray-down</name>
+                    <name lang="de-DE">tray-down</name>
+                </option>
+                <option>
+                    <id>tray-up</id>
+                    <name>tray-up</name>
+                    <name lang="de-DE">tray-up</name>
+                </option>
+                <option>
+                    <id>trophy</id>
+                    <name>trophy</name>
+                    <name lang="de-DE">trophy</name>
+                </option>
+                <option>
+                    <id>video-camera</id>
+                    <name>video-camera</name>
+                    <name lang="de-DE">video-camera</name>
+                </option>
+                <option>
+                    <id>warning</id>
+                    <name>warning</name>
+                    <name lang="de-DE">warning</name>
+                </option>
+                <option>
+                    <id>x-block</id>
+                    <name>x-block</name>
+                    <name lang="de-DE">x-block</name>
+                </option>
+                <option>
+                    <id>x-circle</id>
+                    <name>x-circle</name>
+                    <name lang="de-DE">x-circle</name>
+                </option>
+                <option>
+                    <id>x-wide</id>
+                    <name>x-wide</name>
+                    <name lang="de-DE">x-wide</name>
+                </option>
+                <option>
+                    <id>x</id>
+                    <name>x</name>
+                    <name lang="de-DE">x</name>
+                </option>
+            </options>
+            <label>icon</label>
+            <label lang="de-DE">Icon</label>
+            <defaultValue>package-open</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>iconViaSnippetTopBarArea2</name>
+            <label>icon alternatively maintainable via snippet</label>
+            <label lang="de-DE">Icon alternativ pflegbar über Textbaustein</label>
+            <disabled>true</disabled>
+            <defaultValue>IconTopBarArea2</defaultValue>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>iconColorTopBarArea2</name>
+            <label>icon color</label>
+            <label lang="de-DE">Iconfarbe</label>
+            <defaultValue>#4a545b</defaultValue>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>hoverIconColorTopBarArea2</name>
+            <label>hover icon color</label>
+            <label lang="de-DE">Hover - Iconfarbe</label>
+            <defaultValue>#4a545b</defaultValue>
+        </input-field>
+
+        <input-field type="int">
+            <name>iconWidthTopBarArea2</name>
+            <label>icon width in pixels</label>
+            <label lang="de-DE">Iconbreite in Pixeln</label>
+            <defaultValue>22</defaultValue>
+        </input-field>
+
+        <input-field type="int">
+            <name>iconHeightTopBarArea2</name>
+            <label>icon height in pixels</label>
+            <label lang="de-DE">Iconhöhe in Pixeln</label>
+            <defaultValue>22</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>iconMarginTopBarArea2</name>
+            <label>distance between the icon and the content</label>
+            <label lang="de-DE">Abstand des Icons zum Inhalt</label>
+            <defaultValue>1%</defaultValue>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>fontColorTopBarArea2</name>
+            <label>font color of the content</label>
+            <label lang="de-DE">Schriftfarbe des Inhalts</label>
+            <defaultValue>#4a545b</defaultValue>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>hoverFontColorTopBarArea2</name>
+            <label>hover font color of the content</label>
+            <label lang="de-DE">Hover - Schriftfarbe des Inhalts</label>
+            <defaultValue>#4a545b</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>contentTopBarArea2</name>
+            <label>content maintainable via snippet</label>
+            <label lang="de-DE">Inhalt pflegbar über Textbaustein</label>
+            <disabled>true</disabled>
+            <defaultValue>ContentTopBarArea2</defaultValue>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>positionContentTopBarArea2</name>
+            <options>
+                <option>
+                    <id>iconleft</id>
+                    <name>icon on the left and content on the right</name>
+                    <name lang="de-DE">Icon links und Inhalt rechts</name>
+                </option>
+                <option>
+                    <id>iconright</id>
+                    <name>icon on the right and content on the left</name>
+                    <name lang="de-DE">Icon rechts und Inhalt links</name>
+                </option>
+            </options>
+            <label>position of the content</label>
+            <label lang="de-DE">Position des Inhalts</label>
+            <defaultValue>iconleft</defaultValue>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>orientationTopBarArea2</name>
+            <options>
+                <option>
+                    <id>left</id>
+                    <name>left</name>
+                    <name lang="de-DE">links</name>
+                </option>
+                <option>
+                    <id>center</id>
+                    <name>center</name>
+                    <name lang="de-DE">mittig</name>
+                </option>
+                <option>
+                    <id>right</id>
+                    <name>right</name>
+                    <name lang="de-DE">rechts</name>
+                </option>
+            </options>
+            <label>orientation of the area</label>
+            <label lang="de-DE">Ausrichtung des Bereichs</label>
+            <defaultValue>left</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>linkTopBarArea2</name>
+            <label>link of the area (link or the cms id of the shopping experience)</label>
+            <label lang="de-DE">Link des Bereichs (Link oder CMS ID der Erlebniswelt)</label>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>linkTargetTopBarArea2</name>
+            <options>
+                <option>
+                    <id>current</id>
+                    <name>in current tab</name>
+                    <name lang="de-DE">im gleichen Fenster</name>
+                </option>
+                <option>
+                    <id>blank</id>
+                    <name>in new tab</name>
+                    <name lang="de-DE">in einem neuen Fenster</name>
+                </option>
+                <option>
+                    <id>modalbox</id>
+                    <name>in a modalbox</name>
+                    <name lang="de-DE">in einer Modalbox</name>
+                </option>
+            </options>
+            <label>link target of the area</label>
+            <label lang="de-DE">Linkziel des Bereichs</label>
+            <defaultValue>current</defaultValue>
+        </input-field>
+    </card>
+
+    <card>
+        <title>area 3 of the top bar</title>
+        <title lang="de-DE">Bereich 3 der Topbar</title>
+
+        <input-field type="bool">
+            <name>showTopBarArea3</name>
+            <label>show the area</label>
+            <label lang="de-DE">Bereich anzeigen</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+
+        <input-field type="multi-select">
+            <name>showInViewportTopBarArea3</name>
+            <options>
+                <option>
+                    <id>xs</id>
+                    <name>smartphone portrait (XS)</name>
+                    <name lang="de-DE">Smartphone Hochformat (XS)</name>
+                </option>
+                <option>
+                    <id>sm</id>
+                    <name>smartphone landscape (SM)</name>
+                    <name lang="de-DE">Smartphone Querformat (SM)</name>
+                </option>
+                <option>
+                    <id>md</id>
+                    <name>tablet portrait (MD)</name>
+                    <name lang="de-DE">Tablet Hochformat (MD)</name>
+                </option>
+                <option>
+                    <id>lg</id>
+                    <name>tablet landscape (LG)</name>
+                    <name lang="de-DE">Tablet Querformat (LG)</name>
+                </option>
+                <option>
+                    <id>xl</id>
+                    <name>desktop (XL)</name>
+                    <name lang="de-DE">Desktop (XL)</name>
+                </option>
+            </options>
+            <label>viewports in which the area should be shown</label>
+            <label lang="de-DE">Auflösungen, in denen der Bereich angezeigt werden soll</label>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>iconTypeTopBarArea3</name>
+            <options>
+                <option>
+                    <id>select</id>
+                    <name>following select field</name>
+                    <name lang="de-DE">nachfolgendem Auswahlfeld</name>
+                </option>
+                <option>
+                    <id>snippet</id>
+                    <name>a snippet</name>
+                    <name lang="de-DE">einem Textbaustein</name>
+                </option>
+            </options>
+            <label>icon obtain from</label>
+            <label lang="de-DE">Icon beziehen aus</label>
+            <defaultValue>select</defaultValue>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>iconTopBarArea3</name>
+            <options>
+                <option>
+                    <id>address</id>
+                    <name>address</name>
+                    <name lang="de-DE">address</name>
+                </option>
+                <option>
+                    <id>alert</id>
+                    <name>alert</name>
+                    <name lang="de-DE">alert</name>
+                </option>
+                <option>
+                    <id>arrow-360-left</id>
+                    <name>arrow-360-left</name>
+                    <name lang="de-DE">arrow-360-left</name>
+                </option>
+                <option>
+                    <id>arrow-360-right</id>
+                    <name>arrow-360-right</name>
+                    <name lang="de-DE">arrow-360-right</name>
+                </option>
+                <option>
+                    <id>arrow-circle-down</id>
+                    <name>arrow-circle-down</name>
+                    <name lang="de-DE">arrow-circle-down</name>
+                </option>
+                <option>
+                    <id>arrow-circle-left</id>
+                    <name>arrow-circle-left</name>
+                    <name lang="de-DE">arrow-circle-left</name>
+                </option>
+                <option>
+                    <id>arrow-circle-right</id>
+                    <name>arrow-circle-right</name>
+                    <name lang="de-DE">arrow-circle-right</name>
+                </option>
+                <option>
+                    <id>arrow-circle-up</id>
+                    <name>arrow-circle-up</name>
+                    <name lang="de-DE">arrow-circle-up</name>
+                </option>
+                <option>
+                    <id>arrow-down</id>
+                    <name>arrow-down</name>
+                    <name lang="de-DE">arrow-down</name>
+                </option>
+                <option>
+                    <id>arrow-head-down</id>
+                    <name>arrow-head-down</name>
+                    <name lang="de-DE">arrow-head-down</name>
+                </option>
+                <option>
+                    <id>arrow-head-left</id>
+                    <name>arrow-head-left</name>
+                    <name lang="de-DE">arrow-head-left</name>
+                </option>
+                <option>
+                    <id>arrow-head-right</id>
+                    <name>arrow-head-right</name>
+                    <name lang="de-DE">arrow-head-right</name>
+                </option>
+                <option>
+                    <id>arrow-head-up</id>
+                    <name>arrow-head-up</name>
+                    <name lang="de-DE">arrow-head-up</name>
+                </option>
+                <option>
+                    <id>arrow-left</id>
+                    <name>arrow-left</name>
+                    <name lang="de-DE">arrow-left</name>
+                </option>
+                <option>
+                    <id>arrow-right</id>
+                    <name>arrow-right</name>
+                    <name lang="de-DE">arrow-right</name>
+                </option>
+                <option>
+                    <id>arrow-scroll</id>
+                    <name>arrow-scroll</name>
+                    <name lang="de-DE">arrow-scroll</name>
+                </option>
+                <option>
+                    <id>arrow-simple-long-right</id>
+                    <name>arrow-simple-long-right</name>
+                    <name lang="de-DE">arrow-simple-long-right</name>
+                </option>
+                <option>
+                    <id>arrow-switch</id>
+                    <name>arrow-switch</name>
+                    <name lang="de-DE">arrow-switch</name>
+                </option>
+                <option>
+                    <id>arrow-turn-left</id>
+                    <name>arrow-turn-left</name>
+                    <name lang="de-DE">arrow-turn-left</name>
+                </option>
+                <option>
+                    <id>arrow-turn-right</id>
+                    <name>arrow-turn-right</name>
+                    <name lang="de-DE">arrow-turn-right</name>
+                </option>
+                <option>
+                    <id>arrow-up-down</id>
+                    <name>arrow-up-down</name>
+                    <name lang="de-DE">arrow-up-down</name>
+                </option>
+                <option>
+                    <id>arrow-up</id>
+                    <name>arrow-up</name>
+                    <name lang="de-DE">arrow-up</name>
+                </option>
+                <option>
+                    <id>avatar-multiple</id>
+                    <name>avatar-multiple</name>
+                    <name lang="de-DE">avatar-multiple</name>
+                </option>
+                <option>
+                    <id>avatar</id>
+                    <name>avatar</name>
+                    <name lang="de-DE">avatar</name>
+                </option>
+                <option>
+                    <id>bag-product</id>
+                    <name>bag-product</name>
+                    <name lang="de-DE">bag-product</name>
+                </option>
+                <option>
+                    <id>bag</id>
+                    <name>bag</name>
+                    <name lang="de-DE">bag</name>
+                </option>
+                <option>
+                    <id>basket</id>
+                    <name>basket</name>
+                    <name lang="de-DE">basket</name>
+                </option>
+                <option>
+                    <id>beer</id>
+                    <name>beer</name>
+                    <name lang="de-DE">beer</name>
+                </option>
+                <option>
+                    <id>bell-bell</id>
+                    <name>bell-bell</name>
+                    <name lang="de-DE">bell-bell</name>
+                </option>
+                <option>
+                    <id>bell-crossed</id>
+                    <name>bell-crossed</name>
+                    <name lang="de-DE">bell-crossed</name>
+                </option>
+                <option>
+                    <id>blocked</id>
+                    <name>blocked</name>
+                    <name lang="de-DE">blocked</name>
+                </option>
+                <option>
+                    <id>bookmark</id>
+                    <name>bookmark</name>
+                    <name lang="de-DE">bookmark</name>
+                </option>
+                <option>
+                    <id>books</id>
+                    <name>books</name>
+                    <name lang="de-DE">books</name>
+                </option>
+                <option>
+                    <id>briefcase</id>
+                    <name>briefcase</name>
+                    <name lang="de-DE">briefcase</name>
+                </option>
+                <option>
+                    <id>browser</id>
+                    <name>browser</name>
+                    <name lang="de-DE">browser</name>
+                </option>
+                <option>
+                    <id>bug</id>
+                    <name>bug</name>
+                    <name lang="de-DE">bug</name>
+                </option>
+                <option>
+                    <id>bulk-edit</id>
+                    <name>bulk-edit</name>
+                    <name lang="de-DE">bulk-edit</name>
+                </option>
+                <option>
+                    <id>calendar-empty</id>
+                    <name>calendar-empty</name>
+                    <name lang="de-DE">calendar-empty</name>
+                </option>
+                <option>
+                    <id>calendar</id>
+                    <name>calendar</name>
+                    <name lang="de-DE">calendar</name>
+                </option>
+                <option>
+                    <id>cart</id>
+                    <name>cart</name>
+                    <name lang="de-DE">cart</name>
+                </option>
+                <option>
+                    <id>chart-bar-filled</id>
+                    <name>chart-bar-filled</name>
+                    <name lang="de-DE">chart-bar-filled</name>
+                </option>
+                <option>
+                    <id>chart-bar</id>
+                    <name>chart-bar</name>
+                    <name lang="de-DE">chart-bar</name>
+                </option>
+                <option>
+                    <id>chart-pie</id>
+                    <name>chart-pie</name>
+                    <name lang="de-DE">chart-pie</name>
+                </option>
+                <option>
+                    <id>chart-sales</id>
+                    <name>chart-sales</name>
+                    <name lang="de-DE">chart-sales</name>
+                </option>
+                <option>
+                    <id>chart</id>
+                    <name>chart</name>
+                    <name lang="de-DE">chart</name>
+                </option>
+                <option>
+                    <id>checkmark-block</id>
+                    <name>checkmark-block</name>
+                    <name lang="de-DE">checkmark-block</name>
+                </option>
+                <option>
+                    <id>checkmark-circle</id>
+                    <name>checkmark-circle</name>
+                    <name lang="de-DE">checkmark-circle</name>
+                </option>
+                <option>
+                    <id>checkmark-wide-block</id>
+                    <name>checkmark-wide-block</name>
+                    <name lang="de-DE">checkmark-wide-block</name>
+                </option>
+                <option>
+                    <id>checkmark-wide</id>
+                    <name>checkmark-wide</name>
+                    <name lang="de-DE">checkmark-wide</name>
+                </option>
+                <option>
+                    <id>checkmark</id>
+                    <name>checkmark</name>
+                    <name lang="de-DE">checkmark</name>
+                </option>
+                <option>
+                    <id>circle-download</id>
+                    <name>circle-download</name>
+                    <name lang="de-DE">circle-download</name>
+                </option>
+                <option>
+                    <id>circle</id>
+                    <name>circle</name>
+                    <name lang="de-DE">circle</name>
+                </option>
+                <option>
+                    <id>clock</id>
+                    <name>clock</name>
+                    <name lang="de-DE">clock</name>
+                </option>
+                <option>
+                    <id>cloud-download</id>
+                    <name>cloud-download</name>
+                    <name lang="de-DE">cloud-download</name>
+                </option>
+                <option>
+                    <id>cloud-upload</id>
+                    <name>cloud-upload</name>
+                    <name lang="de-DE">cloud-upload</name>
+                </option>
+                <option>
+                    <id>cockpit</id>
+                    <name>cockpit</name>
+                    <name lang="de-DE">cockpit</name>
+                </option>
+                <option>
+                    <id>desktop</id>
+                    <name>desktop</name>
+                    <name lang="de-DE">desktop</name>
+                </option>
+                <option>
+                    <id>document-view</id>
+                    <name>document-view</name>
+                    <name lang="de-DE">document-view</name>
+                </option>
+                <option>
+                    <id>duplicate</id>
+                    <name>duplicate</name>
+                    <name lang="de-DE">duplicate</name>
+                </option>
+                <option>
+                    <id>emoji</id>
+                    <name>emoji</name>
+                    <name lang="de-DE">emoji</name>
+                </option>
+                <option>
+                    <id>envelope</id>
+                    <name>envelope</name>
+                    <name lang="de-DE">envelope</name>
+                </option>
+                <option>
+                    <id>error</id>
+                    <name>error</name>
+                    <name lang="de-DE">error</name>
+                </option>
+                <option>
+                    <id>external</id>
+                    <name>external</name>
+                    <name lang="de-DE">external</name>
+                </option>
+                <option>
+                    <id>eye-crossed</id>
+                    <name>eye-crossed</name>
+                    <name lang="de-DE">eye-crossed</name>
+                </option>
+                <option>
+                    <id>eye-open</id>
+                    <name>eye-open</name>
+                    <name lang="de-DE">eye-open</name>
+                </option>
+                <option>
+                    <id>file</id>
+                    <name>file</name>
+                    <name lang="de-DE">file</name>
+                </option>
+                <option>
+                    <id>flag</id>
+                    <name>flag</name>
+                    <name lang="de-DE">flag</name>
+                </option>
+                <option>
+                    <id>forward</id>
+                    <name>forward</name>
+                    <name lang="de-DE">forward</name>
+                </option>
+                <option>
+                    <id>gamecontroler</id>
+                    <name>gamecontroler</name>
+                    <name lang="de-DE">gamecontroler</name>
+                </option>
+                <option>
+                    <id>globe</id>
+                    <name>globe</name>
+                    <name lang="de-DE">globe</name>
+                </option>
+                <option>
+                    <id>gps</id>
+                    <name>gps</name>
+                    <name lang="de-DE">gps</name>
+                </option>
+                <option>
+                    <id>graduate-cap</id>
+                    <name>graduate-cap</name>
+                    <name lang="de-DE">graduate-cap</name>
+                </option>
+                <option>
+                    <id>harddisk</id>
+                    <name>harddisk</name>
+                    <name lang="de-DE">harddisk</name>
+                </option>
+                <option>
+                    <id>headset</id>
+                    <name>headset</name>
+                    <name lang="de-DE">headset</name>
+                </option>
+                <option>
+                    <id>heart</id>
+                    <name>heart</name>
+                    <name lang="de-DE">heart</name>
+                </option>
+                <option>
+                    <id>help</id>
+                    <name>help</name>
+                    <name lang="de-DE">help</name>
+                </option>
+                <option>
+                    <id>history</id>
+                    <name>history</name>
+                    <name lang="de-DE">history</name>
+                </option>
+                <option>
+                    <id>home</id>
+                    <name>home</name>
+                    <name lang="de-DE">home</name>
+                </option>
+                <option>
+                    <id>hourglass</id>
+                    <name>hourglass</name>
+                    <name lang="de-DE">hourglass</name>
+                </option>
+                <option>
+                    <id>image</id>
+                    <name>image</name>
+                    <name lang="de-DE">image</name>
+                </option>
+                <option>
+                    <id>inbox</id>
+                    <name>inbox</name>
+                    <name lang="de-DE">inbox</name>
+                </option>
+                <option>
+                    <id>info</id>
+                    <name>info</name>
+                    <name lang="de-DE">info</name>
+                </option>
+                <option>
+                    <id>keyboard</id>
+                    <name>keyboard</name>
+                    <name lang="de-DE">keyboard</name>
+                </option>
+                <option>
+                    <id>lab-flask</id>
+                    <name>lab-flask</name>
+                    <name lang="de-DE">lab-flask</name>
+                </option>
+                <option>
+                    <id>laptop</id>
+                    <name>laptop</name>
+                    <name lang="de-DE">laptop</name>
+                </option>
+                <option>
+                    <id>layers</id>
+                    <name>layers</name>
+                    <name lang="de-DE">layers</name>
+                </option>
+                <option>
+                    <id>lightbulb</id>
+                    <name>lightbulb</name>
+                    <name lang="de-DE">lightbulb</name>
+                </option>
+                <option>
+                    <id>link</id>
+                    <name>link</name>
+                    <name lang="de-DE">link</name>
+                </option>
+                <option>
+                    <id>list</id>
+                    <name>list</name>
+                    <name lang="de-DE">list</name>
+                </option>
+                <option>
+                    <id>loading-circle</id>
+                    <name>loading-circle</name>
+                    <name lang="de-DE">loading-circle</name>
+                </option>
+                <option>
+                    <id>loading-star</id>
+                    <name>loading-star</name>
+                    <name lang="de-DE">loading-star</name>
+                </option>
+                <option>
+                    <id>lock-closed</id>
+                    <name>lock-closed</name>
+                    <name lang="de-DE">lock-closed</name>
+                </option>
+                <option>
+                    <id>lock-fingerprint</id>
+                    <name>lock-fingerprint</name>
+                    <name lang="de-DE">lock-fingerprint</name>
+                </option>
+                <option>
+                    <id>lock-key</id>
+                    <name>lock-key</name>
+                    <name lang="de-DE">lock-key</name>
+                </option>
+                <option>
+                    <id>lock-open</id>
+                    <name>lock-open</name>
+                    <name lang="de-DE">lock-open</name>
+                </option>
+                <option>
+                    <id>log-in</id>
+                    <name>log-in</name>
+                    <name lang="de-DE">log-in</name>
+                </option>
+                <option>
+                    <id>log-out</id>
+                    <name>log-out</name>
+                    <name lang="de-DE">log-out</name>
+                </option>
+                <option>
+                    <id>map-closed</id>
+                    <name>map-closed</name>
+                    <name lang="de-DE">map-closed</name>
+                </option>
+                <option>
+                    <id>map-open</id>
+                    <name>map-open</name>
+                    <name lang="de-DE">map-open</name>
+                </option>
+                <option>
+                    <id>map</id>
+                    <name>map</name>
+                    <name lang="de-DE">map</name>
+                </option>
+                <option>
+                    <id>marker</id>
+                    <name>marker</name>
+                    <name lang="de-DE">marker</name>
+                </option>
+                <option>
+                    <id>marketing</id>
+                    <name>marketing</name>
+                    <name lang="de-DE">marketing</name>
+                </option>
+                <option>
+                    <id>medal</id>
+                    <name>medal</name>
+                    <name lang="de-DE">medal</name>
+                </option>
+                <option>
+                    <id>micophone</id>
+                    <name>micophone</name>
+                    <name lang="de-DE">micophone</name>
+                </option>
+                <option>
+                    <id>minus-block</id>
+                    <name>minus-block</name>
+                    <name lang="de-DE">minus-block</name>
+                </option>
+                <option>
+                    <id>minus-circle</id>
+                    <name>minus-circle</name>
+                    <name lang="de-DE">minus-circle</name>
+                </option>
+                <option>
+                    <id>minus-wide</id>
+                    <name>minus-wide</name>
+                    <name lang="de-DE">minus-wide</name>
+                </option>
+                <option>
+                    <id>minus</id>
+                    <name>minus</name>
+                    <name lang="de-DE">minus</name>
+                </option>
+                <option>
+                    <id>mobile</id>
+                    <name>mobile</name>
+                    <name lang="de-DE">mobile</name>
+                </option>
+                <option>
+                    <id>money-card</id>
+                    <name>money-card</name>
+                    <name lang="de-DE">money-card</name>
+                </option>
+                <option>
+                    <id>money-cash</id>
+                    <name>money-cash</name>
+                    <name lang="de-DE">money-cash</name>
+                </option>
+                <option>
+                    <id>money-wallet</id>
+                    <name>money-wallet</name>
+                    <name lang="de-DE">money-wallet</name>
+                </option>
+                <option>
+                    <id>moon</id>
+                    <name>moon</name>
+                    <name lang="de-DE">moon</name>
+                </option>
+                <option>
+                    <id>move-file</id>
+                    <name>move-file</name>
+                    <name lang="de-DE">move-file</name>
+                </option>
+                <option>
+                    <id>package-closed</id>
+                    <name>package-closed</name>
+                    <name lang="de-DE">package-closed</name>
+                </option>
+                <option>
+                    <id>package-gift</id>
+                    <name>package-gift</name>
+                    <name lang="de-DE">package-gift</name>
+                </option>
+                <option>
+                    <id>package-open</id>
+                    <name>package-open</name>
+                    <name lang="de-DE">package-open</name>
+                </option>
+                <option>
+                    <id>paint</id>
+                    <name>paint</name>
+                    <name lang="de-DE">paint</name>
+                </option>
+                <option>
+                    <id>paper-pencil-signed</id>
+                    <name>paper-pencil-signed</name>
+                    <name lang="de-DE">paper-pencil-signed</name>
+                </option>
+                <option>
+                    <id>paper-pencil</id>
+                    <name>paper-pencil</name>
+                    <name lang="de-DE">paper-pencil</name>
+                </option>
+                <option>
+                    <id>paperclip</id>
+                    <name>paperclip</name>
+                    <name lang="de-DE">paperclip</name>
+                </option>
+                <option>
+                    <id>paperplane</id>
+                    <name>paperplane</name>
+                    <name lang="de-DE">paperplane</name>
+                </option>
+                <option>
+                    <id>pawn</id>
+                    <name>pawn</name>
+                    <name lang="de-DE">pawn</name>
+                </option>
+                <option>
+                    <id>pencil-brush</id>
+                    <name>pencil-brush</name>
+                    <name lang="de-DE">pencil-brush</name>
+                </option>
+                <option>
+                    <id>photocamera</id>
+                    <name>photocamera</name>
+                    <name lang="de-DE">photocamera</name>
+                </option>
+                <option>
+                    <id>plastic-bag</id>
+                    <name>plastic-bag</name>
+                    <name lang="de-DE">plastic-bag</name>
+                </option>
+                <option>
+                    <id>plug</id>
+                    <name>plug</name>
+                    <name lang="de-DE">plug</name>
+                </option>
+                <option>
+                    <id>plus-block</id>
+                    <name>plus-block</name>
+                    <name lang="de-DE">plus-block</name>
+                </option>
+                <option>
+                    <id>plus-circle</id>
+                    <name>plus-circle</name>
+                    <name lang="de-DE">plus-circle</name>
+                </option>
+                <option>
+                    <id>plus-wide</id>
+                    <name>plus-wide</name>
+                    <name lang="de-DE">plus-wide</name>
+                </option>
+                <option>
+                    <id>plus</id>
+                    <name>plus</name>
+                    <name lang="de-DE">plus</name>
+                </option>
+                <option>
+                    <id>printer</id>
+                    <name>printer</name>
+                    <name lang="de-DE">printer</name>
+                </option>
+                <option>
+                    <id>products</id>
+                    <name>products</name>
+                    <name lang="de-DE">products</name>
+                </option>
+                <option>
+                    <id>pulse</id>
+                    <name>pulse</name>
+                    <name lang="de-DE">pulse</name>
+                </option>
+                <option>
+                    <id>pushpin</id>
+                    <name>pushpin</name>
+                    <name lang="de-DE">pushpin</name>
+                </option>
+                <option>
+                    <id>puzzle-piece</id>
+                    <name>puzzle-piece</name>
+                    <name lang="de-DE">puzzle-piece</name>
+                </option>
+                <option>
+                    <id>quickjump</id>
+                    <name>quickjump</name>
+                    <name lang="de-DE">quickjump</name>
+                </option>
+                <option>
+                    <id>replace</id>
+                    <name>replace</name>
+                    <name lang="de-DE">replace</name>
+                </option>
+                <option>
+                    <id>reply</id>
+                    <name>reply</name>
+                    <name lang="de-DE">reply</name>
+                </option>
+                <option>
+                    <id>rocket</id>
+                    <name>rocket</name>
+                    <name lang="de-DE">rocket</name>
+                </option>
+                <option>
+                    <id>ruler-pencil</id>
+                    <name>ruler-pencil</name>
+                    <name lang="de-DE">ruler-pencil</name>
+                </option>
+                <option>
+                    <id>save</id>
+                    <name>save</name>
+                    <name lang="de-DE">save</name>
+                </option>
+                <option>
+                    <id>screen-full</id>
+                    <name>screen-full</name>
+                    <name lang="de-DE">screen-full</name>
+                </option>
+                <option>
+                    <id>screen-minimize</id>
+                    <name>screen-minimize</name>
+                    <name lang="de-DE">screen-minimize</name>
+                </option>
+                <option>
+                    <id>search</id>
+                    <name>search</name>
+                    <name lang="de-DE">search</name>
+                </option>
+                <option>
+                    <id>server</id>
+                    <name>server</name>
+                    <name lang="de-DE">server</name>
+                </option>
+                <option>
+                    <id>settings</id>
+                    <name>settings</name>
+                    <name lang="de-DE">settings</name>
+                </option>
+                <option>
+                    <id>share</id>
+                    <name>share</name>
+                    <name lang="de-DE">share</name>
+                </option>
+                <option>
+                    <id>shield</id>
+                    <name>shield</name>
+                    <name lang="de-DE">shield</name>
+                </option>
+                <option>
+                    <id>shop</id>
+                    <name>shop</name>
+                    <name lang="de-DE">shop</name>
+                </option>
+                <option>
+                    <id>sofa</id>
+                    <name>sofa</name>
+                    <name lang="de-DE">sofa</name>
+                </option>
+                <option>
+                    <id>speech-bubble</id>
+                    <name>speech-bubble</name>
+                    <name lang="de-DE">speech-bubble</name>
+                </option>
+                <option>
+                    <id>speech-bubbles</id>
+                    <name>speech-bubbles</name>
+                    <name lang="de-DE">speech-bubbles</name>
+                </option>
+                <option>
+                    <id>stack-block</id>
+                    <name>stack-block</name>
+                    <name lang="de-DE">stack-block</name>
+                </option>
+                <option>
+                    <id>stack-circle</id>
+                    <name>stack-circle</name>
+                    <name lang="de-DE">stack-circle</name>
+                </option>
+                <option>
+                    <id>stack</id>
+                    <name>stack</name>
+                    <name lang="de-DE">stack</name>
+                </option>
+                <option>
+                    <id>star</id>
+                    <name>star</name>
+                    <name lang="de-DE">star</name>
+                </option>
+                <option>
+                    <id>sun</id>
+                    <name>sun</name>
+                    <name lang="de-DE">sun</name>
+                </option>
+                <option>
+                    <id>tablet</id>
+                    <name>tablet</name>
+                    <name lang="de-DE">tablet</name>
+                </option>
+                <option>
+                    <id>tags</id>
+                    <name>tags</name>
+                    <name lang="de-DE">tags</name>
+                </option>
+                <option>
+                    <id>target-big</id>
+                    <name>target-big</name>
+                    <name lang="de-DE">target-big</name>
+                </option>
+                <option>
+                    <id>target-with-block</id>
+                    <name>target-with-block</name>
+                    <name lang="de-DE">target-with-block</name>
+                </option>
+                <option>
+                    <id>terminal</id>
+                    <name>terminal</name>
+                    <name lang="de-DE">terminal</name>
+                </option>
+                <option>
+                    <id>thumb-down</id>
+                    <name>thumb-down</name>
+                    <name lang="de-DE">thumb-down</name>
+                </option>
+                <option>
+                    <id>thumb-up</id>
+                    <name>thumb-up</name>
+                    <name lang="de-DE">thumb-up</name>
+                </option>
+                <option>
+                    <id>tools</id>
+                    <name>tools</name>
+                    <name lang="de-DE">tools</name>
+                </option>
+                <option>
+                    <id>traffic-pawn</id>
+                    <name>traffic-pawn</name>
+                    <name lang="de-DE">traffic-pawn</name>
+                </option>
+                <option>
+                    <id>trash</id>
+                    <name>trash</name>
+                    <name lang="de-DE">trash</name>
+                </option>
+                <option>
+                    <id>tray-down</id>
+                    <name>tray-down</name>
+                    <name lang="de-DE">tray-down</name>
+                </option>
+                <option>
+                    <id>tray-up</id>
+                    <name>tray-up</name>
+                    <name lang="de-DE">tray-up</name>
+                </option>
+                <option>
+                    <id>trophy</id>
+                    <name>trophy</name>
+                    <name lang="de-DE">trophy</name>
+                </option>
+                <option>
+                    <id>video-camera</id>
+                    <name>video-camera</name>
+                    <name lang="de-DE">video-camera</name>
+                </option>
+                <option>
+                    <id>warning</id>
+                    <name>warning</name>
+                    <name lang="de-DE">warning</name>
+                </option>
+                <option>
+                    <id>x-block</id>
+                    <name>x-block</name>
+                    <name lang="de-DE">x-block</name>
+                </option>
+                <option>
+                    <id>x-circle</id>
+                    <name>x-circle</name>
+                    <name lang="de-DE">x-circle</name>
+                </option>
+                <option>
+                    <id>x-wide</id>
+                    <name>x-wide</name>
+                    <name lang="de-DE">x-wide</name>
+                </option>
+                <option>
+                    <id>x</id>
+                    <name>x</name>
+                    <name lang="de-DE">x</name>
+                </option>
+            </options>
+            <label>icon</label>
+            <label lang="de-DE">Icon</label>
+            <defaultValue>arrow-360-right</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>iconViaSnippetTopBarArea3</name>
+            <label>icon alternatively maintainable via snippet</label>
+            <label lang="de-DE">Icon alternativ pflegbar über Textbaustein</label>
+            <disabled>true</disabled>
+            <defaultValue>IconTopBarArea3</defaultValue>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>iconColorTopBarArea3</name>
+            <label>icon color</label>
+            <label lang="de-DE">Iconfarbe</label>
+            <defaultValue>#4a545b</defaultValue>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>hoverIconColorTopBarArea3</name>
+            <label>hover icon color</label>
+            <label lang="de-DE">Hover - Iconfarbe</label>
+            <defaultValue>#4a545b</defaultValue>
+        </input-field>
+
+        <input-field type="int">
+            <name>iconWidthTopBarArea3</name>
+            <label>icon width in pixels</label>
+            <label lang="de-DE">Iconbreite in Pixeln</label>
+            <defaultValue>22</defaultValue>
+        </input-field>
+
+        <input-field type="int">
+            <name>iconHeightTopBarArea3</name>
+            <label>icon height in pixels</label>
+            <label lang="de-DE">Iconhöhe in Pixeln</label>
+            <defaultValue>22</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>iconMarginTopBarArea3</name>
+            <label>distance between the icon and the content</label>
+            <label lang="de-DE">Abstand des Icons zum Inhalt</label>
+            <defaultValue>1%</defaultValue>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>fontColorTopBarArea3</name>
+            <label>font color of the content</label>
+            <label lang="de-DE">Schriftfarbe des Inhalts</label>
+            <defaultValue>#4a545b</defaultValue>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>hoverFontColorTopBarArea3</name>
+            <label>hover font color of the content</label>
+            <label lang="de-DE">Hover - Schriftfarbe des Inhalts</label>
+            <defaultValue>#4a545b</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>contentTopBarArea3</name>
+            <label>content maintainable via snippet</label>
+            <label lang="de-DE">Inhalt pflegbar über Textbaustein</label>
+            <disabled>true</disabled>
+            <defaultValue>ContentTopBarArea3</defaultValue>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>positionContentTopBarArea3</name>
+            <options>
+                <option>
+                    <id>iconleft</id>
+                    <name>icon on the left and content on the right</name>
+                    <name lang="de-DE">Icon links und Inhalt rechts</name>
+                </option>
+                <option>
+                    <id>iconright</id>
+                    <name>icon on the right and content on the left</name>
+                    <name lang="de-DE">Icon rechts und Inhalt links</name>
+                </option>
+            </options>
+            <label>position of the content</label>
+            <label lang="de-DE">Position des Inhalts</label>
+            <defaultValue>iconleft</defaultValue>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>orientationTopBarArea3</name>
+            <options>
+                <option>
+                    <id>left</id>
+                    <name>left</name>
+                    <name lang="de-DE">links</name>
+                </option>
+                <option>
+                    <id>center</id>
+                    <name>center</name>
+                    <name lang="de-DE">mittig</name>
+                </option>
+                <option>
+                    <id>right</id>
+                    <name>right</name>
+                    <name lang="de-DE">rechts</name>
+                </option>
+            </options>
+            <label>orientation of the area</label>
+            <label lang="de-DE">Ausrichtung des Bereichs</label>
+            <defaultValue>left</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>linkTopBarArea3</name>
+            <label>link of the area (link or the cms id of the shopping experience)</label>
+            <label lang="de-DE">Link des Bereichs (Link oder CMS ID der Erlebniswelt)</label>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>linkTargetTopBarArea3</name>
+            <options>
+                <option>
+                    <id>current</id>
+                    <name>in current tab</name>
+                    <name lang="de-DE">im gleichen Fenster</name>
+                </option>
+                <option>
+                    <id>blank</id>
+                    <name>in new tab</name>
+                    <name lang="de-DE">in einem neuen Fenster</name>
+                </option>
+                <option>
+                    <id>modalbox</id>
+                    <name>in a modalbox</name>
+                    <name lang="de-DE">in einer Modalbox</name>
+                </option>
+            </options>
+            <label>link target of the area</label>
+            <label lang="de-DE">Linkziel des Bereichs</label>
+            <defaultValue>current</defaultValue>
+        </input-field>
+    </card>
+
+    <card>
+        <title>area 4 of the top bar</title>
+        <title lang="de-DE">Bereich 4 der Topbar</title>
+
+        <input-field type="bool">
+            <name>showTopBarArea4</name>
+            <label>show the area</label>
+            <label lang="de-DE">Bereich anzeigen</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+
+        <input-field type="multi-select">
+            <name>showInViewportTopBarArea4</name>
+            <options>
+                <option>
+                    <id>xs</id>
+                    <name>smartphone portrait (XS)</name>
+                    <name lang="de-DE">Smartphone Hochformat (XS)</name>
+                </option>
+                <option>
+                    <id>sm</id>
+                    <name>smartphone landscape (SM)</name>
+                    <name lang="de-DE">Smartphone Querformat (SM)</name>
+                </option>
+                <option>
+                    <id>md</id>
+                    <name>tablet portrait (MD)</name>
+                    <name lang="de-DE">Tablet Hochformat (MD)</name>
+                </option>
+                <option>
+                    <id>lg</id>
+                    <name>tablet landscape (LG)</name>
+                    <name lang="de-DE">Tablet Querformat (LG)</name>
+                </option>
+                <option>
+                    <id>xl</id>
+                    <name>desktop (XL)</name>
+                    <name lang="de-DE">Desktop (XL)</name>
+                </option>
+            </options>
+            <label>viewports in which the area should be shown</label>
+            <label lang="de-DE">Auflösungen, in denen der Bereich angezeigt werden soll</label>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>iconTypeTopBarArea4</name>
+            <options>
+                <option>
+                    <id>select</id>
+                    <name>following select field</name>
+                    <name lang="de-DE">nachfolgendem Auswahlfeld</name>
+                </option>
+                <option>
+                    <id>snippet</id>
+                    <name>a snippet</name>
+                    <name lang="de-DE">einem Textbaustein</name>
+                </option>
+            </options>
+            <label>icon obtain from</label>
+            <label lang="de-DE">Icon beziehen aus</label>
+            <defaultValue>select</defaultValue>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>iconTopBarArea4</name>
+            <options>
+                <option>
+                    <id>address</id>
+                    <name>address</name>
+                    <name lang="de-DE">address</name>
+                </option>
+                <option>
+                    <id>alert</id>
+                    <name>alert</name>
+                    <name lang="de-DE">alert</name>
+                </option>
+                <option>
+                    <id>arrow-360-left</id>
+                    <name>arrow-360-left</name>
+                    <name lang="de-DE">arrow-360-left</name>
+                </option>
+                <option>
+                    <id>arrow-360-right</id>
+                    <name>arrow-360-right</name>
+                    <name lang="de-DE">arrow-360-right</name>
+                </option>
+                <option>
+                    <id>arrow-circle-down</id>
+                    <name>arrow-circle-down</name>
+                    <name lang="de-DE">arrow-circle-down</name>
+                </option>
+                <option>
+                    <id>arrow-circle-left</id>
+                    <name>arrow-circle-left</name>
+                    <name lang="de-DE">arrow-circle-left</name>
+                </option>
+                <option>
+                    <id>arrow-circle-right</id>
+                    <name>arrow-circle-right</name>
+                    <name lang="de-DE">arrow-circle-right</name>
+                </option>
+                <option>
+                    <id>arrow-circle-up</id>
+                    <name>arrow-circle-up</name>
+                    <name lang="de-DE">arrow-circle-up</name>
+                </option>
+                <option>
+                    <id>arrow-down</id>
+                    <name>arrow-down</name>
+                    <name lang="de-DE">arrow-down</name>
+                </option>
+                <option>
+                    <id>arrow-head-down</id>
+                    <name>arrow-head-down</name>
+                    <name lang="de-DE">arrow-head-down</name>
+                </option>
+                <option>
+                    <id>arrow-head-left</id>
+                    <name>arrow-head-left</name>
+                    <name lang="de-DE">arrow-head-left</name>
+                </option>
+                <option>
+                    <id>arrow-head-right</id>
+                    <name>arrow-head-right</name>
+                    <name lang="de-DE">arrow-head-right</name>
+                </option>
+                <option>
+                    <id>arrow-head-up</id>
+                    <name>arrow-head-up</name>
+                    <name lang="de-DE">arrow-head-up</name>
+                </option>
+                <option>
+                    <id>arrow-left</id>
+                    <name>arrow-left</name>
+                    <name lang="de-DE">arrow-left</name>
+                </option>
+                <option>
+                    <id>arrow-right</id>
+                    <name>arrow-right</name>
+                    <name lang="de-DE">arrow-right</name>
+                </option>
+                <option>
+                    <id>arrow-scroll</id>
+                    <name>arrow-scroll</name>
+                    <name lang="de-DE">arrow-scroll</name>
+                </option>
+                <option>
+                    <id>arrow-simple-long-right</id>
+                    <name>arrow-simple-long-right</name>
+                    <name lang="de-DE">arrow-simple-long-right</name>
+                </option>
+                <option>
+                    <id>arrow-switch</id>
+                    <name>arrow-switch</name>
+                    <name lang="de-DE">arrow-switch</name>
+                </option>
+                <option>
+                    <id>arrow-turn-left</id>
+                    <name>arrow-turn-left</name>
+                    <name lang="de-DE">arrow-turn-left</name>
+                </option>
+                <option>
+                    <id>arrow-turn-right</id>
+                    <name>arrow-turn-right</name>
+                    <name lang="de-DE">arrow-turn-right</name>
+                </option>
+                <option>
+                    <id>arrow-up-down</id>
+                    <name>arrow-up-down</name>
+                    <name lang="de-DE">arrow-up-down</name>
+                </option>
+                <option>
+                    <id>arrow-up</id>
+                    <name>arrow-up</name>
+                    <name lang="de-DE">arrow-up</name>
+                </option>
+                <option>
+                    <id>avatar-multiple</id>
+                    <name>avatar-multiple</name>
+                    <name lang="de-DE">avatar-multiple</name>
+                </option>
+                <option>
+                    <id>avatar</id>
+                    <name>avatar</name>
+                    <name lang="de-DE">avatar</name>
+                </option>
+                <option>
+                    <id>bag-product</id>
+                    <name>bag-product</name>
+                    <name lang="de-DE">bag-product</name>
+                </option>
+                <option>
+                    <id>bag</id>
+                    <name>bag</name>
+                    <name lang="de-DE">bag</name>
+                </option>
+                <option>
+                    <id>basket</id>
+                    <name>basket</name>
+                    <name lang="de-DE">basket</name>
+                </option>
+                <option>
+                    <id>beer</id>
+                    <name>beer</name>
+                    <name lang="de-DE">beer</name>
+                </option>
+                <option>
+                    <id>bell-bell</id>
+                    <name>bell-bell</name>
+                    <name lang="de-DE">bell-bell</name>
+                </option>
+                <option>
+                    <id>bell-crossed</id>
+                    <name>bell-crossed</name>
+                    <name lang="de-DE">bell-crossed</name>
+                </option>
+                <option>
+                    <id>blocked</id>
+                    <name>blocked</name>
+                    <name lang="de-DE">blocked</name>
+                </option>
+                <option>
+                    <id>bookmark</id>
+                    <name>bookmark</name>
+                    <name lang="de-DE">bookmark</name>
+                </option>
+                <option>
+                    <id>books</id>
+                    <name>books</name>
+                    <name lang="de-DE">books</name>
+                </option>
+                <option>
+                    <id>briefcase</id>
+                    <name>briefcase</name>
+                    <name lang="de-DE">briefcase</name>
+                </option>
+                <option>
+                    <id>browser</id>
+                    <name>browser</name>
+                    <name lang="de-DE">browser</name>
+                </option>
+                <option>
+                    <id>bug</id>
+                    <name>bug</name>
+                    <name lang="de-DE">bug</name>
+                </option>
+                <option>
+                    <id>bulk-edit</id>
+                    <name>bulk-edit</name>
+                    <name lang="de-DE">bulk-edit</name>
+                </option>
+                <option>
+                    <id>calendar-empty</id>
+                    <name>calendar-empty</name>
+                    <name lang="de-DE">calendar-empty</name>
+                </option>
+                <option>
+                    <id>calendar</id>
+                    <name>calendar</name>
+                    <name lang="de-DE">calendar</name>
+                </option>
+                <option>
+                    <id>cart</id>
+                    <name>cart</name>
+                    <name lang="de-DE">cart</name>
+                </option>
+                <option>
+                    <id>chart-bar-filled</id>
+                    <name>chart-bar-filled</name>
+                    <name lang="de-DE">chart-bar-filled</name>
+                </option>
+                <option>
+                    <id>chart-bar</id>
+                    <name>chart-bar</name>
+                    <name lang="de-DE">chart-bar</name>
+                </option>
+                <option>
+                    <id>chart-pie</id>
+                    <name>chart-pie</name>
+                    <name lang="de-DE">chart-pie</name>
+                </option>
+                <option>
+                    <id>chart-sales</id>
+                    <name>chart-sales</name>
+                    <name lang="de-DE">chart-sales</name>
+                </option>
+                <option>
+                    <id>chart</id>
+                    <name>chart</name>
+                    <name lang="de-DE">chart</name>
+                </option>
+                <option>
+                    <id>checkmark-block</id>
+                    <name>checkmark-block</name>
+                    <name lang="de-DE">checkmark-block</name>
+                </option>
+                <option>
+                    <id>checkmark-circle</id>
+                    <name>checkmark-circle</name>
+                    <name lang="de-DE">checkmark-circle</name>
+                </option>
+                <option>
+                    <id>checkmark-wide-block</id>
+                    <name>checkmark-wide-block</name>
+                    <name lang="de-DE">checkmark-wide-block</name>
+                </option>
+                <option>
+                    <id>checkmark-wide</id>
+                    <name>checkmark-wide</name>
+                    <name lang="de-DE">checkmark-wide</name>
+                </option>
+                <option>
+                    <id>checkmark</id>
+                    <name>checkmark</name>
+                    <name lang="de-DE">checkmark</name>
+                </option>
+                <option>
+                    <id>circle-download</id>
+                    <name>circle-download</name>
+                    <name lang="de-DE">circle-download</name>
+                </option>
+                <option>
+                    <id>circle</id>
+                    <name>circle</name>
+                    <name lang="de-DE">circle</name>
+                </option>
+                <option>
+                    <id>clock</id>
+                    <name>clock</name>
+                    <name lang="de-DE">clock</name>
+                </option>
+                <option>
+                    <id>cloud-download</id>
+                    <name>cloud-download</name>
+                    <name lang="de-DE">cloud-download</name>
+                </option>
+                <option>
+                    <id>cloud-upload</id>
+                    <name>cloud-upload</name>
+                    <name lang="de-DE">cloud-upload</name>
+                </option>
+                <option>
+                    <id>cockpit</id>
+                    <name>cockpit</name>
+                    <name lang="de-DE">cockpit</name>
+                </option>
+                <option>
+                    <id>desktop</id>
+                    <name>desktop</name>
+                    <name lang="de-DE">desktop</name>
+                </option>
+                <option>
+                    <id>document-view</id>
+                    <name>document-view</name>
+                    <name lang="de-DE">document-view</name>
+                </option>
+                <option>
+                    <id>duplicate</id>
+                    <name>duplicate</name>
+                    <name lang="de-DE">duplicate</name>
+                </option>
+                <option>
+                    <id>emoji</id>
+                    <name>emoji</name>
+                    <name lang="de-DE">emoji</name>
+                </option>
+                <option>
+                    <id>envelope</id>
+                    <name>envelope</name>
+                    <name lang="de-DE">envelope</name>
+                </option>
+                <option>
+                    <id>error</id>
+                    <name>error</name>
+                    <name lang="de-DE">error</name>
+                </option>
+                <option>
+                    <id>external</id>
+                    <name>external</name>
+                    <name lang="de-DE">external</name>
+                </option>
+                <option>
+                    <id>eye-crossed</id>
+                    <name>eye-crossed</name>
+                    <name lang="de-DE">eye-crossed</name>
+                </option>
+                <option>
+                    <id>eye-open</id>
+                    <name>eye-open</name>
+                    <name lang="de-DE">eye-open</name>
+                </option>
+                <option>
+                    <id>file</id>
+                    <name>file</name>
+                    <name lang="de-DE">file</name>
+                </option>
+                <option>
+                    <id>flag</id>
+                    <name>flag</name>
+                    <name lang="de-DE">flag</name>
+                </option>
+                <option>
+                    <id>forward</id>
+                    <name>forward</name>
+                    <name lang="de-DE">forward</name>
+                </option>
+                <option>
+                    <id>gamecontroler</id>
+                    <name>gamecontroler</name>
+                    <name lang="de-DE">gamecontroler</name>
+                </option>
+                <option>
+                    <id>globe</id>
+                    <name>globe</name>
+                    <name lang="de-DE">globe</name>
+                </option>
+                <option>
+                    <id>gps</id>
+                    <name>gps</name>
+                    <name lang="de-DE">gps</name>
+                </option>
+                <option>
+                    <id>graduate-cap</id>
+                    <name>graduate-cap</name>
+                    <name lang="de-DE">graduate-cap</name>
+                </option>
+                <option>
+                    <id>harddisk</id>
+                    <name>harddisk</name>
+                    <name lang="de-DE">harddisk</name>
+                </option>
+                <option>
+                    <id>headset</id>
+                    <name>headset</name>
+                    <name lang="de-DE">headset</name>
+                </option>
+                <option>
+                    <id>heart</id>
+                    <name>heart</name>
+                    <name lang="de-DE">heart</name>
+                </option>
+                <option>
+                    <id>help</id>
+                    <name>help</name>
+                    <name lang="de-DE">help</name>
+                </option>
+                <option>
+                    <id>history</id>
+                    <name>history</name>
+                    <name lang="de-DE">history</name>
+                </option>
+                <option>
+                    <id>home</id>
+                    <name>home</name>
+                    <name lang="de-DE">home</name>
+                </option>
+                <option>
+                    <id>hourglass</id>
+                    <name>hourglass</name>
+                    <name lang="de-DE">hourglass</name>
+                </option>
+                <option>
+                    <id>image</id>
+                    <name>image</name>
+                    <name lang="de-DE">image</name>
+                </option>
+                <option>
+                    <id>inbox</id>
+                    <name>inbox</name>
+                    <name lang="de-DE">inbox</name>
+                </option>
+                <option>
+                    <id>info</id>
+                    <name>info</name>
+                    <name lang="de-DE">info</name>
+                </option>
+                <option>
+                    <id>keyboard</id>
+                    <name>keyboard</name>
+                    <name lang="de-DE">keyboard</name>
+                </option>
+                <option>
+                    <id>lab-flask</id>
+                    <name>lab-flask</name>
+                    <name lang="de-DE">lab-flask</name>
+                </option>
+                <option>
+                    <id>laptop</id>
+                    <name>laptop</name>
+                    <name lang="de-DE">laptop</name>
+                </option>
+                <option>
+                    <id>layers</id>
+                    <name>layers</name>
+                    <name lang="de-DE">layers</name>
+                </option>
+                <option>
+                    <id>lightbulb</id>
+                    <name>lightbulb</name>
+                    <name lang="de-DE">lightbulb</name>
+                </option>
+                <option>
+                    <id>link</id>
+                    <name>link</name>
+                    <name lang="de-DE">link</name>
+                </option>
+                <option>
+                    <id>list</id>
+                    <name>list</name>
+                    <name lang="de-DE">list</name>
+                </option>
+                <option>
+                    <id>loading-circle</id>
+                    <name>loading-circle</name>
+                    <name lang="de-DE">loading-circle</name>
+                </option>
+                <option>
+                    <id>loading-star</id>
+                    <name>loading-star</name>
+                    <name lang="de-DE">loading-star</name>
+                </option>
+                <option>
+                    <id>lock-closed</id>
+                    <name>lock-closed</name>
+                    <name lang="de-DE">lock-closed</name>
+                </option>
+                <option>
+                    <id>lock-fingerprint</id>
+                    <name>lock-fingerprint</name>
+                    <name lang="de-DE">lock-fingerprint</name>
+                </option>
+                <option>
+                    <id>lock-key</id>
+                    <name>lock-key</name>
+                    <name lang="de-DE">lock-key</name>
+                </option>
+                <option>
+                    <id>lock-open</id>
+                    <name>lock-open</name>
+                    <name lang="de-DE">lock-open</name>
+                </option>
+                <option>
+                    <id>log-in</id>
+                    <name>log-in</name>
+                    <name lang="de-DE">log-in</name>
+                </option>
+                <option>
+                    <id>log-out</id>
+                    <name>log-out</name>
+                    <name lang="de-DE">log-out</name>
+                </option>
+                <option>
+                    <id>map-closed</id>
+                    <name>map-closed</name>
+                    <name lang="de-DE">map-closed</name>
+                </option>
+                <option>
+                    <id>map-open</id>
+                    <name>map-open</name>
+                    <name lang="de-DE">map-open</name>
+                </option>
+                <option>
+                    <id>map</id>
+                    <name>map</name>
+                    <name lang="de-DE">map</name>
+                </option>
+                <option>
+                    <id>marker</id>
+                    <name>marker</name>
+                    <name lang="de-DE">marker</name>
+                </option>
+                <option>
+                    <id>marketing</id>
+                    <name>marketing</name>
+                    <name lang="de-DE">marketing</name>
+                </option>
+                <option>
+                    <id>medal</id>
+                    <name>medal</name>
+                    <name lang="de-DE">medal</name>
+                </option>
+                <option>
+                    <id>micophone</id>
+                    <name>micophone</name>
+                    <name lang="de-DE">micophone</name>
+                </option>
+                <option>
+                    <id>minus-block</id>
+                    <name>minus-block</name>
+                    <name lang="de-DE">minus-block</name>
+                </option>
+                <option>
+                    <id>minus-circle</id>
+                    <name>minus-circle</name>
+                    <name lang="de-DE">minus-circle</name>
+                </option>
+                <option>
+                    <id>minus-wide</id>
+                    <name>minus-wide</name>
+                    <name lang="de-DE">minus-wide</name>
+                </option>
+                <option>
+                    <id>minus</id>
+                    <name>minus</name>
+                    <name lang="de-DE">minus</name>
+                </option>
+                <option>
+                    <id>mobile</id>
+                    <name>mobile</name>
+                    <name lang="de-DE">mobile</name>
+                </option>
+                <option>
+                    <id>money-card</id>
+                    <name>money-card</name>
+                    <name lang="de-DE">money-card</name>
+                </option>
+                <option>
+                    <id>money-cash</id>
+                    <name>money-cash</name>
+                    <name lang="de-DE">money-cash</name>
+                </option>
+                <option>
+                    <id>money-wallet</id>
+                    <name>money-wallet</name>
+                    <name lang="de-DE">money-wallet</name>
+                </option>
+                <option>
+                    <id>moon</id>
+                    <name>moon</name>
+                    <name lang="de-DE">moon</name>
+                </option>
+                <option>
+                    <id>move-file</id>
+                    <name>move-file</name>
+                    <name lang="de-DE">move-file</name>
+                </option>
+                <option>
+                    <id>package-closed</id>
+                    <name>package-closed</name>
+                    <name lang="de-DE">package-closed</name>
+                </option>
+                <option>
+                    <id>package-gift</id>
+                    <name>package-gift</name>
+                    <name lang="de-DE">package-gift</name>
+                </option>
+                <option>
+                    <id>package-open</id>
+                    <name>package-open</name>
+                    <name lang="de-DE">package-open</name>
+                </option>
+                <option>
+                    <id>paint</id>
+                    <name>paint</name>
+                    <name lang="de-DE">paint</name>
+                </option>
+                <option>
+                    <id>paper-pencil-signed</id>
+                    <name>paper-pencil-signed</name>
+                    <name lang="de-DE">paper-pencil-signed</name>
+                </option>
+                <option>
+                    <id>paper-pencil</id>
+                    <name>paper-pencil</name>
+                    <name lang="de-DE">paper-pencil</name>
+                </option>
+                <option>
+                    <id>paperclip</id>
+                    <name>paperclip</name>
+                    <name lang="de-DE">paperclip</name>
+                </option>
+                <option>
+                    <id>paperplane</id>
+                    <name>paperplane</name>
+                    <name lang="de-DE">paperplane</name>
+                </option>
+                <option>
+                    <id>pawn</id>
+                    <name>pawn</name>
+                    <name lang="de-DE">pawn</name>
+                </option>
+                <option>
+                    <id>pencil-brush</id>
+                    <name>pencil-brush</name>
+                    <name lang="de-DE">pencil-brush</name>
+                </option>
+                <option>
+                    <id>photocamera</id>
+                    <name>photocamera</name>
+                    <name lang="de-DE">photocamera</name>
+                </option>
+                <option>
+                    <id>plastic-bag</id>
+                    <name>plastic-bag</name>
+                    <name lang="de-DE">plastic-bag</name>
+                </option>
+                <option>
+                    <id>plug</id>
+                    <name>plug</name>
+                    <name lang="de-DE">plug</name>
+                </option>
+                <option>
+                    <id>plus-block</id>
+                    <name>plus-block</name>
+                    <name lang="de-DE">plus-block</name>
+                </option>
+                <option>
+                    <id>plus-circle</id>
+                    <name>plus-circle</name>
+                    <name lang="de-DE">plus-circle</name>
+                </option>
+                <option>
+                    <id>plus-wide</id>
+                    <name>plus-wide</name>
+                    <name lang="de-DE">plus-wide</name>
+                </option>
+                <option>
+                    <id>plus</id>
+                    <name>plus</name>
+                    <name lang="de-DE">plus</name>
+                </option>
+                <option>
+                    <id>printer</id>
+                    <name>printer</name>
+                    <name lang="de-DE">printer</name>
+                </option>
+                <option>
+                    <id>products</id>
+                    <name>products</name>
+                    <name lang="de-DE">products</name>
+                </option>
+                <option>
+                    <id>pulse</id>
+                    <name>pulse</name>
+                    <name lang="de-DE">pulse</name>
+                </option>
+                <option>
+                    <id>pushpin</id>
+                    <name>pushpin</name>
+                    <name lang="de-DE">pushpin</name>
+                </option>
+                <option>
+                    <id>puzzle-piece</id>
+                    <name>puzzle-piece</name>
+                    <name lang="de-DE">puzzle-piece</name>
+                </option>
+                <option>
+                    <id>quickjump</id>
+                    <name>quickjump</name>
+                    <name lang="de-DE">quickjump</name>
+                </option>
+                <option>
+                    <id>replace</id>
+                    <name>replace</name>
+                    <name lang="de-DE">replace</name>
+                </option>
+                <option>
+                    <id>reply</id>
+                    <name>reply</name>
+                    <name lang="de-DE">reply</name>
+                </option>
+                <option>
+                    <id>rocket</id>
+                    <name>rocket</name>
+                    <name lang="de-DE">rocket</name>
+                </option>
+                <option>
+                    <id>ruler-pencil</id>
+                    <name>ruler-pencil</name>
+                    <name lang="de-DE">ruler-pencil</name>
+                </option>
+                <option>
+                    <id>save</id>
+                    <name>save</name>
+                    <name lang="de-DE">save</name>
+                </option>
+                <option>
+                    <id>screen-full</id>
+                    <name>screen-full</name>
+                    <name lang="de-DE">screen-full</name>
+                </option>
+                <option>
+                    <id>screen-minimize</id>
+                    <name>screen-minimize</name>
+                    <name lang="de-DE">screen-minimize</name>
+                </option>
+                <option>
+                    <id>search</id>
+                    <name>search</name>
+                    <name lang="de-DE">search</name>
+                </option>
+                <option>
+                    <id>server</id>
+                    <name>server</name>
+                    <name lang="de-DE">server</name>
+                </option>
+                <option>
+                    <id>settings</id>
+                    <name>settings</name>
+                    <name lang="de-DE">settings</name>
+                </option>
+                <option>
+                    <id>share</id>
+                    <name>share</name>
+                    <name lang="de-DE">share</name>
+                </option>
+                <option>
+                    <id>shield</id>
+                    <name>shield</name>
+                    <name lang="de-DE">shield</name>
+                </option>
+                <option>
+                    <id>shop</id>
+                    <name>shop</name>
+                    <name lang="de-DE">shop</name>
+                </option>
+                <option>
+                    <id>sofa</id>
+                    <name>sofa</name>
+                    <name lang="de-DE">sofa</name>
+                </option>
+                <option>
+                    <id>speech-bubble</id>
+                    <name>speech-bubble</name>
+                    <name lang="de-DE">speech-bubble</name>
+                </option>
+                <option>
+                    <id>speech-bubbles</id>
+                    <name>speech-bubbles</name>
+                    <name lang="de-DE">speech-bubbles</name>
+                </option>
+                <option>
+                    <id>stack-block</id>
+                    <name>stack-block</name>
+                    <name lang="de-DE">stack-block</name>
+                </option>
+                <option>
+                    <id>stack-circle</id>
+                    <name>stack-circle</name>
+                    <name lang="de-DE">stack-circle</name>
+                </option>
+                <option>
+                    <id>stack</id>
+                    <name>stack</name>
+                    <name lang="de-DE">stack</name>
+                </option>
+                <option>
+                    <id>star</id>
+                    <name>star</name>
+                    <name lang="de-DE">star</name>
+                </option>
+                <option>
+                    <id>sun</id>
+                    <name>sun</name>
+                    <name lang="de-DE">sun</name>
+                </option>
+                <option>
+                    <id>tablet</id>
+                    <name>tablet</name>
+                    <name lang="de-DE">tablet</name>
+                </option>
+                <option>
+                    <id>tags</id>
+                    <name>tags</name>
+                    <name lang="de-DE">tags</name>
+                </option>
+                <option>
+                    <id>target-big</id>
+                    <name>target-big</name>
+                    <name lang="de-DE">target-big</name>
+                </option>
+                <option>
+                    <id>target-with-block</id>
+                    <name>target-with-block</name>
+                    <name lang="de-DE">target-with-block</name>
+                </option>
+                <option>
+                    <id>terminal</id>
+                    <name>terminal</name>
+                    <name lang="de-DE">terminal</name>
+                </option>
+                <option>
+                    <id>thumb-down</id>
+                    <name>thumb-down</name>
+                    <name lang="de-DE">thumb-down</name>
+                </option>
+                <option>
+                    <id>thumb-up</id>
+                    <name>thumb-up</name>
+                    <name lang="de-DE">thumb-up</name>
+                </option>
+                <option>
+                    <id>tools</id>
+                    <name>tools</name>
+                    <name lang="de-DE">tools</name>
+                </option>
+                <option>
+                    <id>traffic-pawn</id>
+                    <name>traffic-pawn</name>
+                    <name lang="de-DE">traffic-pawn</name>
+                </option>
+                <option>
+                    <id>trash</id>
+                    <name>trash</name>
+                    <name lang="de-DE">trash</name>
+                </option>
+                <option>
+                    <id>tray-down</id>
+                    <name>tray-down</name>
+                    <name lang="de-DE">tray-down</name>
+                </option>
+                <option>
+                    <id>tray-up</id>
+                    <name>tray-up</name>
+                    <name lang="de-DE">tray-up</name>
+                </option>
+                <option>
+                    <id>trophy</id>
+                    <name>trophy</name>
+                    <name lang="de-DE">trophy</name>
+                </option>
+                <option>
+                    <id>video-camera</id>
+                    <name>video-camera</name>
+                    <name lang="de-DE">video-camera</name>
+                </option>
+                <option>
+                    <id>warning</id>
+                    <name>warning</name>
+                    <name lang="de-DE">warning</name>
+                </option>
+                <option>
+                    <id>x-block</id>
+                    <name>x-block</name>
+                    <name lang="de-DE">x-block</name>
+                </option>
+                <option>
+                    <id>x-circle</id>
+                    <name>x-circle</name>
+                    <name lang="de-DE">x-circle</name>
+                </option>
+                <option>
+                    <id>x-wide</id>
+                    <name>x-wide</name>
+                    <name lang="de-DE">x-wide</name>
+                </option>
+                <option>
+                    <id>x</id>
+                    <name>x</name>
+                    <name lang="de-DE">x</name>
+                </option>
+            </options>
+            <label>icon</label>
+            <label lang="de-DE">Icon</label>
+            <defaultValue>headset</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>iconViaSnippetTopBarArea4</name>
+            <label>icon alternatively maintainable via snippet</label>
+            <label lang="de-DE">Icon alternativ pflegbar über Textbaustein</label>
+            <disabled>true</disabled>
+            <defaultValue>IconTopBarArea4</defaultValue>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>iconColorTopBarArea4</name>
+            <label>icon color</label>
+            <label lang="de-DE">Iconfarbe</label>
+            <defaultValue>#4a545b</defaultValue>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>hoverIconColorTopBarArea4</name>
+            <label>hover icon color</label>
+            <label lang="de-DE">Hover - Iconfarbe</label>
+            <defaultValue>#4a545b</defaultValue>
+        </input-field>
+
+        <input-field type="int">
+            <name>iconWidthTopBarArea4</name>
+            <label>icon width in pixels</label>
+            <label lang="de-DE">Iconbreite in Pixeln</label>
+            <defaultValue>22</defaultValue>
+        </input-field>
+
+        <input-field type="int">
+            <name>iconHeightTopBarArea4</name>
+            <label>icon height in pixels</label>
+            <label lang="de-DE">Iconhöhe in Pixeln</label>
+            <defaultValue>22</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>iconMarginTopBarArea4</name>
+            <label>distance between the icon and the content</label>
+            <label lang="de-DE">Abstand des Icons zum Inhalt</label>
+            <defaultValue>1%</defaultValue>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>fontColorTopBarArea4</name>
+            <label>font color of the content</label>
+            <label lang="de-DE">Schriftfarbe des Inhalts</label>
+            <defaultValue>#4a545b</defaultValue>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>hoverFontColorTopBarArea4</name>
+            <label>hover font color of the content</label>
+            <label lang="de-DE">Hover - Schriftfarbe des Inhalts</label>
+            <defaultValue>#4a545b</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>contentTopBarArea4</name>
+            <label>content maintainable via snippet</label>
+            <label lang="de-DE">Inhalt pflegbar über Textbaustein</label>
+            <disabled>true</disabled>
+            <defaultValue>ContentTopBarArea4</defaultValue>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>positionContentTopBarArea4</name>
+            <options>
+                <option>
+                    <id>iconleft</id>
+                    <name>icon on the left and content on the right</name>
+                    <name lang="de-DE">Icon links und Inhalt rechts</name>
+                </option>
+                <option>
+                    <id>iconright</id>
+                    <name>icon on the right and content on the left</name>
+                    <name lang="de-DE">Icon rechts und Inhalt links</name>
+                </option>
+            </options>
+            <label>position of the content</label>
+            <label lang="de-DE">Position des Inhalts</label>
+            <defaultValue>iconleft</defaultValue>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>orientationTopBarArea4</name>
+            <options>
+                <option>
+                    <id>left</id>
+                    <name>left</name>
+                    <name lang="de-DE">links</name>
+                </option>
+                <option>
+                    <id>center</id>
+                    <name>center</name>
+                    <name lang="de-DE">mittig</name>
+                </option>
+                <option>
+                    <id>right</id>
+                    <name>right</name>
+                    <name lang="de-DE">rechts</name>
+                </option>
+            </options>
+            <label>orientation of the area</label>
+            <label lang="de-DE">Ausrichtung des Bereichs</label>
+            <defaultValue>left</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>linkTopBarArea4</name>
+            <label>link of the area (link or the cms id of the shopping experience)</label>
+            <label lang="de-DE">Link des Bereichs (Link oder CMS ID der Erlebniswelt)</label>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>linkTargetTopBarArea4</name>
+            <options>
+                <option>
+                    <id>current</id>
+                    <name>in current tab</name>
+                    <name lang="de-DE">im gleichen Fenster</name>
+                </option>
+                <option>
+                    <id>blank</id>
+                    <name>in new tab</name>
+                    <name lang="de-DE">in einem neuen Fenster</name>
+                </option>
+                <option>
+                    <id>modalbox</id>
+                    <name>in a modalbox</name>
+                    <name lang="de-DE">in einer Modalbox</name>
+                </option>
+            </options>
+            <label>link target of the area</label>
+            <label lang="de-DE">Linkziel des Bereichs</label>
+            <defaultValue>current</defaultValue>
+        </input-field>
+    </card>
+</config>
