@@ -21,7 +21,7 @@
          },
          "description": {
               "de-DE": "Ein Plugin für Informations- oder Hinweistexte in einer Topbar, die bis zu 4 Bereiche beinhalten kann.",
-              "en-GB": "A plugin for information or notification texts in the top bar which can contain up to 4 areas."
+              "en-GB": "A plugin for information or notification texts in a top bar which can contain up to 4 areas."
          },
          "manufacturerLink": {
               "de-DE": "https://www.sebastianschreier.de",

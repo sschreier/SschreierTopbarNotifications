@@ -1,6 +1,6 @@
-# A plugin for information or notification texts in the top bar for Shopware 6
+# A plugin for information or notification texts in a top bar for Shopware 6
 
-A plugin for _information or notification texts in the top bar_ which can contain _up to 4 areas_.
+A plugin for _information or notification texts in a top bar_ which can contain _up to 4 areas_.
 
 ## Possible Configurations for the top bar
  - set the background color of the top bar

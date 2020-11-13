@@ -83,8 +83,8 @@ $sschreier-hover-fontcolor-topbararea4: #4a545b !default;
     
                         .top-bar-notification-nav-item-icon {
                             .icon {
-                                width: $sschreier-iconwidth-topbararea1+'px';
-                                height: $sschreier-iconheight-topbararea1+'px';
+                                width: $sschreier-iconwidth-topbararea1 * 1px;
+                                height: $sschreier-iconheight-topbararea1 * 1px;
             
                                 svg {
                                     color: $sschreier-iconcolor-topbararea1;
@@ -117,8 +117,8 @@ $sschreier-hover-fontcolor-topbararea4: #4a545b !default;
     
                         .top-bar-notification-nav-item-icon {
                             .icon {
-                                width: $sschreier-iconwidth-topbararea2+'px';
-                                height: $sschreier-iconheight-topbararea2+'px';
+                                width: $sschreier-iconwidth-topbararea2 * 1px;
+                                height: $sschreier-iconheight-topbararea2 * 1px;
             
                                 svg {
                                     color: $sschreier-iconcolor-topbararea2;
@@ -151,8 +151,8 @@ $sschreier-hover-fontcolor-topbararea4: #4a545b !default;
     
                         .top-bar-notification-nav-item-icon {
                             .icon {
-                                width: $sschreier-iconwidth-topbararea3+'px';
-                                height: $sschreier-iconheight-topbararea3+'px';
+                                width: $sschreier-iconwidth-topbararea3 * 1px;
+                                height: $sschreier-iconheight-topbararea3 * 1px;
             
                                 svg {
                                     color: $sschreier-iconcolor-topbararea3;
@@ -185,8 +185,8 @@ $sschreier-hover-fontcolor-topbararea4: #4a545b !default;
     
                         .top-bar-notification-nav-item-icon {
                             .icon {
-                                width: $sschreier-iconwidth-topbararea4+'px';
-                                height: $sschreier-iconheight-topbararea4+'px';
+                                width: $sschreier-iconwidth-topbararea4 * 1px;
+                                height: $sschreier-iconheight-topbararea4 * 1px;
             
                                 svg {
                                     color: $sschreier-iconcolor-topbararea4;
