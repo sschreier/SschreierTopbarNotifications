@@ -1,5 +1,5 @@
 <?php
-    namespace sschreier\sschreierTopbarnotifications\Subscriber;
+    namespace sschreier\Topbarnotifications\Subscriber;
 
     use Symfony\Component\EventDispatcher\EventSubscriberInterface;
     use Shopware\Storefront\Event\ThemeCompilerEnrichScssVariablesEvent;

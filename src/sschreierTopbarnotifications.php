@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php 
+declare(strict_types=1);
 
-     namespace sschreier\sschreierTopbarnotifications;
+namespace sschreier\Topbarnotifications;
 
-     use Shopware\Core\Framework\Plugin;
+use Shopware\Core\Framework\Plugin;
 
-     class sschreierTopbarnotifications extends Plugin {
+class sschreierTopbarnotifications extends Plugin 
+{
 
-     }
+}

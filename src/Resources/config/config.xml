@@ -30,6 +30,7 @@
             <label>outer distance of the area upwards in pixels or percent</label>
             <label lang="de-DE">Außenabstand des Bereichs nach oben in Pixeln oder Prozent</label>
             <defaultValue>0px</defaultValue>
+            <placeholder>0px</placeholder>
         </input-field>
 
         <input-field type="text">
@@ -37,6 +38,7 @@
             <label>outer distance of the area downwards in pixels or percent</label>
             <label lang="de-DE">Außenabstand des Bereichs nach unten in Pixeln oder Prozent</label>
             <defaultValue>0px</defaultValue>
+            <placeholder>0px</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -44,6 +46,7 @@
             <label>background color of the top bar</label>
             <label lang="de-DE">Hintergrundfarbe der Topbar</label>
             <defaultValue>#efefef</defaultValue>
+            <placeholder>#efefef</placeholder>
         </input-field>
 
         <input-field type="text">
@@ -51,6 +54,7 @@
             <label>distance of the areas upwards in pixels or percent</label>
             <label lang="de-DE">Abstand der Bereiche nach oben in Pixeln oder Prozent</label>
             <defaultValue>8px</defaultValue>
+            <placeholder>8px</placeholder>
         </input-field>
 
         <input-field type="text">
@@ -58,6 +62,7 @@
             <label>distance of the areas downwards in pixels or percent</label>
             <label lang="de-DE">Abstand der Bereiche nach unten in Pixeln oder Prozent</label>
             <defaultValue>8px</defaultValue>
+            <placeholder>8px</placeholder>
         </input-field>
 
          <input-field type="bool">
@@ -1038,6 +1043,7 @@
             <label>icon color</label>
             <label lang="de-DE">Iconfarbe</label>
             <defaultValue>#4a545b</defaultValue>
+            <placeholder>#4a545b</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -1045,6 +1051,7 @@
             <label>hover icon color</label>
             <label lang="de-DE">Hover - Iconfarbe</label>
             <defaultValue>#4a545b</defaultValue>
+            <placeholder>#4a545b</placeholder>
         </input-field>
 
         <input-field type="int">
@@ -1052,6 +1059,7 @@
             <label>icon width in pixels</label>
             <label lang="de-DE">Iconbreite in Pixeln</label>
             <defaultValue>22</defaultValue>
+            <placeholder>22</placeholder>
         </input-field>
 
         <input-field type="int">
@@ -1059,6 +1067,7 @@
             <label>icon height in pixels</label>
             <label lang="de-DE">Iconhöhe in Pixeln</label>
             <defaultValue>22</defaultValue>
+            <placeholder>22</placeholder>
         </input-field>
 
         <input-field type="text">
@@ -1066,6 +1075,7 @@
             <label>distance between the icon and the content</label>
             <label lang="de-DE">Abstand des Icons zum Inhalt</label>
             <defaultValue>1%</defaultValue>
+            <placeholder>1%</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -1073,6 +1083,7 @@
             <label>font color of the content</label>
             <label lang="de-DE">Schriftfarbe des Inhalts</label>
             <defaultValue>#4a545b</defaultValue>
+            <placeholder>#4a545b</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -1080,6 +1091,7 @@
             <label>hover font color of the content</label>
             <label lang="de-DE">Hover - Schriftfarbe des Inhalts</label>
             <defaultValue>#4a545b</defaultValue>
+            <placeholder>#4a545b</placeholder>
         </input-field>
 
         <input-field type="text">
@@ -1135,8 +1147,18 @@
 
         <input-field type="text">
             <name>linkTopBarArea1</name>
-            <label>link of the area (link or the cms id of the shopping experience)</label>
-            <label lang="de-DE">Link des Bereichs (Link oder CMS ID der Erlebniswelt)</label>
+            <label>link (link or the cms id of the shopping experience for a modal box)</label>
+            <label lang="de-DE">Link (Link oder CMS ID der Erlebniswelt für eine Modalbox)</label>
+            <helpText>the cms id of the shopping experience for a modal box is located in the browser behind https://www.shopurl.de/admin#/sw/cms/detail/</helpText>
+            <helpText lang="de-DE">Die CMS ID der Erlebniswelt für eine Modalbox befindet sich im Browser hinter https://www.shopurl.de/admin#/sw/cms/detail/</helpText>
+        </input-field>
+
+        <input-field type="text">
+            <name>linkTitleTopBarArea1</name>
+            <label>title of the link (required field when setting a link)</label>
+            <label lang="de-DE">Titel des Links (Pflichtfeld beim Setzen eines Links)</label>
+            <defaultValue>Schneller Versand</defaultValue>
+            <placeholder>Schneller Versand</placeholder>
         </input-field>
 
         <input-field type="single-select">
@@ -2134,6 +2156,7 @@
             <label>icon color</label>
             <label lang="de-DE">Iconfarbe</label>
             <defaultValue>#4a545b</defaultValue>
+            <placeholder>#4a545b</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -2141,6 +2164,7 @@
             <label>hover icon color</label>
             <label lang="de-DE">Hover - Iconfarbe</label>
             <defaultValue>#4a545b</defaultValue>
+            <placeholder>#4a545b</placeholder>
         </input-field>
 
         <input-field type="int">
@@ -2148,6 +2172,7 @@
             <label>icon width in pixels</label>
             <label lang="de-DE">Iconbreite in Pixeln</label>
             <defaultValue>22</defaultValue>
+            <placeholder>22</placeholder>
         </input-field>
 
         <input-field type="int">
@@ -2155,6 +2180,7 @@
             <label>icon height in pixels</label>
             <label lang="de-DE">Iconhöhe in Pixeln</label>
             <defaultValue>22</defaultValue>
+            <placeholder>22</placeholder>
         </input-field>
 
         <input-field type="text">
@@ -2162,6 +2188,7 @@
             <label>distance between the icon and the content</label>
             <label lang="de-DE">Abstand des Icons zum Inhalt</label>
             <defaultValue>1%</defaultValue>
+            <placeholder>1%</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -2169,6 +2196,7 @@
             <label>font color of the content</label>
             <label lang="de-DE">Schriftfarbe des Inhalts</label>
             <defaultValue>#4a545b</defaultValue>
+            <placeholder>#4a545b</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -2176,6 +2204,7 @@
             <label>hover font color of the content</label>
             <label lang="de-DE">Hover - Schriftfarbe des Inhalts</label>
             <defaultValue>#4a545b</defaultValue>
+            <placeholder>#4a545b</placeholder>
         </input-field>
 
         <input-field type="text">
@@ -2231,8 +2260,18 @@
 
         <input-field type="text">
             <name>linkTopBarArea2</name>
-            <label>link of the area (link or the cms id of the shopping experience)</label>
-            <label lang="de-DE">Link des Bereichs (Link oder CMS ID der Erlebniswelt)</label>
+            <label>link (link or the cms id of the shopping experience for a modal box)</label>
+            <label lang="de-DE">Link (Link oder CMS ID der Erlebniswelt für eine Modalbox)</label>
+            <helpText>the cms id of the shopping experience for a modal box is located in the browser behind https://www.shopurl.de/admin#/sw/cms/detail/</helpText>
+            <helpText lang="de-DE">Die CMS ID der Erlebniswelt für eine Modalbox befindet sich im Browser hinter https://www.shopurl.de/admin#/sw/cms/detail/</helpText>
+        </input-field>
+
+        <input-field type="text">
+            <name>linkTitleTopBarArea2</name>
+            <label>title of the link (required field when setting a link)</label>
+            <label lang="de-DE">Titel des Links (Pflichtfeld beim Setzen eines Links)</label>
+            <defaultValue>Schneller Versand</defaultValue>
+            <placeholder>Schneller Versand</placeholder>
         </input-field>
 
         <input-field type="single-select">
@@ -3230,6 +3269,7 @@
             <label>icon color</label>
             <label lang="de-DE">Iconfarbe</label>
             <defaultValue>#4a545b</defaultValue>
+            <placeholder>#4a545b</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -3237,6 +3277,7 @@
             <label>hover icon color</label>
             <label lang="de-DE">Hover - Iconfarbe</label>
             <defaultValue>#4a545b</defaultValue>
+            <placeholder>#4a545b</placeholder>
         </input-field>
 
         <input-field type="int">
@@ -3244,6 +3285,7 @@
             <label>icon width in pixels</label>
             <label lang="de-DE">Iconbreite in Pixeln</label>
             <defaultValue>22</defaultValue>
+            <placeholder>22</placeholder>
         </input-field>
 
         <input-field type="int">
@@ -3251,6 +3293,7 @@
             <label>icon height in pixels</label>
             <label lang="de-DE">Iconhöhe in Pixeln</label>
             <defaultValue>22</defaultValue>
+            <placeholder>22</placeholder>
         </input-field>
 
         <input-field type="text">
@@ -3258,6 +3301,7 @@
             <label>distance between the icon and the content</label>
             <label lang="de-DE">Abstand des Icons zum Inhalt</label>
             <defaultValue>1%</defaultValue>
+            <placeholder>1%</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -3265,6 +3309,7 @@
             <label>font color of the content</label>
             <label lang="de-DE">Schriftfarbe des Inhalts</label>
             <defaultValue>#4a545b</defaultValue>
+            <placeholder>#4a545b</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -3272,6 +3317,7 @@
             <label>hover font color of the content</label>
             <label lang="de-DE">Hover - Schriftfarbe des Inhalts</label>
             <defaultValue>#4a545b</defaultValue>
+            <placeholder>#4a545b</placeholder>
         </input-field>
 
         <input-field type="text">
@@ -3327,8 +3373,18 @@
 
         <input-field type="text">
             <name>linkTopBarArea3</name>
-            <label>link of the area (link or the cms id of the shopping experience)</label>
-            <label lang="de-DE">Link des Bereichs (Link oder CMS ID der Erlebniswelt)</label>
+            <label>link (link or the cms id of the shopping experience for a modal box)</label>
+            <label lang="de-DE">Link (Link oder CMS ID der Erlebniswelt für eine Modalbox)</label>
+            <helpText>the cms id of the shopping experience for a modal box is located in the browser behind https://www.shopurl.de/admin#/sw/cms/detail/</helpText>
+            <helpText lang="de-DE">Die CMS ID der Erlebniswelt für eine Modalbox befindet sich im Browser hinter https://www.shopurl.de/admin#/sw/cms/detail/</helpText>
+        </input-field>
+
+        <input-field type="text">
+            <name>linkTitleTopBarArea3</name>
+            <label>title of the link (required field when setting a link)</label>
+            <label lang="de-DE">Titel des Links (Pflichtfeld beim Setzen eines Links)</label>
+            <defaultValue>Schneller Versand</defaultValue>
+            <placeholder>Schneller Versand</placeholder>
         </input-field>
 
         <input-field type="single-select">
@@ -4326,6 +4382,7 @@
             <label>icon color</label>
             <label lang="de-DE">Iconfarbe</label>
             <defaultValue>#4a545b</defaultValue>
+            <placeholder>#4a545b</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -4333,6 +4390,7 @@
             <label>hover icon color</label>
             <label lang="de-DE">Hover - Iconfarbe</label>
             <defaultValue>#4a545b</defaultValue>
+            <placeholder>#4a545b</placeholder>
         </input-field>
 
         <input-field type="int">
@@ -4340,6 +4398,7 @@
             <label>icon width in pixels</label>
             <label lang="de-DE">Iconbreite in Pixeln</label>
             <defaultValue>22</defaultValue>
+            <placeholder>22</placeholder>
         </input-field>
 
         <input-field type="int">
@@ -4347,6 +4406,7 @@
             <label>icon height in pixels</label>
             <label lang="de-DE">Iconhöhe in Pixeln</label>
             <defaultValue>22</defaultValue>
+            <placeholder>22</placeholder>
         </input-field>
 
         <input-field type="text">
@@ -4354,6 +4414,7 @@
             <label>distance between the icon and the content</label>
             <label lang="de-DE">Abstand des Icons zum Inhalt</label>
             <defaultValue>1%</defaultValue>
+            <placeholder>1%</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -4361,6 +4422,7 @@
             <label>font color of the content</label>
             <label lang="de-DE">Schriftfarbe des Inhalts</label>
             <defaultValue>#4a545b</defaultValue>
+            <placeholder>#4a545b</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -4368,6 +4430,7 @@
             <label>hover font color of the content</label>
             <label lang="de-DE">Hover - Schriftfarbe des Inhalts</label>
             <defaultValue>#4a545b</defaultValue>
+            <placeholder>#4a545b</placeholder>
         </input-field>
 
         <input-field type="text">
@@ -4423,8 +4486,18 @@
 
         <input-field type="text">
             <name>linkTopBarArea4</name>
-            <label>link of the area (link or the cms id of the shopping experience)</label>
-            <label lang="de-DE">Link des Bereichs (Link oder CMS ID der Erlebniswelt)</label>
+            <label>link (link or the cms id of the shopping experience for a modal box)</label>
+            <label lang="de-DE">Link (Link oder CMS ID der Erlebniswelt für eine Modalbox)</label>
+            <helpText>the cms id of the shopping experience for a modal box is located in the browser behind https://www.shopurl.de/admin#/sw/cms/detail/</helpText>
+            <helpText lang="de-DE">Die CMS ID der Erlebniswelt für eine Modalbox befindet sich im Browser hinter https://www.shopurl.de/admin#/sw/cms/detail/</helpText>
+        </input-field>
+
+        <input-field type="text">
+            <name>linkTitleTopBarArea4</name>
+            <label>title of the link (required field when setting a link)</label>
+            <label lang="de-DE">Titel des Links (Pflichtfeld beim Setzen eines Links)</label>
+            <defaultValue>Schneller Versand</defaultValue>
+            <placeholder>Schneller Versand</placeholder>
         </input-field>
 
         <input-field type="single-select">

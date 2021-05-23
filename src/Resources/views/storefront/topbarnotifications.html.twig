@@ -4,65 +4,69 @@
             {% block base_header_inner_topbarnotifications_container_topbar %}
                 <div class="top-bar top-bar-notification d-lg-block">
                     {% block base_header_inner_topbarnotifications_container_topbar_nav %}
-                        <nav class="top-bar-notification-nav{% if (shopware.config.sschreierTopbarnotifications.config.fiftyPercentWidthInSmTopBarAreas == true) %} sm-width-50{% endif %}">
+                        <nav class="top-bar-notification-nav{% if config('sschreierTopbarnotifications.config.fiftyPercentWidthInSmTopBarAreas') == true %} sm-width-50{% endif %}">
                             {% block base_header_inner_topbarnotifications_container_topbar_nav_for %}
 
                                 {% for i in 1..4 %}
                                     {% set showTopBarArea = false %}
 
                                     {% if ( i == 1) %}
-                                        {% set showTopBarArea = shopware.config.sschreierTopbarnotifications.config.showTopBarArea1 %}
+                                        {% set showTopBarArea = config('sschreierTopbarnotifications.config.showTopBarArea2') %}
 
                                         {% if (showTopBarArea == true) %}
-                                            {% set showInViewportTopBarArea = shopware.config.sschreierTopbarnotifications.config.showInViewportTopBarArea1 %}
-                                            {% set iconTypeTopBarArea = shopware.config.sschreierTopbarnotifications.config.iconTypeTopBarArea1 %}
-                                            {% set iconTopBarArea = shopware.config.sschreierTopbarnotifications.config.iconTopBarArea1 %}
-                                            {% set positionContentTopBarArea = shopware.config.sschreierTopbarnotifications.config.positionContentTopBarArea1 %}
-                                            {% set orientationTopBarArea = shopware.config.sschreierTopbarnotifications.config.orientationTopBarArea1 %}
-                                            {% set linkTopBarArea = shopware.config.sschreierTopbarnotifications.config.linkTopBarArea1 %}
-                                            {% set linkTargetTopBarArea = shopware.config.sschreierTopbarnotifications.config.linkTargetTopBarArea1 %}
+                                            {% set showInViewportTopBarArea = config('sschreierTopbarnotifications.config.showInViewportTopBarArea1') %}
+                                            {% set iconTypeTopBarArea = config('sschreierTopbarnotifications.config.iconTypeTopBarArea1') %}
+                                            {% set iconTopBarArea = config('sschreierTopbarnotifications.config.iconTopBarArea1') %}
+                                            {% set positionContentTopBarArea = config('sschreierTopbarnotifications.config.positionContentTopBarArea1') %}
+                                            {% set orientationTopBarArea = config('sschreierTopbarnotifications.config.orientationTopBarArea1') %}
+                                            {% set linkTopBarArea = config('sschreierTopbarnotifications.config.linkTopBarArea1') %}
+                                            {% set linkTitleTopBarArea = config('sschreierTopbarnotifications.config.linkTitleTopBarArea1') %}
+                                            {% set linkTargetTopBarArea = config('sschreierTopbarnotifications.config.linkTargetTopBarArea1') %}
                                         {% endif %}
                                     {% elseif ( i == 2) %}
-                                        {% set showTopBarArea = shopware.config.sschreierTopbarnotifications.config.showTopBarArea2 %}
+                                        {% set showTopBarArea = config('sschreierTopbarnotifications.config.showTopBarArea2') %}
 
                                         {% if (showTopBarArea == true) %}
-                                            {% set showInViewportTopBarArea = shopware.config.sschreierTopbarnotifications.config.showInViewportTopBarArea2 %}
-                                            {% set iconTypeTopBarArea = shopware.config.sschreierTopbarnotifications.config.iconTypeTopBarArea2 %}
-                                            {% set iconTopBarArea = shopware.config.sschreierTopbarnotifications.config.iconTopBarArea2 %}
-                                            {% set positionContentTopBarArea = shopware.config.sschreierTopbarnotifications.config.positionContentTopBarArea2 %}
-                                            {% set orientationTopBarArea = shopware.config.sschreierTopbarnotifications.config.orientationTopBarArea2 %}
-                                            {% set linkTopBarArea = shopware.config.sschreierTopbarnotifications.config.linkTopBarArea2 %}
-                                            {% set linkTargetTopBarArea = shopware.config.sschreierTopbarnotifications.config.linkTargetTopBarArea2 %}
+                                            {% set showInViewportTopBarArea = config('sschreierTopbarnotifications.config.showInViewportTopBarArea2') %}
+                                            {% set iconTypeTopBarArea = config('sschreierTopbarnotifications.config.iconTypeTopBarArea2') %}
+                                            {% set iconTopBarArea = config('sschreierTopbarnotifications.config.iconTopBarArea2') %}
+                                            {% set positionContentTopBarArea = config('sschreierTopbarnotifications.config.positionContentTopBarArea2') %}
+                                            {% set orientationTopBarArea = config('sschreierTopbarnotifications.config.orientationTopBarArea2') %}
+                                            {% set linkTopBarArea = config('sschreierTopbarnotifications.config.linkTopBarArea2') %}
+                                            {% set linkTitleTopBarArea = config('sschreierTopbarnotifications.config.linkTitleTopBarArea2') %}
+                                            {% set linkTargetTopBarArea = config('sschreierTopbarnotifications.config.linkTargetTopBarArea2') %}
                                         {% endif %}
                                     {% elseif ( i == 3) %}
-                                        {% set showTopBarArea = shopware.config.sschreierTopbarnotifications.config.showTopBarArea3 %}
+                                        {% set showTopBarArea = config('sschreierTopbarnotifications.config.showTopBarArea3') %}
 
                                         {% if (showTopBarArea == true) %}
-                                            {% set showInViewportTopBarArea = shopware.config.sschreierTopbarnotifications.config.showInViewportTopBarArea3 %}
-                                            {% set iconTypeTopBarArea = shopware.config.sschreierTopbarnotifications.config.iconTypeTopBarArea3 %}
-                                            {% set iconTopBarArea = shopware.config.sschreierTopbarnotifications.config.iconTopBarArea3 %}
-                                            {% set positionContentTopBarArea = shopware.config.sschreierTopbarnotifications.config.positionContentTopBarArea3 %}
-                                            {% set orientationTopBarArea = shopware.config.sschreierTopbarnotifications.config.orientationTopBarArea3 %}
-                                            {% set linkTopBarArea = shopware.config.sschreierTopbarnotifications.config.linkTopBarArea3 %}
-                                            {% set linkTargetTopBarArea = shopware.config.sschreierTopbarnotifications.config.linkTargetTopBarArea3 %}
+                                            {% set showInViewportTopBarArea = config('sschreierTopbarnotifications.config.showInViewportTopBarArea3') %}
+                                            {% set iconTypeTopBarArea = config('sschreierTopbarnotifications.config.iconTypeTopBarArea3') %}
+                                            {% set iconTopBarArea = config('sschreierTopbarnotifications.config.iconTopBarArea3') %}
+                                            {% set positionContentTopBarArea = config('sschreierTopbarnotifications.config.positionContentTopBarArea3') %}
+                                            {% set orientationTopBarArea = config('sschreierTopbarnotifications.config.orientationTopBarArea3') %}
+                                            {% set linkTopBarArea = config('sschreierTopbarnotifications.config.linkTopBarArea3') %}
+                                            {% set linkTitleTopBarArea = config('sschreierTopbarnotifications.config.linkTitleTopBarArea3') %}
+                                            {% set linkTargetTopBarArea = config('sschreierTopbarnotifications.config.linkTargetTopBarArea3') %}
                                         {% endif %}
                                     {% elseif ( i == 4) %}
-                                        {% set showTopBarArea = shopware.config.sschreierTopbarnotifications.config.showTopBarArea4 %}
+                                        {% set showTopBarArea = config('sschreierTopbarnotifications.config.showTopBarArea4') %}
 
                                         {% if (showTopBarArea == true) %}
-                                            {% set showInViewportTopBarArea = shopware.config.sschreierTopbarnotifications.config.showInViewportTopBarArea4 %}
-                                            {% set iconTypeTopBarArea = shopware.config.sschreierTopbarnotifications.config.iconTypeTopBarArea4 %}
-                                            {% set iconTopBarArea = shopware.config.sschreierTopbarnotifications.config.iconTopBarArea4 %}
-                                            {% set positionContentTopBarArea = shopware.config.sschreierTopbarnotifications.config.positionContentTopBarArea4 %}
-                                            {% set orientationTopBarArea = shopware.config.sschreierTopbarnotifications.config.orientationTopBarArea4 %}
-                                            {% set linkTopBarArea = shopware.config.sschreierTopbarnotifications.config.linkTopBarArea4 %}
-                                            {% set linkTargetTopBarArea = shopware.config.sschreierTopbarnotifications.config.linkTargetTopBarArea4 %}
+                                            {% set showInViewportTopBarArea = config('sschreierTopbarnotifications.config.showInViewportTopBarArea4') %}
+                                            {% set iconTypeTopBarArea = config('sschreierTopbarnotifications.config.iconTypeTopBarArea4') %}
+                                            {% set iconTopBarArea = config('sschreierTopbarnotifications.config.iconTopBarArea4') %}
+                                            {% set positionContentTopBarArea = config('sschreierTopbarnotifications.config.positionContentTopBarArea4') %}
+                                            {% set orientationTopBarArea = config('sschreierTopbarnotifications.config.orientationTopBarArea4') %}
+                                            {% set linkTopBarArea = config('sschreierTopbarnotifications.config.linkTopBarArea4') %}
+                                            {% set linkTitleTopBarArea = config('sschreierTopbarnotifications.config.linkTitleTopBarArea4') %}
+                                            {% set linkTargetTopBarArea = config('sschreierTopbarnotifications.config.linkTargetTopBarArea4') %}
                                         {% endif %}
                                     {% endif %}
 
                                     {% if (showTopBarArea == true) %}
                                         {% block base_header_inner_topbarnotifications_container_topbar_nav_item_container_link %}
-                                            {% if (linkTopBarArea != "") %}<a {% if (linkTargetTopBarArea == "modalbox") %}data-toggle="modal" data-url="/widgets/cms/{{ linkTopBarArea }}" {% endif %}href="{% if (linkTargetTopBarArea == "modalbox") %}/widgets/cms/{% endif %}{{ linkTopBarArea }}" class="top-bar-notification-nav-item-link d-none {% for showInViewportTopBarAreaArray in showInViewportTopBarArea %}{{ "d-only-" ~ showInViewportTopBarAreaArray ~ "-flex " }}{% endfor %}"{% if (linkTargetTopBarArea == "blank") %} target="_blank"{% endif %}>{% endif %}
+                                            {% if (linkTopBarArea != "") %}<a {% if (linkTargetTopBarArea == "modalbox") %}data-toggle="modal" data-url="{% if (linkTargetTopBarArea == "modalbox") %}{{ path('frontend.cms.page', { id:  linkTopBarArea }) }}{% else %}{{ linkTopBarArea }}{% endif %}" {% endif %}href="{% if (linkTargetTopBarArea == "modalbox") %}{{ path('frontend.cms.page', { id:  linkTopBarArea }) }}{% else %}{{ linkTopBarArea }}{% endif %}"{% if (linkTitleTopBarArea != "") %} title="{{ linkTitleTopBarArea }}"{% endif %} class="top-bar-notification-nav-item-link d-none {% for showInViewportTopBarAreaArray in showInViewportTopBarArea %}{{ "d-only-" ~ showInViewportTopBarAreaArray ~ "-flex " }}{% endfor %}"{% if (linkTargetTopBarArea == "blank") %} target="_blank"{% endif %}>{% endif %}
                                                 {% block base_header_inner_topbarnotifications_container_topbar_nav_item_container %}
                                                     <div class="top-bar-notification-nav-item-container {% if (linkTopBarArea == "") %}d-none {% for showInViewportTopBarAreaArray in showInViewportTopBarArea %}{{ "d-only-" ~ showInViewportTopBarAreaArray ~ "-flex " }}{% endfor %}{% endif %}">
                                                         <div class="top-bar-notification-nav-item-inner-container top-bar-notification-nav-item-container-{{ i }} {{ orientationTopBarArea }}">

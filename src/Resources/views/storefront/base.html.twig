@@ -1,21 +1,23 @@
 {% sw_extends '@Storefront/storefront/base.html.twig' %}
 
 {% block base_header_inner %}
-    {% block base_header_inner_topbarnotifications %}
-        {% if shopware.config.sschreierTopbarnotifications.config.showContentIn == "topbar" %}
-            {% sw_include '@Storefront/storefront/topbarnotifications.html.twig' %}
+    {% block base_header_inner_topbarnotifications_before %}
+        {% if config('sschreierTopbarnotifications.config.showContentIn') == "topbar" %}
+            {% sw_include '@sschreierTopbarnotifications/storefront/topbarnotifications.html.twig' %}
         {% endif %}
     {% endblock %}
 
     {{ parent() }}
+    {% block base_header_inner_topbarnotifications_after %}{% endblock %}
 {% endblock %}
 
 {% block base_footer %}
-    {% block base_header_inner_footerbarnotifications %}
-        {% if shopware.config.sschreierTopbarnotifications.config.showContentIn == "footerbar" %}
-            {% sw_include '@Storefront/storefront/topbarnotifications.html.twig' %}
+    {% block base_footer_topbarnotifications_before %}
+        {% if config('sschreierTopbarnotifications.config.showContentIn') == "footerbar" %}
+            {% sw_include '@sschreierTopbarnotifications/storefront/topbarnotifications.html.twig' %}
         {% endif %}
     {% endblock %}
 
     {{ parent() }}
+    {% block base_footer_topbarnotifications_after %}{% endblock %}
 {% endblock %}
