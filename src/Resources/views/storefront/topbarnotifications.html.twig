@@ -4,63 +4,63 @@
             {% block base_header_inner_topbarnotifications_container_topbar %}
                 <div class="top-bar top-bar-notification d-lg-block">
                     {% block base_header_inner_topbarnotifications_container_topbar_nav %}
-                        <nav class="top-bar-notification-nav{% if config('sschreierTopbarnotifications.config.fiftyPercentWidthInSmTopBarAreas') == true %} sm-width-50{% endif %}">
+                        <nav class="top-bar-notification-nav{% if config('SschreierTopbarNotifications.config.fiftyPercentWidthInSmTopBarAreas') == true %} sm-width-50{% endif %}">
                             {% block base_header_inner_topbarnotifications_container_topbar_nav_for %}
 
                                 {% for i in 1..4 %}
                                     {% set showTopBarArea = false %}
 
                                     {% if ( i == 1) %}
-                                        {% set showTopBarArea = config('sschreierTopbarnotifications.config.showTopBarArea2') %}
+                                        {% set showTopBarArea = config('SschreierTopbarNotifications.config.showTopBarArea2') %}
 
                                         {% if (showTopBarArea == true) %}
-                                            {% set showInViewportTopBarArea = config('sschreierTopbarnotifications.config.showInViewportTopBarArea1') %}
-                                            {% set iconTypeTopBarArea = config('sschreierTopbarnotifications.config.iconTypeTopBarArea1') %}
-                                            {% set iconTopBarArea = config('sschreierTopbarnotifications.config.iconTopBarArea1') %}
-                                            {% set positionContentTopBarArea = config('sschreierTopbarnotifications.config.positionContentTopBarArea1') %}
-                                            {% set orientationTopBarArea = config('sschreierTopbarnotifications.config.orientationTopBarArea1') %}
-                                            {% set linkTopBarArea = config('sschreierTopbarnotifications.config.linkTopBarArea1') %}
-                                            {% set linkTitleTopBarArea = config('sschreierTopbarnotifications.config.linkTitleTopBarArea1') %}
-                                            {% set linkTargetTopBarArea = config('sschreierTopbarnotifications.config.linkTargetTopBarArea1') %}
+                                            {% set showInViewportTopBarArea = config('SschreierTopbarNotifications.config.showInViewportTopBarArea1') %}
+                                            {% set iconTypeTopBarArea = config('SschreierTopbarNotifications.config.iconTypeTopBarArea1') %}
+                                            {% set iconTopBarArea = config('SschreierTopbarNotifications.config.iconTopBarArea1') %}
+                                            {% set positionContentTopBarArea = config('SschreierTopbarNotifications.config.positionContentTopBarArea1') %}
+                                            {% set orientationTopBarArea = config('SschreierTopbarNotifications.config.orientationTopBarArea1') %}
+                                            {% set linkTopBarArea = config('SschreierTopbarNotifications.config.linkTopBarArea1') %}
+                                            {% set linkTitleTopBarArea = config('SschreierTopbarNotifications.config.linkTitleTopBarArea1') %}
+                                            {% set linkTargetTopBarArea = config('SschreierTopbarNotifications.config.linkTargetTopBarArea1') %}
                                         {% endif %}
                                     {% elseif ( i == 2) %}
-                                        {% set showTopBarArea = config('sschreierTopbarnotifications.config.showTopBarArea2') %}
+                                        {% set showTopBarArea = config('SschreierTopbarNotifications.config.showTopBarArea2') %}
 
                                         {% if (showTopBarArea == true) %}
-                                            {% set showInViewportTopBarArea = config('sschreierTopbarnotifications.config.showInViewportTopBarArea2') %}
-                                            {% set iconTypeTopBarArea = config('sschreierTopbarnotifications.config.iconTypeTopBarArea2') %}
-                                            {% set iconTopBarArea = config('sschreierTopbarnotifications.config.iconTopBarArea2') %}
-                                            {% set positionContentTopBarArea = config('sschreierTopbarnotifications.config.positionContentTopBarArea2') %}
-                                            {% set orientationTopBarArea = config('sschreierTopbarnotifications.config.orientationTopBarArea2') %}
-                                            {% set linkTopBarArea = config('sschreierTopbarnotifications.config.linkTopBarArea2') %}
-                                            {% set linkTitleTopBarArea = config('sschreierTopbarnotifications.config.linkTitleTopBarArea2') %}
-                                            {% set linkTargetTopBarArea = config('sschreierTopbarnotifications.config.linkTargetTopBarArea2') %}
+                                            {% set showInViewportTopBarArea = config('SschreierTopbarNotifications.config.showInViewportTopBarArea2') %}
+                                            {% set iconTypeTopBarArea = config('SschreierTopbarNotifications.config.iconTypeTopBarArea2') %}
+                                            {% set iconTopBarArea = config('SschreierTopbarNotifications.config.iconTopBarArea2') %}
+                                            {% set positionContentTopBarArea = config('SschreierTopbarNotifications.config.positionContentTopBarArea2') %}
+                                            {% set orientationTopBarArea = config('SschreierTopbarNotifications.config.orientationTopBarArea2') %}
+                                            {% set linkTopBarArea = config('SschreierTopbarNotifications.config.linkTopBarArea2') %}
+                                            {% set linkTitleTopBarArea = config('SschreierTopbarNotifications.config.linkTitleTopBarArea2') %}
+                                            {% set linkTargetTopBarArea = config('SschreierTopbarNotifications.config.linkTargetTopBarArea2') %}
                                         {% endif %}
                                     {% elseif ( i == 3) %}
-                                        {% set showTopBarArea = config('sschreierTopbarnotifications.config.showTopBarArea3') %}
+                                        {% set showTopBarArea = config('SschreierTopbarNotifications.config.showTopBarArea3') %}
 
                                         {% if (showTopBarArea == true) %}
-                                            {% set showInViewportTopBarArea = config('sschreierTopbarnotifications.config.showInViewportTopBarArea3') %}
-                                            {% set iconTypeTopBarArea = config('sschreierTopbarnotifications.config.iconTypeTopBarArea3') %}
-                                            {% set iconTopBarArea = config('sschreierTopbarnotifications.config.iconTopBarArea3') %}
-                                            {% set positionContentTopBarArea = config('sschreierTopbarnotifications.config.positionContentTopBarArea3') %}
-                                            {% set orientationTopBarArea = config('sschreierTopbarnotifications.config.orientationTopBarArea3') %}
-                                            {% set linkTopBarArea = config('sschreierTopbarnotifications.config.linkTopBarArea3') %}
-                                            {% set linkTitleTopBarArea = config('sschreierTopbarnotifications.config.linkTitleTopBarArea3') %}
-                                            {% set linkTargetTopBarArea = config('sschreierTopbarnotifications.config.linkTargetTopBarArea3') %}
+                                            {% set showInViewportTopBarArea = config('SschreierTopbarNotifications.config.showInViewportTopBarArea3') %}
+                                            {% set iconTypeTopBarArea = config('SschreierTopbarNotifications.config.iconTypeTopBarArea3') %}
+                                            {% set iconTopBarArea = config('SschreierTopbarNotifications.config.iconTopBarArea3') %}
+                                            {% set positionContentTopBarArea = config('SschreierTopbarNotifications.config.positionContentTopBarArea3') %}
+                                            {% set orientationTopBarArea = config('SschreierTopbarNotifications.config.orientationTopBarArea3') %}
+                                            {% set linkTopBarArea = config('SschreierTopbarNotifications.config.linkTopBarArea3') %}
+                                            {% set linkTitleTopBarArea = config('SschreierTopbarNotifications.config.linkTitleTopBarArea3') %}
+                                            {% set linkTargetTopBarArea = config('SschreierTopbarNotifications.config.linkTargetTopBarArea3') %}
                                         {% endif %}
                                     {% elseif ( i == 4) %}
-                                        {% set showTopBarArea = config('sschreierTopbarnotifications.config.showTopBarArea4') %}
+                                        {% set showTopBarArea = config('SschreierTopbarNotifications.config.showTopBarArea4') %}
 
                                         {% if (showTopBarArea == true) %}
-                                            {% set showInViewportTopBarArea = config('sschreierTopbarnotifications.config.showInViewportTopBarArea4') %}
-                                            {% set iconTypeTopBarArea = config('sschreierTopbarnotifications.config.iconTypeTopBarArea4') %}
-                                            {% set iconTopBarArea = config('sschreierTopbarnotifications.config.iconTopBarArea4') %}
-                                            {% set positionContentTopBarArea = config('sschreierTopbarnotifications.config.positionContentTopBarArea4') %}
-                                            {% set orientationTopBarArea = config('sschreierTopbarnotifications.config.orientationTopBarArea4') %}
-                                            {% set linkTopBarArea = config('sschreierTopbarnotifications.config.linkTopBarArea4') %}
-                                            {% set linkTitleTopBarArea = config('sschreierTopbarnotifications.config.linkTitleTopBarArea4') %}
-                                            {% set linkTargetTopBarArea = config('sschreierTopbarnotifications.config.linkTargetTopBarArea4') %}
+                                            {% set showInViewportTopBarArea = config('SschreierTopbarNotifications.config.showInViewportTopBarArea4') %}
+                                            {% set iconTypeTopBarArea = config('SschreierTopbarNotifications.config.iconTypeTopBarArea4') %}
+                                            {% set iconTopBarArea = config('SschreierTopbarNotifications.config.iconTopBarArea4') %}
+                                            {% set positionContentTopBarArea = config('SschreierTopbarNotifications.config.positionContentTopBarArea4') %}
+                                            {% set orientationTopBarArea = config('SschreierTopbarNotifications.config.orientationTopBarArea4') %}
+                                            {% set linkTopBarArea = config('SschreierTopbarNotifications.config.linkTopBarArea4') %}
+                                            {% set linkTitleTopBarArea = config('SschreierTopbarNotifications.config.linkTitleTopBarArea4') %}
+                                            {% set linkTargetTopBarArea = config('SschreierTopbarNotifications.config.linkTargetTopBarArea4') %}
                                         {% endif %}
                                     {% endif %}
 

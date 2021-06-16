@@ -2,8 +2,8 @@
 
 {% block base_header_inner %}
     {% block base_header_inner_topbarnotifications_before %}
-        {% if config('sschreierTopbarnotifications.config.showContentIn') == "topbar" %}
-            {% sw_include '@sschreierTopbarnotifications/storefront/topbarnotifications.html.twig' %}
+        {% if config('SschreierTopbarNotifications.config.showContentIn') == "topbar" %}
+            {% sw_include '@SschreierTopbarNotifications/storefront/topbarnotifications.html.twig' %}
         {% endif %}
     {% endblock %}
 
@@ -13,8 +13,8 @@
 
 {% block base_footer %}
     {% block base_footer_topbarnotifications_before %}
-        {% if config('sschreierTopbarnotifications.config.showContentIn') == "footerbar" %}
-            {% sw_include '@sschreierTopbarnotifications/storefront/topbarnotifications.html.twig' %}
+        {% if config('SschreierTopbarNotifications.config.showContentIn') == "footerbar" %}
+            {% sw_include '@SschreierTopbarNotifications/storefront/topbarnotifications.html.twig' %}
         {% endif %}
     {% endblock %}
 

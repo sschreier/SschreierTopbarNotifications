@@ -1,28 +1,29 @@
 {
     "name": "sschreier/sschreiertopbarnotifications",
     "description": "Informations- oder Hinweistexte in einer Top- oder Footerbar",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "type": "shopware-platform-plugin",
     "license": "proprietary",
     "authors": [
-         {
-              "name": "Sebastian Schreier"
-         }
+        {
+            "name": "Sebastian Schreier",
+            "role": "Manufacturer"
+        }
     ],
     "require": {
          "shopware/core": "~6.4.0",
          "shopware/storefront": "~6.4.0"
     },
     "extra": {
-         "shopware-plugin-class": "sschreier\\Topbarnotifications\\sschreierTopbarnotifications",
+         "shopware-plugin-class": "Sschreier\\TopbarNotifications\\SschreierTopbarNotifications",
          "plugin-icon": "src/Resources/config/plugin.png",
          "label": {
               "de-DE": "Informations- oder Hinweistexte in einer Top- oder Footerbar",
               "en-GB": "information or notification texts in a top or footer bar"
          },
          "description": {
-              "de-DE": "Ein Plugin für Informations- oder Hinweistexte in einer Top- oder Footerbar, die bis zu 4 Bereiche beinhalten kann.",
-              "en-GB": "A plugin for information or notification texts in a top or footer bar which can contain up to 4 areas."
+              "de-DE": "Eine Erweiterung für Informations- oder Hinweistexte in einer Top- oder Footerbar, die bis zu 4 Bereiche beinhalten kann.",
+              "en-GB": "A extension for information or notification texts in a top or footer bar which can contain up to 4 areas."
          },
          "manufacturerLink": {
               "de-DE": "https://www.sebastianschreier.de",
@@ -35,7 +36,7 @@
     },
     "autoload": {
          "psr-4": {
-              "sschreier\\Topbarnotifications\\": "src/"
+              "Sschreier\\TopbarNotifications\\": "src/"
          }
     }
 }

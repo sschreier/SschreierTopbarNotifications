@@ -1,6 +1,6 @@
-# A plugin for information or notification texts in a top or footer bar for Shopware 6
+# Information or notification texts in a top or footer bar for Shopware 6
 
-A plugin for _information or notification texts in a top  or footer bar_ which can contain _up to 4 areas_.
+A shopware 6 extension for _information or notification texts in a top  or footer bar_ which can contain _up to 4 areas_.
 
 ## Possible Configurations for the top or footer bar
  - show the content in a top or footer bar
@@ -33,32 +33,32 @@ A plugin for _information or notification texts in a top  or footer bar_ which c
  - IconTopBarArea3
  - IconTopBarArea4
 
-## How to install the plugin
+## How to install the extension
 ### via console (recommended)
 
-1. Download the latest _sschreierTopbarnotifications-master.zip_.
-2. Unzip the zip file and rename the folder to _sschreierTopbarnotifications_. 
+1. Download the latest _SschreierTopbarNotifications-master.zip_.
+2. Unzip the zip file and rename the folder to _SschreierTopbarNotifications_. 
 3. Move the folder to the project folder _custom/plugins/_ .
 4. Connect to the console via ssh:
 
 ```
 bin/console plugin:refresh
-bin/console plugin:install --activate sschreierTopbarnotifications
+bin/console plugin:install --activate SschreierTopbarNotifications
 ```
 
 ### via zip upload
-1. Download the latest _sschreierTopbarnotifications-master.zip_.
-2. Unzip the zip file and rename the folder to _sschreierTopbarnotifications_.
-3. Zip the folder to _sschreierTopbarnotifications.zip_.
+1. Download the latest _SschreierTopbarNotifications-master.zip_.
+2. Unzip the zip file and rename the folder to _SschreierTopbarNotifications_.
+3. Zip the folder to _SschreierTopbarNotifications.zip_.
 4. Upload the zip in the Shopware Administration.
-5. Install & Activate the plugin.
+5. Install & Activate the extension.
 
-#### Plugin update (zip)
-1. Download the latest _sschreierTopbarnotifications-master.zip_.
-2. Unzip the zip file and rename the folder to _sschreierTopbarnotifications_.
-3. Zip the folder to _sschreierTopbarnotifications.zip_.
+#### extension update (zip)
+1. Download the latest _SschreierTopbarNotifications-master.zip_.
+2. Unzip the zip file and rename the folder to _SschreierTopbarNotifications_.
+3. Zip the folder to _SschreierTopbarNotifications.zip_.
 4. Upload the zip in the Shopware Administration.
-5. Update the plugin.
+5. Update the extension.
 
 ## Images
 
@@ -82,18 +82,18 @@ bin/console plugin:install --activate sschreierTopbarnotifications
 
 ![footer bar with four areas](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image9.jpg)
 
-### plugin configuration - top bar
+### extension configuration - top bar
 
-![plugin configuration - top bar](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image5.jpg)
+![extension configuration - top bar](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image5.jpg)
 
-### plugin configuration - area 1 part 1
+### extension configuration - area 1 part 1
 
-![plugin configuration - area 1 part 1](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image6.jpg)
+![extension configuration - area 1 part 1](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image6.jpg)
 
-### plugin configuration - area 1 part 2
+### extension configuration - area 1 part 2
 
-![plugin configuration - area 1 part 2](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image7.jpg)
+![extension configuration - area 1 part 2](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image7.jpg)
 
-### plugin configuration - area 1 part 3
+### extension configuration - area 1 part 3
 
-![plugin configuration - area 1 part 3](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image8.jpg)
+![extension configuration - area 1 part 3](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image8.jpg)
