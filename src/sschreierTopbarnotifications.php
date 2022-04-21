@@ -1,4 +1,4 @@
-<?php 
+<?php
 declare(strict_types=1);
 
 namespace Sschreier\TopbarNotifications;
@@ -6,13 +6,14 @@ namespace Sschreier\TopbarNotifications;
 use Shopware\Core\Framework\Plugin;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
-class SschreierTopbarNotifications extends Plugin 
+class SschreierTopbarNotifications extends Plugin
 {
 	/* plugin variables match: config key => scss variable */
     const PLUGIN_VARS = [
         'marginTopTopBar' => 'sschreier-margintop-topbar',
         'marginBottomTopBar' => 'sschreier-marginbottom-topbar',
         'backgroundColorTopBar' => 'sschreier-backgroundcolor-topbar',
+        'shadowTopBar' => 'sschreier-shadow-topbar',
         'paddingTopTopBarAreas' => 'sschreier-paddingtop-topbar-areas',
         'paddingBottomTopBarAreas' => 'sschreier-paddingbottom-topbar-areas',
         'iconColorTopBarArea1' => 'sschreier-iconcolor-topbararea1',

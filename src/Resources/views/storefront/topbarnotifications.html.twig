@@ -1,4 +1,4 @@
-<div class="topbar-outer-container">
+<div class="topbar-outer-container {{ config('SschreierTopbarNotifications.config.showContentIn') }}">
     {% block base_header_inner_topbarnotifications_container %}
         <div class="container">
             {% block base_header_inner_topbarnotifications_container_topbar %}
@@ -11,7 +11,7 @@
                                     {% set showTopBarArea = false %}
 
                                     {% if ( i == 1) %}
-                                        {% set showTopBarArea = config('SschreierTopbarNotifications.config.showTopBarArea2') %}
+                                        {% set showTopBarArea = config('SschreierTopbarNotifications.config.showTopBarArea1') %}
 
                                         {% if (showTopBarArea == true) %}
                                             {% set showInViewportTopBarArea = config('SschreierTopbarNotifications.config.showInViewportTopBarArea1') %}
@@ -79,12 +79,12 @@
                                                                             {{ "sschreier.topbarnotifications.ContentTopBarArea2"|trans|raw }}
                                                                         {% elseif ( i == 3) %}
                                                                             {{ "sschreier.topbarnotifications.ContentTopBarArea3"|trans|raw }}
-                                                                        {% elseif ( i == 4) %}  
+                                                                        {% elseif ( i == 4) %}
                                                                             {{ "sschreier.topbarnotifications.ContentTopBarArea4"|trans|raw }}
                                                                         {% endif %}
                                                                     </span>
                                                                 {% endblock %}
-                                                            {% endif %}    
+                                                            {% endif %}
 
                                                             {% block base_header_inner_topbarnotifications_container_topbar_nav_item_icon %}
                                                                 <span class="top-bar-notification-nav-item-icon">
@@ -449,7 +449,7 @@
                                                                             {{ "sschreier.topbarnotifications.IconTopBarArea2"|trans|raw }}
                                                                         {% elseif ( i == 3) %}
                                                                             {{ "sschreier.topbarnotifications.IconTopBarArea3"|trans|raw }}
-                                                                        {% elseif ( i == 4) %}  
+                                                                        {% elseif ( i == 4) %}
                                                                             {{ "sschreier.topbarnotifications.IconTopBarArea4"|trans|raw }}
                                                                         {% endif %}
                                                                     {% endif %}
@@ -465,7 +465,7 @@
                                                                             {{ "sschreier.topbarnotifications.ContentTopBarArea2"|trans|raw }}
                                                                         {% elseif ( i == 3) %}
                                                                             {{ "sschreier.topbarnotifications.ContentTopBarArea3"|trans|raw }}
-                                                                        {% elseif ( i == 4) %}  
+                                                                        {% elseif ( i == 4) %}
                                                                             {{ "sschreier.topbarnotifications.ContentTopBarArea4"|trans|raw }}
                                                                         {% endif %}
                                                                     </span>
@@ -475,9 +475,9 @@
                                                     </div>
                                                 {% endblock %}
                                             {% if (linkTopBarArea != "") %}</a>{% endif %}
-                                        {% endblock %}    
+                                        {% endblock %}
                                     {% endif %}
-                                {% endfor %}   
+                                {% endfor %}
 
                             {% endblock %}
                         </nav>

@@ -3,25 +3,35 @@
         xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
 
     <card>
-        <title>top oder footer bar</title>
-        <title lang="de-DE">Top- oder Footerbar</title>
+        <title>general settings of the area</title>
+        <title lang="de-DE">Allgemeine Einstellungen des Bereichs</title>
 
         <input-field type="single-select">
             <name>showContentIn</name>
             <options>
                 <option>
                     <id>topbar</id>
-                    <name>top bar</name>
-                    <name lang="de-DE">Topbar</name>
+                    <name>in the top bar</name>
+                    <name lang="de-DE">in der Topbar</name>
+                </option>
+                <option>
+                    <id>above_breadcrumb</id>
+                    <name>above the breadcrumb navigation</name>
+                    <name lang="de-DE">oberhalb der Brotkrumennavigation</name>
+                </option>
+                <option>
+                    <id>below_breadcrumb</id>
+                    <name>below the breadcrumb navigation</name>
+                    <name lang="de-DE">unterhalb der Brotkrumennavigation</name>
                 </option>
                 <option>
                     <id>footerbar</id>
-                    <name>footer bar</name>
-                    <name lang="de-DE">Footerbar</name>
+                    <name>in the footer bar</name>
+                    <name lang="de-DE">in der Footerbar</name>
                 </option>
             </options>
-            <label>show content in</label>
-            <label lang="de-DE">Inhalt anzeigen in</label>
+            <label>show area</label>
+            <label lang="de-DE">Bereich anzeigen</label>
             <defaultValue>topbar</defaultValue>
         </input-field>
 
@@ -43,10 +53,20 @@
 
         <input-field type="colorpicker">
             <name>backgroundColorTopBar</name>
-            <label>background color of the top bar</label>
-            <label lang="de-DE">Hintergrundfarbe der Topbar</label>
+            <label>background color of the area</label>
+            <label lang="de-DE">Hintergrundfarbe des Bereichs</label>
             <defaultValue>#efefef</defaultValue>
             <placeholder>#efefef</placeholder>
+        </input-field>
+
+        <input-field type="text">
+            <name>shadowTopBar</name>
+            <label>shadow of the area</label>
+            <label lang="de-DE">Schatten des Bereichs</label>
+            <helpText>css 'box-shadow' property, see https://developer.mozilla.org/docs/Web/CSS/box-shadow</helpText>
+            <helpText lang="de-DE">CSS-Eigenschaft 'box-shadow', siehe https://developer.mozilla.org/de/docs/Web/CSS/box-shadow</helpText>
+            <defaultValue></defaultValue>
+            <placeholder>5px 10px 16px rgba(0, 0, 0, 0.1), -5px 10px 16px rgba(0, 0, 0, 0.1)</placeholder>
         </input-field>
 
         <input-field type="text">
@@ -74,8 +94,8 @@
     </card>
 
      <card>
-        <title>area 1 of the top bar</title>
-        <title lang="de-DE">Bereich 1 der Topbar</title>
+        <title>area 1</title>
+        <title lang="de-DE">Bereich 1</title>
 
         <input-field type="bool">
             <name>showTopBarArea1</name>
@@ -1028,6 +1048,8 @@
             <label>icon</label>
             <label lang="de-DE">Icon</label>
             <defaultValue>clock</defaultValue>
+            <helpText>for a preview of the icons, see https://component-library.shopware.com/icons/</helpText>
+            <helpText lang="de-DE">Vorschau der Icons siehe https://component-library.shopware.com/icons/</helpText>
         </input-field>
 
         <input-field type="text">
@@ -1142,13 +1164,13 @@
             </options>
             <label>orientation of the area</label>
             <label lang="de-DE">Ausrichtung des Bereichs</label>
-            <defaultValue>left</defaultValue>
+            <defaultValue>center</defaultValue>
         </input-field>
 
         <input-field type="text">
             <name>linkTopBarArea1</name>
-            <label>link (link or the cms id of the shopping experience for a modal box)</label>
-            <label lang="de-DE">Link (Link oder CMS ID der Erlebniswelt für eine Modalbox)</label>
+            <label>link (either a direct link for a link or otherwise a cms id of an shopping experience for a modal box)</label>
+            <label lang="de-DE">Link (entweder ein Direktlink für einen Link oder anderenfalls eine CMS ID einer Erlebniswelt für eine Modalbox)</label>
             <helpText>the cms id of the shopping experience for a modal box is located in the browser behind https://www.shopurl.de/admin#/sw/cms/detail/</helpText>
             <helpText lang="de-DE">Die CMS ID der Erlebniswelt für eine Modalbox befindet sich im Browser hinter https://www.shopurl.de/admin#/sw/cms/detail/</helpText>
         </input-field>
@@ -1187,8 +1209,8 @@
     </card>
 
     <card>
-        <title>area 2 of the top bar</title>
-        <title lang="de-DE">Bereich 2 der Topbar</title>
+        <title>area 2</title>
+        <title lang="de-DE">Bereich 2</title>
 
         <input-field type="bool">
             <name>showTopBarArea2</name>
@@ -2141,6 +2163,8 @@
             <label>icon</label>
             <label lang="de-DE">Icon</label>
             <defaultValue>package-open</defaultValue>
+            <helpText>for a preview of the icons, see https://component-library.shopware.com/icons/</helpText>
+            <helpText lang="de-DE">Vorschau der Icons siehe https://component-library.shopware.com/icons/</helpText>
         </input-field>
 
         <input-field type="text">
@@ -2255,13 +2279,13 @@
             </options>
             <label>orientation of the area</label>
             <label lang="de-DE">Ausrichtung des Bereichs</label>
-            <defaultValue>left</defaultValue>
+            <defaultValue>center</defaultValue>
         </input-field>
 
         <input-field type="text">
             <name>linkTopBarArea2</name>
-            <label>link (link or the cms id of the shopping experience for a modal box)</label>
-            <label lang="de-DE">Link (Link oder CMS ID der Erlebniswelt für eine Modalbox)</label>
+            <label>link (either a direct link for a link or otherwise a cms id of an shopping experience for a modal box)</label>
+            <label lang="de-DE">Link (entweder ein Direktlink für einen Link oder anderenfalls eine CMS ID einer Erlebniswelt für eine Modalbox)</label>
             <helpText>the cms id of the shopping experience for a modal box is located in the browser behind https://www.shopurl.de/admin#/sw/cms/detail/</helpText>
             <helpText lang="de-DE">Die CMS ID der Erlebniswelt für eine Modalbox befindet sich im Browser hinter https://www.shopurl.de/admin#/sw/cms/detail/</helpText>
         </input-field>
@@ -2300,8 +2324,8 @@
     </card>
 
     <card>
-        <title>area 3 of the top bar</title>
-        <title lang="de-DE">Bereich 3 der Topbar</title>
+        <title>area 3</title>
+        <title lang="de-DE">Bereich 3</title>
 
         <input-field type="bool">
             <name>showTopBarArea3</name>
@@ -3254,6 +3278,8 @@
             <label>icon</label>
             <label lang="de-DE">Icon</label>
             <defaultValue>arrow-360-right</defaultValue>
+            <helpText>for a preview of the icons, see https://component-library.shopware.com/icons/</helpText>
+            <helpText lang="de-DE">Vorschau der Icons siehe https://component-library.shopware.com/icons/</helpText>
         </input-field>
 
         <input-field type="text">
@@ -3368,13 +3394,13 @@
             </options>
             <label>orientation of the area</label>
             <label lang="de-DE">Ausrichtung des Bereichs</label>
-            <defaultValue>left</defaultValue>
+            <defaultValue>center</defaultValue>
         </input-field>
 
         <input-field type="text">
             <name>linkTopBarArea3</name>
-            <label>link (link or the cms id of the shopping experience for a modal box)</label>
-            <label lang="de-DE">Link (Link oder CMS ID der Erlebniswelt für eine Modalbox)</label>
+            <label>link (either a direct link for a link or otherwise a cms id of an shopping experience for a modal box)</label>
+            <label lang="de-DE">Link (entweder ein Direktlink für einen Link oder anderenfalls eine CMS ID einer Erlebniswelt für eine Modalbox)</label>
             <helpText>the cms id of the shopping experience for a modal box is located in the browser behind https://www.shopurl.de/admin#/sw/cms/detail/</helpText>
             <helpText lang="de-DE">Die CMS ID der Erlebniswelt für eine Modalbox befindet sich im Browser hinter https://www.shopurl.de/admin#/sw/cms/detail/</helpText>
         </input-field>
@@ -3413,8 +3439,8 @@
     </card>
 
     <card>
-        <title>area 4 of the top bar</title>
-        <title lang="de-DE">Bereich 4 der Topbar</title>
+        <title>area 4</title>
+        <title lang="de-DE">Bereich 4</title>
 
         <input-field type="bool">
             <name>showTopBarArea4</name>
@@ -4367,6 +4393,8 @@
             <label>icon</label>
             <label lang="de-DE">Icon</label>
             <defaultValue>headset</defaultValue>
+            <helpText>for a preview of the icons, see https://component-library.shopware.com/icons/</helpText>
+            <helpText lang="de-DE">Vorschau der Icons siehe https://component-library.shopware.com/icons/</helpText>
         </input-field>
 
         <input-field type="text">
@@ -4481,13 +4509,13 @@
             </options>
             <label>orientation of the area</label>
             <label lang="de-DE">Ausrichtung des Bereichs</label>
-            <defaultValue>left</defaultValue>
+            <defaultValue>center</defaultValue>
         </input-field>
 
         <input-field type="text">
             <name>linkTopBarArea4</name>
-            <label>link (link or the cms id of the shopping experience for a modal box)</label>
-            <label lang="de-DE">Link (Link oder CMS ID der Erlebniswelt für eine Modalbox)</label>
+            <label>link (either a direct link for a link or otherwise a cms id of an shopping experience for a modal box)</label>
+            <label lang="de-DE">Link (entweder ein Direktlink für einen Link oder anderenfalls eine CMS ID einer Erlebniswelt für eine Modalbox)</label>
             <helpText>the cms id of the shopping experience for a modal box is located in the browser behind https://www.shopurl.de/admin#/sw/cms/detail/</helpText>
             <helpText lang="de-DE">Die CMS ID der Erlebniswelt für eine Modalbox befindet sich im Browser hinter https://www.shopurl.de/admin#/sw/cms/detail/</helpText>
         </input-field>
