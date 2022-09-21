@@ -1123,6 +1123,15 @@
             <disabled>true</disabled>
             <defaultValue>ContentTopBarArea1</defaultValue>
         </input-field>
+        
+        <input-field type="text">
+            <name>customContentTopBarArea1</name>
+            <label>editable content</label>
+            <label lang="de-DE">Editierbarer Inhalt</label>
+            <defaultValue></defaultValue>
+            <helpText>You can either define a notification content here (globally, or per sales channel)</helpText>
+            <helpText lang="de-DE"></helpText>
+        </input-field>
 
         <input-field type="single-select">
             <name>positionContentTopBarArea1</name>
