@@ -1,23 +1,40 @@
 {% sw_extends '@Storefront/storefront/base.html.twig' %}
 
+{% set now = date("now") %}
+{% set from = config('SschreierTopbarNotifications.config.notificationEnabledFrom')|default(date('-1 DAY')) %}
+{% set until = config('SschreierTopbarNotifications.config.notificationEnabledUntil')|default(date('+1 DAY')) %}
+        
 {% block base_header_inner %}
     {% block base_header_inner_topbarnotifications_before %}
+        {% if ( from|date('c') < now|date('c')  and now|date('c') < until|date('c') ) %}
+        <!-- from < now < until -->
+        {% endif %}
         {% if config('SschreierTopbarNotifications.config.showContentIn') == "topbar" %}
-            {% sw_include '@SschreierTopbarNotifications/storefront/topbarnotifications.html.twig' %}
+            {% if ( from|date('c') < now|date('c') and now|date('c') < until|date('c') ) %}
+                {% sw_include '@SschreierTopbarNotifications/storefront/topbarnotifications.html.twig' %}
+            {% endif %}
         {% endif %}
     {% endblock %}
 
     {{ parent() }}
-    {% block base_header_inner_topbarnotifications_after %}{% endblock %}
+    
+    {% if ( from|date('c') < now|date('c') and now|date('c') < until|date('c') ) %}
+        {% block base_header_inner_topbarnotifications_after %}{% endblock %}
+    {% endif %}
 {% endblock %}
 
 {% block base_footer %}
     {% block base_footer_topbarnotifications_before %}
         {% if config('SschreierTopbarNotifications.config.showContentIn') == "footerbar" %}
-            {% sw_include '@SschreierTopbarNotifications/storefront/topbarnotifications.html.twig' %}
+            {% if ( from|date('c') < now|date('c') and now|date('c') < until|date('c') ) %}
+                {% sw_include '@SschreierTopbarNotifications/storefront/topbarnotifications.html.twig' %}
+            {% endif %}
         {% endif %}
     {% endblock %}
 
     {{ parent() }}
-    {% block base_footer_topbarnotifications_after %}{% endblock %}
+    
+    {% if ( from|date('c') < now|date('c') and now|date('c') < until|date('c') ) %}
+        {% block base_footer_topbarnotifications_after %}{% endblock %}
+    {% endif %}
 {% endblock %}

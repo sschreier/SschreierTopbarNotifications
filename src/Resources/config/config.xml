@@ -91,6 +91,22 @@
             <label lang="de-DE">50% Breite der Bereiche in der Auflösung Smartphone Querformat (SM)</label>
             <defaultValue>true</defaultValue>
         </input-field>
+        
+        <input-field type="datetime">
+            <name>notificationEnabledFrom</name>
+            <label>Notification Enabled From Date and Time</label>
+            <label lang="de-DE"></label>
+            <helpText></helpText>
+            <helpText lang="de-DE"></helpText>
+        </input-field>
+        
+        <input-field type="datetime">
+            <name>notificationEnabledUntil</name>
+            <label>Notification Enabled Until Date and Time</label>
+            <label lang="de-DE"></label>
+            <helpText></helpText>
+            <helpText lang="de-DE"></helpText>
+        </input-field>
     </card>
 
      <card>
