@@ -54,6 +54,20 @@ bin/console plugin:install --activate SschreierTopbarNotifications
 4. Upload the zip in the Shopware Administration.
 5. Install & Activate the extension.
 
+### via Composer
+1. Add the repository URL to your composer.json like so
+```
+  "repositories": [
+    { "type": "vcs", "url": "https://github.com/sschreier/SschreierTopbarNotifications" }
+  ]
+```
+2. Run `composer require sschreier/sschreiertopbarnotifications` to install the plugin source code
+3. Setup and plugin activation in Shopware 6: 
+```
+bin/console plugin:refresh 
+bin/console plugin:install --activate SschreierTopbarNotifications
+```
+
 #### extension update (zip)
 1. Download the latest _SschreierTopbarNotifications-master.zip_.
 2. Unzip the zip file and rename the folder to _SschreierTopbarNotifications_.
