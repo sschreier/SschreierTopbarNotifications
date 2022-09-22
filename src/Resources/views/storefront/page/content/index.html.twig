@@ -1,9 +1,15 @@
 {% sw_extends '@Storefront/storefront/page/content/index.html.twig' %}
 
+{% set now = date("now") %}
+{% set from = config('SschreierTopbarNotifications.config.notificationEnabledFrom')|default(date('-1 DAY')) %}
+{% set until = config('SschreierTopbarNotifications.config.notificationEnabledUntil')|default(date('+1 DAY')) %}
+
 {% block cms_breadcrumb %}
     {% block cms_breadcrumb_topbarnotifications_before %}
         {% if config('SschreierTopbarNotifications.config.showContentIn') == "above_breadcrumb" %}
-            {% sw_include '@SschreierTopbarNotifications/storefront/topbarnotifications.html.twig' %}
+            {% if ( from|date('c') < now|date('c') and now|date('c') < until|date('c') ) %}
+                {% sw_include '@SschreierTopbarNotifications/storefront/topbarnotifications.html.twig' %}
+            {% endif %}
         {% endif %}
     {% endblock %}
 
@@ -11,7 +17,9 @@
 
     {% block cms_breadcrumb_topbarnotifications_after %}
         {% if config('SschreierTopbarNotifications.config.showContentIn') == "below_breadcrumb" %}
-            {% sw_include '@SschreierTopbarNotifications/storefront/topbarnotifications.html.twig' %}
+            {% if ( from|date('c') < now|date('c') and now|date('c') < until|date('c') ) %}
+                {% sw_include '@SschreierTopbarNotifications/storefront/topbarnotifications.html.twig' %}
+            {% endif %}
         {% endif %}
     {% endblock %}
 {% endblock %}
