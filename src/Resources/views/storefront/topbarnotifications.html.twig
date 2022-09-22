@@ -22,6 +22,7 @@
                                             {% set linkTopBarArea = config('SschreierTopbarNotifications.config.linkTopBarArea1') %}
                                             {% set linkTitleTopBarArea = config('SschreierTopbarNotifications.config.linkTitleTopBarArea1') %}
                                             {% set linkTargetTopBarArea = config('SschreierTopbarNotifications.config.linkTargetTopBarArea1') %}
+                                            {% set customContent1 = config('SschreierTopbarNotifications.config.customContentTopBarArea1') %}
                                         {% endif %}
                                     {% elseif ( i == 2) %}
                                         {% set showTopBarArea = config('SschreierTopbarNotifications.config.showTopBarArea2') %}
@@ -35,6 +36,7 @@
                                             {% set linkTopBarArea = config('SschreierTopbarNotifications.config.linkTopBarArea2') %}
                                             {% set linkTitleTopBarArea = config('SschreierTopbarNotifications.config.linkTitleTopBarArea2') %}
                                             {% set linkTargetTopBarArea = config('SschreierTopbarNotifications.config.linkTargetTopBarArea2') %}
+                                            {% set customContent2 = config('SschreierTopbarNotifications.config.customContentTopBarArea2')|raw %}
                                         {% endif %}
                                     {% elseif ( i == 3) %}
                                         {% set showTopBarArea = config('SschreierTopbarNotifications.config.showTopBarArea3') %}
@@ -48,6 +50,7 @@
                                             {% set linkTopBarArea = config('SschreierTopbarNotifications.config.linkTopBarArea3') %}
                                             {% set linkTitleTopBarArea = config('SschreierTopbarNotifications.config.linkTitleTopBarArea3') %}
                                             {% set linkTargetTopBarArea = config('SschreierTopbarNotifications.config.linkTargetTopBarArea3') %}
+                                            {% set customContent3 = config('SschreierTopbarNotifications.config.customContentTopBarArea3')|raw %}
                                         {% endif %}
                                     {% elseif ( i == 4) %}
                                         {% set showTopBarArea = config('SschreierTopbarNotifications.config.showTopBarArea4') %}
@@ -61,6 +64,7 @@
                                             {% set linkTopBarArea = config('SschreierTopbarNotifications.config.linkTopBarArea4') %}
                                             {% set linkTitleTopBarArea = config('SschreierTopbarNotifications.config.linkTitleTopBarArea4') %}
                                             {% set linkTargetTopBarArea = config('SschreierTopbarNotifications.config.linkTargetTopBarArea4') %}
+                                            {% set customContent4 = config('SschreierTopbarNotifications.config.customContentTopBarArea4')|raw %}
                                         {% endif %}
                                     {% endif %}
 
@@ -74,13 +78,13 @@
                                                                 {% block base_header_inner_topbarnotifications_container_topbar_nav_item_text_before %}
                                                                     <span class="top-bar-notification-nav-item-text">
                                                                         {% if ( i == 1) %}
-                                                                            {{ "sschreier.topbarnotifications.ContentTopBarArea1"|trans|raw }}
+                                                                            {% if customContent1 is not empty %}{{ customContent1|raw }}{% else %}{{ "sschreier.topbarnotifications.ContentTopBarArea1"|trans|raw }}{%  endif %}
                                                                         {% elseif ( i == 2) %}
-                                                                            {{ "sschreier.topbarnotifications.ContentTopBarArea2"|trans|raw }}
+                                                                            {% if customContent1 is not empty %}{{ customContent2|raw }}{% else %}{{ "sschreier.topbarnotifications.ContentTopBarArea2"|trans|raw }}{%  endif %}
                                                                         {% elseif ( i == 3) %}
-                                                                            {{ "sschreier.topbarnotifications.ContentTopBarArea3"|trans|raw }}
+                                                                            {% if customContent1 is not empty %}{{ customContent3|raw }}{% else %}{{ "sschreier.topbarnotifications.ContentTopBarArea3"|trans|raw }}{%  endif %}
                                                                         {% elseif ( i == 4) %}
-                                                                            {{ "sschreier.topbarnotifications.ContentTopBarArea4"|trans|raw }}
+                                                                            {% if customContent1 is not empty %}{{ customContent4|raw }}{% else %}{{ "sschreier.topbarnotifications.ContentTopBarArea4"|trans|raw }}{%  endif %}
                                                                         {% endif %}
                                                                     </span>
                                                                 {% endblock %}
@@ -460,13 +464,13 @@
                                                                 {% block base_header_inner_topbarnotifications_container_topbar_nav_item_text_after %}
                                                                     <span class="top-bar-notification-nav-item-text">
                                                                         {% if ( i == 1) %}
-                                                                            {{ "sschreier.topbarnotifications.ContentTopBarArea1"|trans|raw }}
+                                                                            {% if customContent1 is not empty %}{{ customContent1|raw }}{% else %}{{ "sschreier.topbarnotifications.ContentTopBarArea1"|trans|raw }}{%  endif %}
                                                                         {% elseif ( i == 2) %}
-                                                                            {{ "sschreier.topbarnotifications.ContentTopBarArea2"|trans|raw }}
+                                                                            {% if customContent1 is not empty %}{{ customContent2|raw }}{% else %}{{ "sschreier.topbarnotifications.ContentTopBarArea2"|trans|raw }}{%  endif %}
                                                                         {% elseif ( i == 3) %}
-                                                                            {{ "sschreier.topbarnotifications.ContentTopBarArea3"|trans|raw }}
+                                                                            {% if customContent1 is not empty %}{{ customContent3|raw }}{% else %}{{ "sschreier.topbarnotifications.ContentTopBarArea3"|trans|raw }}{%  endif %}
                                                                         {% elseif ( i == 4) %}
-                                                                            {{ "sschreier.topbarnotifications.ContentTopBarArea4"|trans|raw }}
+                                                                            {% if customContent1 is not empty %}{{ customContent4|raw }}{% else %}{{ "sschreier.topbarnotifications.ContentTopBarArea4"|trans|raw }}{%  endif %}
                                                                         {% endif %}
                                                                     </span>
                                                                 {% endblock %}

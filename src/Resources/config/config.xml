@@ -1116,21 +1116,22 @@
             <placeholder>#4a545b</placeholder>
         </input-field>
 
-        <input-field type="text">
+        <component name="sw-snippet-field">
             <name>contentTopBarArea1</name>
             <label>content maintainable via snippet</label>
             <label lang="de-DE">Inhalt pflegbar über Textbaustein</label>
-            <disabled>true</disabled>
-            <defaultValue>ContentTopBarArea1</defaultValue>
-        </input-field>
-        
+            <snippet>sschreier.topbarnotifications.ContentTopBarArea1</snippet>
+            <helpText>Click on the globe to edit translations.</helpText>
+            <helpText lang="de-DE">Klicken Sie auf den Globus um die Übersetzungen zu bearbeiten.</helpText>
+        </component>
+
         <input-field type="text">
             <name>customContentTopBarArea1</name>
             <label>editable content</label>
             <label lang="de-DE">Editierbarer Inhalt</label>
             <defaultValue></defaultValue>
-            <helpText>You can either define a notification content here (globally, or per sales channel)</helpText>
-            <helpText lang="de-DE"></helpText>
+            <helpText>If you define a custom notification content here you can do it globally for all sales channels, or per sales channel. This field allows you to have different texts per sales channel. It does not allow to translate the text into different languages. If a sales channel has more than one language use the snippet instead.</helpText>
+            <helpText lang="de-DE">Wenn Sie hier einen individuellen Inhalt angeben, könenn Sie das global für alle Verkaufskanäle tun, oder per Verkaufskanal. Dieses Feld erlaubt Ihnen unterschiedliche Texte per Verkaufskanal anzuzeigen. Es erlaubt aber keine Übersetzung in andere Sprachen. Wenn Sie mehrsprachige Verkaufskanäle benutzen, verwenden Sie bitte lieber den Textbaustein.</helpText>
         </input-field>
 
         <input-field type="single-select">
