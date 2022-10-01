@@ -142,13 +142,13 @@
             <options>
                 <option>
                     <id>select</id>
-                    <name>following select field</name>
-                    <name lang="de-DE">nachfolgendem Auswahlfeld</name>
+                    <name>the following select field</name>
+                    <name lang="de-DE">dem nachfolgendem Auswahlfeld</name>
                 </option>
                 <option>
                     <id>snippet</id>
-                    <name>a snippet</name>
-                    <name lang="de-DE">einem Textbaustein</name>
+                    <name>the snippet</name>
+                    <name lang="de-DE">dem Textbaustein</name>
                 </option>
             </options>
             <label>icon obtain from</label>
@@ -1052,13 +1052,14 @@
             <helpText lang="de-DE">Vorschau der Icons siehe https://component-library.shopware.com/icons/</helpText>
         </input-field>
 
-        <input-field type="text">
+        <component name="sw-snippet-field">
             <name>iconViaSnippetTopBarArea1</name>
-            <label>icon alternatively maintainable via snippet</label>
-            <label lang="de-DE">Icon alternativ pflegbar über Textbaustein</label>
-            <disabled>true</disabled>
-            <defaultValue>IconTopBarArea1</defaultValue>
-        </input-field>
+            <label>icon from the snippet</label>
+            <label lang="de-DE">Icon aus dem Textbaustein</label>
+            <snippet>sschreier.topbarnotifications.IconTopBarArea1</snippet>
+            <helpText>click on the globe to edit the translations</helpText>
+            <helpText lang="de-DE">Klicke auf den Globus, um die Übersetzung zu bearbeiten</helpText>
+        </component>
 
         <input-field type="colorpicker">
             <name>iconColorTopBarArea1</name>
@@ -1070,8 +1071,8 @@
 
         <input-field type="colorpicker">
             <name>hoverIconColorTopBarArea1</name>
-            <label>hover icon color</label>
-            <label lang="de-DE">Hover - Iconfarbe</label>
+            <label>hover icon color if the area is linked</label>
+            <label lang="de-DE">Hover - Iconfarbe, wenn der Bereich verlinkt ist</label>
             <defaultValue>#4a545b</defaultValue>
             <placeholder>#4a545b</placeholder>
         </input-field>
@@ -1110,19 +1111,54 @@
 
         <input-field type="colorpicker">
             <name>hoverFontColorTopBarArea1</name>
-            <label>hover font color of the content</label>
-            <label lang="de-DE">Hover - Schriftfarbe des Inhalts</label>
+            <label>hover font color of the content if the area is linked</label>
+            <label lang="de-DE">Hover - Schriftfarbe des Inhalts, wenn der Bereich verlinkt ist</label>
             <defaultValue>#4a545b</defaultValue>
             <placeholder>#4a545b</placeholder>
         </input-field>
 
-        <input-field type="text">
-            <name>contentTopBarArea1</name>
-            <label>content maintainable via snippet</label>
-            <label lang="de-DE">Inhalt pflegbar über Textbaustein</label>
-            <disabled>true</disabled>
-            <defaultValue>ContentTopBarArea1</defaultValue>
+        <input-field type="int">
+            <name>fontSizeTopBarArea1</name>
+            <label>font size of the content in pixels</label>
+            <label lang="de-DE">Schriftgröße des Inhalts in Pixeln</label>
+            <defaultValue>14</defaultValue>
+            <placeholder>14</placeholder>
         </input-field>
+
+        <input-field type="single-select">
+            <name>contentTypeTopBarArea1</name>
+            <options>
+                <option>
+                    <id>texteditor</id>
+                    <name>the following text editor</name>
+                    <name lang="de-DE">dem nachfolgenden Texteditor - Feld</name>
+                </option>
+                <option>
+                    <id>snippet</id>
+                    <name>the snippet</name>
+                    <name lang="de-DE">dem Textbaustein</name>
+                </option>
+            </options>
+            <label>content obtain from</label>
+            <label lang="de-DE">Inhalt beziehen aus</label>
+            <defaultValue>snippet</defaultValue>
+        </input-field>
+
+        <component name="sw-text-editor">
+            <name>contentTextEditorTopBarArea1</name>
+            <label>content</label>
+            <label lang="de-DE">Inhalt</label>
+            <defaultValue>Schneller Versand</defaultValue>
+        </component>
+
+        <component name="sw-snippet-field">
+            <name>contentTopBarArea1</name>
+            <label>content from the snippet</label>
+            <label lang="de-DE">Inhalt aus dem Textbaustein</label>
+            <snippet>sschreier.topbarnotifications.ContentTopBarArea1</snippet>
+            <helpText>click on the globe to edit the translations</helpText>
+            <helpText lang="de-DE">Klicke auf den Globus, um die Übersetzung zu bearbeiten</helpText>
+        </component>
 
         <input-field type="single-select">
             <name>positionContentTopBarArea1</name>
@@ -1257,13 +1293,13 @@
             <options>
                 <option>
                     <id>select</id>
-                    <name>following select field</name>
-                    <name lang="de-DE">nachfolgendem Auswahlfeld</name>
+                    <name>the following select field</name>
+                    <name lang="de-DE">dem nachfolgendem Auswahlfeld</name>
                 </option>
                 <option>
                     <id>snippet</id>
-                    <name>a snippet</name>
-                    <name lang="de-DE">einem Textbaustein</name>
+                    <name>the snippet</name>
+                    <name lang="de-DE">dem Textbaustein</name>
                 </option>
             </options>
             <label>icon obtain from</label>
@@ -2167,13 +2203,14 @@
             <helpText lang="de-DE">Vorschau der Icons siehe https://component-library.shopware.com/icons/</helpText>
         </input-field>
 
-        <input-field type="text">
+        <component name="sw-snippet-field">
             <name>iconViaSnippetTopBarArea2</name>
-            <label>icon alternatively maintainable via snippet</label>
-            <label lang="de-DE">Icon alternativ pflegbar über Textbaustein</label>
-            <disabled>true</disabled>
-            <defaultValue>IconTopBarArea2</defaultValue>
-        </input-field>
+            <label>icon from the snippet</label>
+            <label lang="de-DE">Icon aus dem Textbaustein</label>
+            <snippet>sschreier.topbarnotifications.IconTopBarArea2</snippet>
+            <helpText>click on the globe to edit the translations</helpText>
+            <helpText lang="de-DE">Klicke auf den Globus, um die Übersetzung zu bearbeiten</helpText>
+        </component>
 
         <input-field type="colorpicker">
             <name>iconColorTopBarArea2</name>
@@ -2185,8 +2222,8 @@
 
         <input-field type="colorpicker">
             <name>hoverIconColorTopBarArea2</name>
-            <label>hover icon color</label>
-            <label lang="de-DE">Hover - Iconfarbe</label>
+            <label>hover icon color if the area is linked</label>
+            <label lang="de-DE">Hover - Iconfarbe, wenn der Bereich verlinkt ist</label>
             <defaultValue>#4a545b</defaultValue>
             <placeholder>#4a545b</placeholder>
         </input-field>
@@ -2225,19 +2262,54 @@
 
         <input-field type="colorpicker">
             <name>hoverFontColorTopBarArea2</name>
-            <label>hover font color of the content</label>
-            <label lang="de-DE">Hover - Schriftfarbe des Inhalts</label>
+            <label>hover font color of the content if the area is linked</label>
+            <label lang="de-DE">Hover - Schriftfarbe des Inhalts, wenn der Bereich verlinkt ist</label>
             <defaultValue>#4a545b</defaultValue>
             <placeholder>#4a545b</placeholder>
         </input-field>
 
-        <input-field type="text">
-            <name>contentTopBarArea2</name>
-            <label>content maintainable via snippet</label>
-            <label lang="de-DE">Inhalt pflegbar über Textbaustein</label>
-            <disabled>true</disabled>
-            <defaultValue>ContentTopBarArea2</defaultValue>
+        <input-field type="int">
+            <name>fontSizeTopBarArea2</name>
+            <label>font size of the content in pixels</label>
+            <label lang="de-DE">Schriftgröße des Inhalts in Pixeln</label>
+            <defaultValue>14</defaultValue>
+            <placeholder>14</placeholder>
         </input-field>
+
+        <input-field type="single-select">
+            <name>contentTypeTopBarArea2</name>
+            <options>
+                <option>
+                    <id>texteditor</id>
+                    <name>the following text editor</name>
+                    <name lang="de-DE">dem nachfolgenden Texteditor - Feld</name>
+                </option>
+                <option>
+                    <id>snippet</id>
+                    <name>the snippet</name>
+                    <name lang="de-DE">dem Textbaustein</name>
+                </option>
+            </options>
+            <label>content obtain from</label>
+            <label lang="de-DE">Inhalt beziehen aus</label>
+            <defaultValue>snippet</defaultValue>
+        </input-field>
+
+        <component name="sw-text-editor">
+            <name>contentTextEditorTopBarArea2</name>
+            <label>content</label>
+            <label lang="de-DE">Inhalt</label>
+            <defaultValue>Günstige Versandkosten</defaultValue>
+        </component>
+
+        <component name="sw-snippet-field">
+            <name>contentTopBarArea2</name>
+            <label>content from the snippet</label>
+            <label lang="de-DE">Inhalt aus dem Textbaustein</label>
+            <snippet>sschreier.topbarnotifications.ContentTopBarArea2</snippet>
+            <helpText>click on the globe to edit the translations</helpText>
+            <helpText lang="de-DE">Klicke auf den Globus, um die Übersetzung zu bearbeiten</helpText>
+        </component>
 
         <input-field type="single-select">
             <name>positionContentTopBarArea2</name>
@@ -2372,13 +2444,13 @@
             <options>
                 <option>
                     <id>select</id>
-                    <name>following select field</name>
-                    <name lang="de-DE">nachfolgendem Auswahlfeld</name>
+                    <name>the following select field</name>
+                    <name lang="de-DE">dem nachfolgendem Auswahlfeld</name>
                 </option>
                 <option>
                     <id>snippet</id>
-                    <name>a snippet</name>
-                    <name lang="de-DE">einem Textbaustein</name>
+                    <name>the snippet</name>
+                    <name lang="de-DE">dem Textbaustein</name>
                 </option>
             </options>
             <label>icon obtain from</label>
@@ -3282,13 +3354,14 @@
             <helpText lang="de-DE">Vorschau der Icons siehe https://component-library.shopware.com/icons/</helpText>
         </input-field>
 
-        <input-field type="text">
+        <component name="sw-snippet-field">
             <name>iconViaSnippetTopBarArea3</name>
-            <label>icon alternatively maintainable via snippet</label>
-            <label lang="de-DE">Icon alternativ pflegbar über Textbaustein</label>
-            <disabled>true</disabled>
-            <defaultValue>IconTopBarArea3</defaultValue>
-        </input-field>
+            <label>icon from the snippet</label>
+            <label lang="de-DE">Icon aus dem Textbaustein</label>
+            <snippet>sschreier.topbarnotifications.IconTopBarArea3</snippet>
+            <helpText>click on the globe to edit the translations</helpText>
+            <helpText lang="de-DE">Klicke auf den Globus, um die Übersetzung zu bearbeiten</helpText>
+        </component>
 
         <input-field type="colorpicker">
             <name>iconColorTopBarArea3</name>
@@ -3300,8 +3373,8 @@
 
         <input-field type="colorpicker">
             <name>hoverIconColorTopBarArea3</name>
-            <label>hover icon color</label>
-            <label lang="de-DE">Hover - Iconfarbe</label>
+            <label>hover icon color if the area is linked</label>
+            <label lang="de-DE">Hover - Iconfarbe, wenn der Bereich verlinkt ist</label>
             <defaultValue>#4a545b</defaultValue>
             <placeholder>#4a545b</placeholder>
         </input-field>
@@ -3340,19 +3413,54 @@
 
         <input-field type="colorpicker">
             <name>hoverFontColorTopBarArea3</name>
-            <label>hover font color of the content</label>
-            <label lang="de-DE">Hover - Schriftfarbe des Inhalts</label>
+            <label>hover font color of the content if the area is linked</label>
+            <label lang="de-DE">Hover - Schriftfarbe des Inhalts, wenn der Bereich verlinkt ist</label>
             <defaultValue>#4a545b</defaultValue>
             <placeholder>#4a545b</placeholder>
         </input-field>
 
-        <input-field type="text">
-            <name>contentTopBarArea3</name>
-            <label>content maintainable via snippet</label>
-            <label lang="de-DE">Inhalt pflegbar über Textbaustein</label>
-            <disabled>true</disabled>
-            <defaultValue>ContentTopBarArea3</defaultValue>
+        <input-field type="int">
+            <name>fontSizeTopBarArea3</name>
+            <label>font size of the content in pixels</label>
+            <label lang="de-DE">Schriftgröße des Inhalts in Pixeln</label>
+            <defaultValue>14</defaultValue>
+            <placeholder>14</placeholder>
         </input-field>
+
+        <input-field type="single-select">
+            <name>contentTypeTopBarArea3</name>
+            <options>
+                <option>
+                    <id>texteditor</id>
+                    <name>the following text editor</name>
+                    <name lang="de-DE">dem nachfolgenden Texteditor - Feld</name>
+                </option>
+                <option>
+                    <id>snippet</id>
+                    <name>the snippet</name>
+                    <name lang="de-DE">dem Textbaustein</name>
+                </option>
+            </options>
+            <label>content obtain from</label>
+            <label lang="de-DE">Inhalt beziehen aus</label>
+            <defaultValue>snippet</defaultValue>
+        </input-field>
+
+        <component name="sw-text-editor">
+            <name>contentTextEditorTopBarArea3</name>
+            <label>content</label>
+            <label lang="de-DE">Inhalt</label>
+            <defaultValue>30 Tage Rückgaberecht</defaultValue>
+        </component>
+
+        <component name="sw-snippet-field">
+            <name>contentTopBarArea3</name>
+            <label>content from the snippet</label>
+            <label lang="de-DE">Inhalt aus dem Textbaustein</label>
+            <snippet>sschreier.topbarnotifications.ContentTopBarArea3</snippet>
+            <helpText>click on the globe to edit the translations</helpText>
+            <helpText lang="de-DE">Klicke auf den Globus, um die Übersetzung zu bearbeiten</helpText>
+        </component>
 
         <input-field type="single-select">
             <name>positionContentTopBarArea3</name>
@@ -3487,13 +3595,13 @@
             <options>
                 <option>
                     <id>select</id>
-                    <name>following select field</name>
-                    <name lang="de-DE">nachfolgendem Auswahlfeld</name>
+                    <name>the following select field</name>
+                    <name lang="de-DE">dem nachfolgendem Auswahlfeld</name>
                 </option>
                 <option>
                     <id>snippet</id>
-                    <name>a snippet</name>
-                    <name lang="de-DE">einem Textbaustein</name>
+                    <name>the snippet</name>
+                    <name lang="de-DE">dem Textbaustein</name>
                 </option>
             </options>
             <label>icon obtain from</label>
@@ -4397,13 +4505,14 @@
             <helpText lang="de-DE">Vorschau der Icons siehe https://component-library.shopware.com/icons/</helpText>
         </input-field>
 
-        <input-field type="text">
+        <component name="sw-snippet-field">
             <name>iconViaSnippetTopBarArea4</name>
-            <label>icon alternatively maintainable via snippet</label>
-            <label lang="de-DE">Icon alternativ pflegbar über Textbaustein</label>
-            <disabled>true</disabled>
-            <defaultValue>IconTopBarArea4</defaultValue>
-        </input-field>
+            <label>icon from the snippet</label>
+            <label lang="de-DE">Icon aus dem Textbaustein</label>
+            <snippet>sschreier.topbarnotifications.IconTopBarArea4</snippet>
+            <helpText>click on the globe to edit the translations</helpText>
+            <helpText lang="de-DE">Klicke auf den Globus, um die Übersetzung zu bearbeiten</helpText>
+        </component>
 
         <input-field type="colorpicker">
             <name>iconColorTopBarArea4</name>
@@ -4415,8 +4524,8 @@
 
         <input-field type="colorpicker">
             <name>hoverIconColorTopBarArea4</name>
-            <label>hover icon color</label>
-            <label lang="de-DE">Hover - Iconfarbe</label>
+            <label>hover icon color if the area is linked</label>
+            <label lang="de-DE">Hover - Iconfarbe, wenn der Bereich verlinkt ist</label>
             <defaultValue>#4a545b</defaultValue>
             <placeholder>#4a545b</placeholder>
         </input-field>
@@ -4455,19 +4564,54 @@
 
         <input-field type="colorpicker">
             <name>hoverFontColorTopBarArea4</name>
-            <label>hover font color of the content</label>
-            <label lang="de-DE">Hover - Schriftfarbe des Inhalts</label>
+            <label>hover font color of the content if the area is linked</label>
+            <label lang="de-DE">Hover - Schriftfarbe des Inhalts, wenn der Bereich verlinkt ist</label>
             <defaultValue>#4a545b</defaultValue>
             <placeholder>#4a545b</placeholder>
         </input-field>
 
-        <input-field type="text">
-            <name>contentTopBarArea4</name>
-            <label>content maintainable via snippet</label>
-            <label lang="de-DE">Inhalt pflegbar über Textbaustein</label>
-            <disabled>true</disabled>
-            <defaultValue>ContentTopBarArea4</defaultValue>
+        <input-field type="int">
+            <name>fontSizeTopBarArea4</name>
+            <label>font size of the content in pixels</label>
+            <label lang="de-DE">Schriftgröße des Inhalts in Pixeln</label>
+            <defaultValue>14</defaultValue>
+            <placeholder>14</placeholder>
         </input-field>
+
+        <input-field type="single-select">
+            <name>contentTypeTopBarArea4</name>
+            <options>
+                <option>
+                    <id>texteditor</id>
+                    <name>the following text editor</name>
+                    <name lang="de-DE">dem nachfolgenden Texteditor - Feld</name>
+                </option>
+                <option>
+                    <id>snippet</id>
+                    <name>the snippet</name>
+                    <name lang="de-DE">dem Textbaustein</name>
+                </option>
+            </options>
+            <label>content obtain from</label>
+            <label lang="de-DE">Inhalt beziehen aus</label>
+            <defaultValue>snippet</defaultValue>
+        </input-field>
+
+        <component name="sw-text-editor">
+            <name>contentTextEditorTopBarArea4</name>
+            <label>content</label>
+            <label lang="de-DE">Inhalt</label>
+            <defaultValue>Service - Hotline 0123 - 45678</defaultValue>
+        </component>
+
+        <component name="sw-snippet-field">
+            <name>contentTopBarArea4</name>
+            <label>content from the snippet</label>
+            <label lang="de-DE">Inhalt aus dem Textbaustein</label>
+            <snippet>sschreier.topbarnotifications.ContentTopBarArea4</snippet>
+            <helpText>click on the globe to edit the translations</helpText>
+            <helpText lang="de-DE">Klicke auf den Globus, um die Übersetzung zu bearbeiten</helpText>
+        </component>
 
         <input-field type="single-select">
             <name>positionContentTopBarArea4</name>

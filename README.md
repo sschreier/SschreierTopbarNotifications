@@ -4,10 +4,10 @@ A shopware 6 extension for a bar for information and notification texts or messa
 
 ## Possible Configurations for the bar
  - show the content in a top or footer bar or above or below the breadcrumb navigation
- - set the background color of the area
- - set the shadow of the area
- - set the outer distance of the area up- and downwards in pixels or percent
- - set the distance of the areas up- and downwards in pixels or percent
+ - set the background color of the area (*1)
+ - set the shadow of the area (*1)
+ - set the outer distance of the area up- and downwards in pixels or percent (*1)
+ - set the distance of the areas up- and downwards in pixels or percent (*1)
  - activate, if you want 50% width of the areas in the viewport smartphone landscape (SM)
  
 ## Possible Configurations for each of the possible four areas of the bar
@@ -15,16 +15,25 @@ A shopware 6 extension for a bar for information and notification texts or messa
  - select the viewports in which the area should be shown
  - select, if the icon should obtain from the select field or a snippet
  - select the icon from the select field (which you can find here: https://github.com/shopware/platform/tree/master/src/Storefront/Resources/app/storefront/dist/assets/icon/default )
- - set the icon color and hover icon color
- - set the icon width and height in pixels
- - set the distance between the icon and the content
- - set the font color and hover font color of the content
+ - set the icon via snippet
+ - set the icon color and hover icon color (*1)
+ - set the icon width and height in pixels (*1)
+ - set the distance between the icon and the content (*1)
+ - set the font color and hover font color of the content (*1)
+ - set the font size of the content in pixels (*1)
+ - select, if the content should obtain from the text editor or a snippet
+ - set the content via the text editor
+ - set the content via snippet
  - select the position of the content, for example icon on the left and content on the right or icon on the right and content on the left
  - select the orientation of the area (left, center or right)
  - set a link for the area
  - select the link target of the area, for example in the current tab, in a new tab or in a modalbox
 
 ## Available snippets to customize the content or the icons
+ - ContentTextEditorTopBarArea1
+ - ContentTextEditorTopBarArea2
+ - ContentTextEditorTopBarArea3
+ - ContentTextEditorTopBarArea4
  - ContentTopBarArea1
  - ContentTopBarArea2
  - ContentTopBarArea3
@@ -34,15 +43,42 @@ A shopware 6 extension for a bar for information and notification texts or messa
  - IconTopBarArea3
  - IconTopBarArea4
 
+## Some changes in the settings within the configuration are not immediately visible in the frontend of the shop
+After changing settings specifically for the appearance of the areas (*1), the theme must be recompiled, for example by reassigning the theme to the sales channel in the administration:
+1. Click on the current sales channel under "Sales Channels"
+2. Click on the tab "Theme"
+3. Click on the button "Change theme"
+4. Select the current theme
+5. Click on the button "Save"
+6. Clock on the button "Change theme"
+
 ## How to install the extension
 ### via console (recommended)
-
 1. Download the latest _SschreierTopbarNotifications-master.zip_.
 2. Unzip the zip file and rename the folder to _SschreierTopbarNotifications_. 
 3. Move the folder to the project folder _custom/plugins/_ .
 4. Connect to the console via ssh:
 
 ```
+bin/console plugin:refresh
+bin/console plugin:install --activate SschreierTopbarNotifications
+```
+
+### via composer
+1. Add the repository URL to the composer.json of the project
+```
+"repositories": [
+    ...,
+    {
+        "type": "vcs",
+        "url": "https://github.com/sschreier/SschreierTopbarNotifications"
+    }
+],
+```
+
+2. Connect to the console via ssh and install the plugin source code via the command 
+```
+composer require sschreier/sschreiertopbarnotifications
 bin/console plugin:refresh
 bin/console plugin:install --activate SschreierTopbarNotifications
 ```

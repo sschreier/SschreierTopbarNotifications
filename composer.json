@@ -1,7 +1,7 @@
 {
     "name": "sschreier/sschreiertopbarnotifications",
     "description": "Leiste für Informations- und Hinweistexte oder Meldungen",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "type": "shopware-platform-plugin",
     "license": "proprietary",
     "authors": [
@@ -11,28 +11,29 @@
         }
     ],
     "require": {
-         "shopware/core": "~6.4.0",
-         "shopware/storefront": "~6.4.0"
+        "shopware/core": "~6.4.14",
+        "shopware/storefront": "~6.4.14"
     },
     "extra": {
-         "shopware-plugin-class": "Sschreier\\TopbarNotifications\\SschreierTopbarNotifications",
-         "plugin-icon": "src/Resources/config/plugin.png",
-         "label": {
-             "de-DE": "Leiste für Informations- und Hinweistexte oder Meldungen",
-             "en-GB": "bar for information and notification texts or messages"
-         },
+        "shopware-plugin-class": "Sschreier\\TopbarNotifications\\SschreierTopbarNotifications",
+        "plugin-icon": "src/Resources/config/plugin.png",
+        "copyright": "Sebastian Schreier",
+        "label": {
+            "de-DE": "Leiste für Informations- und Hinweistexte oder Meldungen",
+            "en-GB": "bar for information and notification texts or messages"
+        },
         "description": {
             "de-DE": "Eine Erweiterung für eine Leiste für Informations- und Hinweistexte oder Meldungen, die bis zu 4 Bereiche beinhalten kann. Sie kann entweder in der Topbar oder in der Footerbar oder auch oberhalb oder unterhalb der Brotkrumennavigation angezeigt werden.",
             "en-GB": "An extension for a bar for information and notification texts or messages which can contain up to 4 areas. It can be displayed either in the top bar or in the footer bar or also above or below the breadcrumb navigation."
         },
-         "manufacturerLink": {
-              "de-DE": "https://www.sebastianschreier.de",
-              "en-GB": "https://www.sebastianschreier.de"
-         },
-         "supportLink": {
-              "de-DE": "https://www.sebastianschreier.de",
-              "en-GB": "https://www.sebastianschreier.de"
-         }
+        "manufacturerLink": {
+            "de-DE": "https://www.sebastianschreier.de",
+            "en-GB": "https://www.sebastianschreier.de"
+        },
+        "supportLink": {
+            "de-DE": "https://www.sebastianschreier.de",
+            "en-GB": "https://www.sebastianschreier.de"
+        }
     },
     "autoload": {
          "psr-4": {

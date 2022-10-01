@@ -17,6 +17,8 @@
                                             {% set showInViewportTopBarArea = config('SschreierTopbarNotifications.config.showInViewportTopBarArea1') %}
                                             {% set iconTypeTopBarArea = config('SschreierTopbarNotifications.config.iconTypeTopBarArea1') %}
                                             {% set iconTopBarArea = config('SschreierTopbarNotifications.config.iconTopBarArea1') %}
+                                            {% set contentTypeTopBarArea = config('SschreierTopbarNotifications.config.contentTypeTopBarArea1') %}
+                                            {% set contentTextEditorTopBarArea = config('SschreierTopbarNotifications.config.contentTextEditorTopBarArea1') %}
                                             {% set positionContentTopBarArea = config('SschreierTopbarNotifications.config.positionContentTopBarArea1') %}
                                             {% set orientationTopBarArea = config('SschreierTopbarNotifications.config.orientationTopBarArea1') %}
                                             {% set linkTopBarArea = config('SschreierTopbarNotifications.config.linkTopBarArea1') %}
@@ -30,6 +32,8 @@
                                             {% set showInViewportTopBarArea = config('SschreierTopbarNotifications.config.showInViewportTopBarArea2') %}
                                             {% set iconTypeTopBarArea = config('SschreierTopbarNotifications.config.iconTypeTopBarArea2') %}
                                             {% set iconTopBarArea = config('SschreierTopbarNotifications.config.iconTopBarArea2') %}
+                                            {% set contentTypeTopBarArea = config('SschreierTopbarNotifications.config.contentTypeTopBarArea2') %}
+                                            {% set contentTextEditorTopBarArea = config('SschreierTopbarNotifications.config.contentTextEditorTopBarArea2') %}
                                             {% set positionContentTopBarArea = config('SschreierTopbarNotifications.config.positionContentTopBarArea2') %}
                                             {% set orientationTopBarArea = config('SschreierTopbarNotifications.config.orientationTopBarArea2') %}
                                             {% set linkTopBarArea = config('SschreierTopbarNotifications.config.linkTopBarArea2') %}
@@ -43,6 +47,8 @@
                                             {% set showInViewportTopBarArea = config('SschreierTopbarNotifications.config.showInViewportTopBarArea3') %}
                                             {% set iconTypeTopBarArea = config('SschreierTopbarNotifications.config.iconTypeTopBarArea3') %}
                                             {% set iconTopBarArea = config('SschreierTopbarNotifications.config.iconTopBarArea3') %}
+                                            {% set contentTypeTopBarArea = config('SschreierTopbarNotifications.config.contentTypeTopBarArea3') %}
+                                            {% set contentTextEditorTopBarArea = config('SschreierTopbarNotifications.config.contentTextEditorTopBarArea3') %}
                                             {% set positionContentTopBarArea = config('SschreierTopbarNotifications.config.positionContentTopBarArea3') %}
                                             {% set orientationTopBarArea = config('SschreierTopbarNotifications.config.orientationTopBarArea3') %}
                                             {% set linkTopBarArea = config('SschreierTopbarNotifications.config.linkTopBarArea3') %}
@@ -56,6 +62,8 @@
                                             {% set showInViewportTopBarArea = config('SschreierTopbarNotifications.config.showInViewportTopBarArea4') %}
                                             {% set iconTypeTopBarArea = config('SschreierTopbarNotifications.config.iconTypeTopBarArea4') %}
                                             {% set iconTopBarArea = config('SschreierTopbarNotifications.config.iconTopBarArea4') %}
+                                            {% set contentTypeTopBarArea = config('SschreierTopbarNotifications.config.contentTypeTopBarArea4') %}
+                                            {% set contentTextEditorTopBarArea = config('SschreierTopbarNotifications.config.contentTextEditorTopBarArea4') %}
                                             {% set positionContentTopBarArea = config('SschreierTopbarNotifications.config.positionContentTopBarArea4') %}
                                             {% set orientationTopBarArea = config('SschreierTopbarNotifications.config.orientationTopBarArea4') %}
                                             {% set linkTopBarArea = config('SschreierTopbarNotifications.config.linkTopBarArea4') %}
@@ -74,13 +82,29 @@
                                                                 {% block base_header_inner_topbarnotifications_container_topbar_nav_item_text_before %}
                                                                     <span class="top-bar-notification-nav-item-text">
                                                                         {% if ( i == 1) %}
-                                                                            {{ "sschreier.topbarnotifications.ContentTopBarArea1"|trans|raw }}
+                                                                            {% if (contentTypeTopBarArea == "texteditor") %}
+                                                                                {{ "sschreier.topbarnotifications.ContentTextEditorTopBarArea1"|trans({"%contenttexteditortopbararea1%": contentTextEditorTopBarArea})|raw }}
+                                                                            {% elseif (contentTypeTopBarArea == "snippet") %}
+                                                                                {{ "sschreier.topbarnotifications.ContentTopBarArea1"|trans|raw }}
+                                                                            {% endif %}
                                                                         {% elseif ( i == 2) %}
-                                                                            {{ "sschreier.topbarnotifications.ContentTopBarArea2"|trans|raw }}
+                                                                            {% if (contentTypeTopBarArea == "texteditor") %}
+                                                                                {{ "sschreier.topbarnotifications.ContentTextEditorTopBarArea2"|trans({"%contenttexteditortopbararea2%": contentTextEditorTopBarArea})|raw }}
+                                                                            {% elseif (contentTypeTopBarArea == "snippet") %}
+                                                                                {{ "sschreier.topbarnotifications.ContentTopBarArea2"|trans|raw }}
+                                                                            {% endif %}
                                                                         {% elseif ( i == 3) %}
-                                                                            {{ "sschreier.topbarnotifications.ContentTopBarArea3"|trans|raw }}
+                                                                            {% if (contentTypeTopBarArea == "texteditor") %}
+                                                                                {{ "sschreier.topbarnotifications.ContentTextEditorTopBarArea3"|trans({"%contenttexteditortopbararea3%": contentTextEditorTopBarArea})|raw }}
+                                                                            {% elseif (contentTypeTopBarArea == "snippet") %}
+                                                                                {{ "sschreier.topbarnotifications.ContentTopBarArea3"|trans|raw }}
+                                                                            {% endif %}
                                                                         {% elseif ( i == 4) %}
-                                                                            {{ "sschreier.topbarnotifications.ContentTopBarArea4"|trans|raw }}
+                                                                            {% if (contentTypeTopBarArea == "texteditor") %}
+                                                                                {{ "sschreier.topbarnotifications.ContentTextEditorTopBarArea4"|trans({"%contenttexteditortopbararea4%": contentTextEditorTopBarArea})|raw }}
+                                                                            {% elseif (contentTypeTopBarArea == "snippet") %}
+                                                                                {{ "sschreier.topbarnotifications.ContentTopBarArea4"|trans|raw }}
+                                                                            {% endif %}
                                                                         {% endif %}
                                                                     </span>
                                                                 {% endblock %}
@@ -460,13 +484,29 @@
                                                                 {% block base_header_inner_topbarnotifications_container_topbar_nav_item_text_after %}
                                                                     <span class="top-bar-notification-nav-item-text">
                                                                         {% if ( i == 1) %}
-                                                                            {{ "sschreier.topbarnotifications.ContentTopBarArea1"|trans|raw }}
+                                                                            {% if (contentTypeTopBarArea == "texteditor") %}
+                                                                                {{ "sschreier.topbarnotifications.ContentTextEditorTopBarArea1"|trans({"%contenttexteditortopbararea1%": contentTextEditorTopBarArea})|raw }}
+                                                                            {% elseif (contentTypeTopBarArea == "snippet") %}
+                                                                                {{ "sschreier.topbarnotifications.ContentTopBarArea1"|trans|raw }}
+                                                                            {% endif %}
                                                                         {% elseif ( i == 2) %}
-                                                                            {{ "sschreier.topbarnotifications.ContentTopBarArea2"|trans|raw }}
+                                                                            {% if (contentTypeTopBarArea == "texteditor") %}
+                                                                                {{ "sschreier.topbarnotifications.ContentTextEditorTopBarArea2"|trans({"%contenttexteditortopbararea2%": contentTextEditorTopBarArea})|raw }}
+                                                                            {% elseif (contentTypeTopBarArea == "snippet") %}
+                                                                                {{ "sschreier.topbarnotifications.ContentTopBarArea2"|trans|raw }}
+                                                                            {% endif %}
                                                                         {% elseif ( i == 3) %}
-                                                                            {{ "sschreier.topbarnotifications.ContentTopBarArea3"|trans|raw }}
+                                                                            {% if (contentTypeTopBarArea == "texteditor") %}
+                                                                                {{ "sschreier.topbarnotifications.ContentTextEditorTopBarArea3"|trans({"%contenttexteditortopbararea3%": contentTextEditorTopBarArea})|raw }}
+                                                                            {% elseif (contentTypeTopBarArea == "snippet") %}
+                                                                                {{ "sschreier.topbarnotifications.ContentTopBarArea3"|trans|raw }}
+                                                                            {% endif %}
                                                                         {% elseif ( i == 4) %}
-                                                                            {{ "sschreier.topbarnotifications.ContentTopBarArea4"|trans|raw }}
+                                                                            {% if (contentTypeTopBarArea == "texteditor") %}
+                                                                                {{ "sschreier.topbarnotifications.ContentTextEditorTopBarArea4"|trans({"%contenttexteditortopbararea4%": contentTextEditorTopBarArea})|raw }}
+                                                                            {% elseif (contentTypeTopBarArea == "snippet") %}
+                                                                                {{ "sschreier.topbarnotifications.ContentTopBarArea4"|trans|raw }}
+                                                                            {% endif %}
                                                                         {% endif %}
                                                                     </span>
                                                                 {% endblock %}

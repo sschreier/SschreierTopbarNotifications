@@ -1,6 +1,10 @@
 {
     "sschreier": {
          "topbarnotifications": {
+              "ContentTextEditorTopBarArea1": "%contenttexteditortopbararea1%",
+              "ContentTextEditorTopBarArea2": "%contenttexteditortopbararea2%",
+              "ContentTextEditorTopBarArea3": "%contenttexteditortopbararea3%",
+              "ContentTextEditorTopBarArea4": "%contenttexteditortopbararea4%",
               "ContentTopBarArea1": "fast delivery",
               "ContentTopBarArea2": "cheap shipping costs",
               "ContentTopBarArea3": "30 days return policy",

@@ -5,12 +5,12 @@ $sschreier-shadow-topbar: none !default;
 $sschreier-paddingtop-topbar-areas: 8px !default;
 $sschreier-paddingbottom-topbar-areas: 8px !default;
 $sschreier-iconcolor-topbararea1: #4a545b !default;
-$sschreier-hover-iconcolor-topbararea1: #4a545b !default;
 $sschreier-iconcolor-topbararea2: #4a545b !default;
-$sschreier-hover-iconcolor-topbararea2: #4a545b !default;
 $sschreier-iconcolor-topbararea3: #4a545b !default;
-$sschreier-hover-iconcolor-topbararea3: #4a545b !default;
 $sschreier-iconcolor-topbararea4: #4a545b !default;
+$sschreier-hover-iconcolor-topbararea1: #4a545b !default;
+$sschreier-hover-iconcolor-topbararea2: #4a545b !default;
+$sschreier-hover-iconcolor-topbararea3: #4a545b !default;
 $sschreier-hover-iconcolor-topbararea4: #4a545b !default;
 $sschreier-iconwidth-topbararea1: 22 !default;
 $sschreier-iconwidth-topbararea2: 22 !default;
@@ -25,13 +25,17 @@ $sschreier-iconmargin-topbararea2: 2% !default;
 $sschreier-iconmargin-topbararea3: 2% !default;
 $sschreier-iconmargin-topbararea4: 2% !default;
 $sschreier-fontcolor-topbararea1: #4a545b !default;
-$sschreier-hover-fontcolor-topbararea1: #4a545b !default;
 $sschreier-fontcolor-topbararea2: #4a545b !default;
-$sschreier-hover-fontcolor-topbararea2: #4a545b !default;
 $sschreier-fontcolor-topbararea3: #4a545b !default;
-$sschreier-hover-fontcolor-topbararea3: #4a545b !default;
 $sschreier-fontcolor-topbararea4: #4a545b !default;
+$sschreier-hover-fontcolor-topbararea1: #4a545b !default;
+$sschreier-hover-fontcolor-topbararea2: #4a545b !default;
+$sschreier-hover-fontcolor-topbararea3: #4a545b !default;
 $sschreier-hover-fontcolor-topbararea4: #4a545b !default;
+$sschreier-fontsize-topbararea1: 14 !default;
+$sschreier-fontsize-topbararea2: 14 !default;
+$sschreier-fontsize-topbararea3: 14 !default;
+$sschreier-fontsize-topbararea4: 14 !default;
 
 .topbar-outer-container {
     background-color: $sschreier-backgroundcolor-topbar;
@@ -99,6 +103,7 @@ $sschreier-hover-fontcolor-topbararea4: #4a545b !default;
 
                         .top-bar-notification-nav-item-text {
                             color: $sschreier-fontcolor-topbararea1;
+                            font-size: $sschreier-fontsize-topbararea1 * 1px;
                         }
                     }
 
@@ -133,6 +138,7 @@ $sschreier-hover-fontcolor-topbararea4: #4a545b !default;
 
                         .top-bar-notification-nav-item-text {
                             color: $sschreier-fontcolor-topbararea2;
+                            font-size: $sschreier-fontsize-topbararea2 * 1px;
                         }
                     }
 
@@ -167,6 +173,7 @@ $sschreier-hover-fontcolor-topbararea4: #4a545b !default;
 
                         .top-bar-notification-nav-item-text {
                             color: $sschreier-fontcolor-topbararea3;
+                            font-size: $sschreier-fontsize-topbararea3 * 1px;
                         }
                     }
 
@@ -201,6 +208,7 @@ $sschreier-hover-fontcolor-topbararea4: #4a545b !default;
 
                         .top-bar-notification-nav-item-text {
                             color: $sschreier-fontcolor-topbararea4;
+                            font-size: $sschreier-fontsize-topbararea4 * 1px;
                         }
                     }
 
