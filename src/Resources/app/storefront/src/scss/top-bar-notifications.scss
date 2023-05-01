@@ -1,46 +1,46 @@
-$sschreier-margintop-topbar: 0px !default;
-$sschreier-marginbottom-topbar: 0px !default;
-$sschreier-backgroundcolor-topbar: #ffffff !default;
-$sschreier-shadow-topbar: none !default;
-$sschreier-paddingtop-topbar-areas: 8px !default;
-$sschreier-paddingbottom-topbar-areas: 8px !default;
-$sschreier-iconcolor-topbararea1: #4a545b !default;
-$sschreier-iconcolor-topbararea2: #4a545b !default;
-$sschreier-iconcolor-topbararea3: #4a545b !default;
-$sschreier-iconcolor-topbararea4: #4a545b !default;
-$sschreier-hover-iconcolor-topbararea1: #4a545b !default;
-$sschreier-hover-iconcolor-topbararea2: #4a545b !default;
-$sschreier-hover-iconcolor-topbararea3: #4a545b !default;
-$sschreier-hover-iconcolor-topbararea4: #4a545b !default;
-$sschreier-iconwidth-topbararea1: 22 !default;
-$sschreier-iconwidth-topbararea2: 22 !default;
-$sschreier-iconwidth-topbararea3: 22 !default;
-$sschreier-iconwidth-topbararea4: 22 !default;
-$sschreier-iconheight-topbararea1: 22 !default;
-$sschreier-iconheight-topbararea2: 22 !default;
-$sschreier-iconheight-topbararea3: 22 !default;
-$sschreier-iconheight-topbararea4: 22 !default;
-$sschreier-iconmargin-topbararea1: 2% !default;
-$sschreier-iconmargin-topbararea2: 2% !default;
-$sschreier-iconmargin-topbararea3: 2% !default;
-$sschreier-iconmargin-topbararea4: 2% !default;
-$sschreier-fontcolor-topbararea1: #4a545b !default;
-$sschreier-fontcolor-topbararea2: #4a545b !default;
-$sschreier-fontcolor-topbararea3: #4a545b !default;
-$sschreier-fontcolor-topbararea4: #4a545b !default;
-$sschreier-hover-fontcolor-topbararea1: #4a545b !default;
-$sschreier-hover-fontcolor-topbararea2: #4a545b !default;
-$sschreier-hover-fontcolor-topbararea3: #4a545b !default;
-$sschreier-hover-fontcolor-topbararea4: #4a545b !default;
-$sschreier-fontsize-topbararea1: 14 !default;
-$sschreier-fontsize-topbararea2: 14 !default;
-$sschreier-fontsize-topbararea3: 14 !default;
-$sschreier-fontsize-topbararea4: 14 !default;
+$sschreier-margin-top-top-bar: 0px !default;
+$sschreier-margin-bottom-top-bar: 0px !default;
+$sschreier-background-color-top-bar: #ffffff !default;
+$sschreier-shadow-top-bar: none !default;
+$sschreier-padding-top-top-bar-areas: 8px !default;
+$sschreier-padding-bottom-top-bar-areas: 8px !default;
+$sschreier-icon-color-top-bar-area1: #4a545b !default;
+$sschreier-icon-color-top-bar-area2: #4a545b !default;
+$sschreier-icon-color-top-bar-area3: #4a545b !default;
+$sschreier-icon-color-top-bar-area4: #4a545b !default;
+$sschreier-hover-icon-color-top-bar-area1: #4a545b !default;
+$sschreier-hover-icon-color-top-bar-area2: #4a545b !default;
+$sschreier-hover-icon-color-top-bar-area3: #4a545b !default;
+$sschreier-hover-icon-color-top-bar-area4: #4a545b !default;
+$sschreier-icon-width-top-bar-area1: 22 !default;
+$sschreier-icon-width-top-bar-area2: 22 !default;
+$sschreier-icon-width-top-bar-area3: 22 !default;
+$sschreier-icon-width-top-bar-area4: 22 !default;
+$sschreier-icon-height-top-bar-area1: 22 !default;
+$sschreier-icon-height-top-bar-area2: 22 !default;
+$sschreier-icon-height-top-bar-area3: 22 !default;
+$sschreier-icon-height-top-bar-area4: 22 !default;
+$sschreier-icon-margin-top-bar-area1: 2% !default;
+$sschreier-icon-margin-top-bar-area2: 2% !default;
+$sschreier-icon-margin-top-bar-area3: 2% !default;
+$sschreier-icon-margin-top-bar-area4: 2% !default;
+$sschreier-font-color-top-bar-area1: #4a545b !default;
+$sschreier-font-color-top-bar-area2: #4a545b !default;
+$sschreier-font-color-top-bar-area3: #4a545b !default;
+$sschreier-font-color-top-bar-area4: #4a545b !default;
+$sschreier-hover-font-color-top-bar-area1: #4a545b !default;
+$sschreier-hover-font-color-top-bar-area2: #4a545b !default;
+$sschreier-hover-font-color-top-bar-area3: #4a545b !default;
+$sschreier-hover-font-color-top-bar-area4: #4a545b !default;
+$sschreier-font-size-top-bar-area1: 14 !default;
+$sschreier-font-size-top-bar-area2: 14 !default;
+$sschreier-font-size-top-bar-area3: 14 !default;
+$sschreier-font-size-top-bar-area4: 14 !default;
 
 .topbar-outer-container {
-    background-color: $sschreier-backgroundcolor-topbar;
-    margin-top: $sschreier-margintop-topbar;
-    margin-bottom: $sschreier-marginbottom-topbar;
+    background-color: $sschreier-background-color-top-bar;
+    margin-top: $sschreier-margin-top-top-bar;
+    margin-bottom: $sschreier-margin-bottom-top-bar;
 
     .top-bar-notification {
         .top-bar-notification-nav {
@@ -57,8 +57,8 @@ $sschreier-fontsize-topbararea4: 14 !default;
                     width: 100%;
                     height: 100%;
                     position: relative;
-                    padding-top: $sschreier-paddingtop-topbar-areas;
-                    padding-bottom: $sschreier-paddingbottom-topbar-areas;
+                    padding-top: $sschreier-padding-top-top-bar-areas;
+                    padding-bottom: $sschreier-padding-bottom-top-bar-areas;
 
                     &.left {
                         justify-content: flex-start;
@@ -75,140 +75,140 @@ $sschreier-fontsize-topbararea4: 14 !default;
                     &.top-bar-notification-nav-item-container-1 {
                         &.left {
                             .top-bar-notification-nav-item-icon {
-                                margin-right: $sschreier-iconmargin-topbararea1;
+                                margin-right: $sschreier-icon-margin-top-bar-area1;
                             }
                         }
 
                         &.right {
                             .top-bar-notification-nav-item-icon {
-                                margin-left: $sschreier-iconmargin-topbararea1;
+                                margin-left: $sschreier-icon-margin-top-bar-area1;
                             }
                         }
 
                         .top-bar-notification-nav-item-icon {
                             .icon {
-                                width: $sschreier-iconwidth-topbararea1 * 1px;
-                                height: $sschreier-iconheight-topbararea1 * 1px;
+                                width: $sschreier-icon-width-top-bar-area1 * 1px;
+                                height: $sschreier-icon-height-top-bar-area1 * 1px;
 
                                 svg {
-                                    color: $sschreier-iconcolor-topbararea1;
+                                    color: $sschreier-icon-color-top-bar-area1;
 
                                     path,
                                     use {
-                                        fill: $sschreier-iconcolor-topbararea1;
+                                        fill: $sschreier-icon-color-top-bar-area1;
                                     }
                                 }
                             }
                         }
 
                         .top-bar-notification-nav-item-text {
-                            color: $sschreier-fontcolor-topbararea1;
-                            font-size: $sschreier-fontsize-topbararea1 * 1px;
+                            color: $sschreier-font-color-top-bar-area1;
+                            font-size: $sschreier-font-size-top-bar-area1 * 1px;
                         }
                     }
 
                     &.top-bar-notification-nav-item-container-2 {
                         &.left {
                             .top-bar-notification-nav-item-icon {
-                                margin-right: $sschreier-iconmargin-topbararea2;
+                                margin-right: $sschreier-icon-margin-top-bar-area2;
                             }
                         }
 
                         &.right {
                             .top-bar-notification-nav-item-icon {
-                                margin-left: $sschreier-iconmargin-topbararea2;
+                                margin-left: $sschreier-icon-margin-top-bar-area2;
                             }
                         }
 
                         .top-bar-notification-nav-item-icon {
                             .icon {
-                                width: $sschreier-iconwidth-topbararea2 * 1px;
-                                height: $sschreier-iconheight-topbararea2 * 1px;
+                                width: $sschreier-icon-width-top-bar-area2 * 1px;
+                                height: $sschreier-icon-height-top-bar-area2 * 1px;
 
                                 svg {
-                                    color: $sschreier-iconcolor-topbararea2;
+                                    color: $sschreier-icon-color-top-bar-area2;
 
                                     path,
                                     use {
-                                        fill: $sschreier-iconcolor-topbararea2;
+                                        fill: $sschreier-icon-color-top-bar-area2;
                                     }
                                 }
                             }
                         }
 
                         .top-bar-notification-nav-item-text {
-                            color: $sschreier-fontcolor-topbararea2;
-                            font-size: $sschreier-fontsize-topbararea2 * 1px;
+                            color: $sschreier-font-color-top-bar-area2;
+                            font-size: $sschreier-font-size-top-bar-area2 * 1px;
                         }
                     }
 
                     &.top-bar-notification-nav-item-container-3 {
                         &.left {
                             .top-bar-notification-nav-item-icon {
-                                margin-right: $sschreier-iconmargin-topbararea3;
+                                margin-right: $sschreier-icon-margin-top-bar-area3;
                             }
                         }
 
                         &.right {
                             .top-bar-notification-nav-item-icon {
-                                margin-left: $sschreier-iconmargin-topbararea3;
+                                margin-left: $sschreier-icon-margin-top-bar-area3;
                             }
                         }
 
                         .top-bar-notification-nav-item-icon {
                             .icon {
-                                width: $sschreier-iconwidth-topbararea3 * 1px;
-                                height: $sschreier-iconheight-topbararea3 * 1px;
+                                width: $sschreier-icon-width-top-bar-area3 * 1px;
+                                height: $sschreier-icon-height-top-bar-area3 * 1px;
 
                                 svg {
-                                    color: $sschreier-iconcolor-topbararea3;
+                                    color: $sschreier-icon-color-top-bar-area3;
 
                                     path,
                                     use {
-                                        fill: $sschreier-iconcolor-topbararea3;
+                                        fill: $sschreier-icon-color-top-bar-area3;
                                     }
                                 }
                             }
                         }
 
                         .top-bar-notification-nav-item-text {
-                            color: $sschreier-fontcolor-topbararea3;
-                            font-size: $sschreier-fontsize-topbararea3 * 1px;
+                            color: $sschreier-font-color-top-bar-area3;
+                            font-size: $sschreier-font-size-top-bar-area3 * 1px;
                         }
                     }
 
                     &.top-bar-notification-nav-item-container-4 {
                         &.left {
                             .top-bar-notification-nav-item-icon {
-                                margin-right: $sschreier-iconmargin-topbararea4;
+                                margin-right: $sschreier-icon-margin-top-bar-area4;
                             }
                         }
 
                         &.right {
                             .top-bar-notification-nav-item-icon {
-                                margin-left: $sschreier-iconmargin-topbararea4;
+                                margin-left: $sschreier-icon-margin-top-bar-area4;
                             }
                         }
 
                         .top-bar-notification-nav-item-icon {
                             .icon {
-                                width: $sschreier-iconwidth-topbararea4 * 1px;
-                                height: $sschreier-iconheight-topbararea4 * 1px;
+                                width: $sschreier-icon-width-top-bar-area4 * 1px;
+                                height: $sschreier-icon-height-top-bar-area4 * 1px;
 
                                 svg {
-                                    color: $sschreier-iconcolor-topbararea4;
+                                    color: $sschreier-icon-color-top-bar-area4;
 
                                     path,
                                     use {
-                                        fill: $sschreier-iconcolor-topbararea4;
+                                        fill: $sschreier-icon-color-top-bar-area4;
                                     }
                                 }
                             }
                         }
 
                         .top-bar-notification-nav-item-text {
-                            color: $sschreier-fontcolor-topbararea4;
-                            font-size: $sschreier-fontsize-topbararea4 * 1px;
+                            color: $sschreier-font-color-top-bar-area4;
+                            font-size: $sschreier-font-size-top-bar-area4 * 1px;
                         }
                     }
 
@@ -230,61 +230,61 @@ $sschreier-fontsize-topbararea4: 14 !default;
                         .top-bar-notification-nav-item-inner-container {
                             &.top-bar-notification-nav-item-container-1 {
                                 svg {
-                                    color: $sschreier-hover-iconcolor-topbararea1;
+                                    color: $sschreier-hover-icon-color-top-bar-area1;
 
                                     path,
                                     use {
-                                        fill: $sschreier-hover-iconcolor-topbararea1;
+                                        fill: $sschreier-hover-icon-color-top-bar-area1;
                                     }
                                 }
 
                                 .top-bar-notification-nav-item-text {
-                                    color: $sschreier-hover-fontcolor-topbararea1;
+                                    color: $sschreier-hover-font-color-top-bar-area1;
                                 }
                             }
 
                             &.top-bar-notification-nav-item-container-2 {
                                 svg {
-                                    color: $sschreier-hover-iconcolor-topbararea2;
+                                    color: $sschreier-hover-icon-color-top-bar-area2;
 
                                     path,
                                     use {
-                                        fill: $sschreier-hover-iconcolor-topbararea2;
+                                        fill: $sschreier-hover-icon-color-top-bar-area2;
                                     }
                                 }
 
                                 .top-bar-notification-nav-item-text {
-                                    color: $sschreier-hover-fontcolor-topbararea2;
+                                    color: $sschreier-hover-font-color-top-bar-area2;
                                 }
                             }
 
                             &.top-bar-notification-nav-item-container-3 {
                                 svg {
-                                    color: $sschreier-hover-iconcolor-topbararea3;
+                                    color: $sschreier-hover-icon-color-top-bar-area3;
 
                                     path,
                                     use {
-                                        fill: $sschreier-hover-iconcolor-topbararea3;
+                                        fill: $sschreier-hover-icon-color-top-bar-area3;
                                     }
                                 }
 
                                 .top-bar-notification-nav-item-text {
-                                    color: $sschreier-hover-fontcolor-topbararea3;
+                                    color: $sschreier-hover-font-color-top-bar-area3;
                                 }
                             }
 
                             &.top-bar-notification-nav-item-container-4 {
                                 svg {
-                                    color: $sschreier-hover-iconcolor-topbararea4;
+                                    color: $sschreier-hover-icon-color-top-bar-area4;
 
                                     path,
                                     use {
-                                        fill: $sschreier-hover-iconcolor-topbararea4;
+                                        fill: $sschreier-hover-icon-color-top-bar-area4;
                                     }
                                 }
 
                                 .top-bar-notification-nav-item-text {
-                                    color: $sschreier-hover-fontcolor-topbararea4;
+                                    color: $sschreier-hover-font-color-top-bar-area4;
                                 }
                             }
                         }
@@ -296,7 +296,7 @@ $sschreier-fontsize-topbararea4: 14 !default;
 
     &.topbar,
     &.footerbar {
-        box-shadow: $sschreier-shadow-topbar;
+        box-shadow: $sschreier-shadow-top-bar;
     }
 
     &.above_breadcrumb,
@@ -304,8 +304,8 @@ $sschreier-fontsize-topbararea4: 14 !default;
         background-color: transparent;
 
         .top-bar-notification {
-            background-color: $sschreier-backgroundcolor-topbar;
-            box-shadow: $sschreier-shadow-topbar;
+            background-color: $sschreier-background-color-top-bar;
+            box-shadow: $sschreier-shadow-top-bar;
         }
     }
 }

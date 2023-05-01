@@ -8,7 +8,6 @@
 
           <service id="Sschreier\TopbarNotifications\Subscriber\ThemeVariablesSubscriber">
                <argument type="service" id="Shopware\Core\System\SystemConfig\SystemConfigService" />
-               <argument type="string">%sschreier_topbarnotifications_domain%</argument>
 
               <tag name="kernel.event_subscriber"/>
           </service>
