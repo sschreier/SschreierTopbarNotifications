@@ -44,13 +44,10 @@ A shopware 6 extension for a bar for information and notification texts or messa
  - IconTopBarArea4
 
 ## Some changes in the settings within the configuration are not immediately visible in the frontend of the shop
-After changing settings specifically for the appearance of the areas (*1), the theme must be recompiled, for example by reassigning the theme to the sales channel in the administration:
-1. Click on the current sales channel under "Sales Channels"
-2. Click on the tab "Theme"
-3. Click on the button "Change theme"
-4. Select the current theme
-5. Click on the button "Save"
-6. Clock on the button "Change theme"
+After changing settings specifically for the appearance of the areas (*1), the theme must be recompiled, for example by saving the theme in the administration:
+1. Switch to "Content" and "Themes"
+2. Select the active theme
+3. Click on the button "Save"
 
 ## How to install the extension
 ### via console (recommended)

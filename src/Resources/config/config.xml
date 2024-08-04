@@ -1067,8 +1067,8 @@
             <label>icon color</label>
             <label lang="de-DE">Iconfarbe</label>
             <css>sschreier-icon-color-top-bar-area1</css>
-            <defaultValue>#4a545b</defaultValue>
-            <placeholder>#4a545b</placeholder>
+            <defaultValue>#2b3136</defaultValue>
+            <placeholder>#2b3136</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -1076,8 +1076,8 @@
             <label>hover icon color if the area is linked</label>
             <label lang="de-DE">Hover - Iconfarbe, wenn der Bereich verlinkt ist</label>
             <css>sschreier-hover-icon-color-top-bar-area1</css>
-            <defaultValue>#4a545b</defaultValue>
-            <placeholder>#4a545b</placeholder>
+            <defaultValue>#09427c</defaultValue>
+            <placeholder>#09427c</placeholder>
         </input-field>
 
         <input-field type="int">
@@ -1109,8 +1109,8 @@
             <label>font color of the content</label>
             <label lang="de-DE">Schriftfarbe des Inhalts</label>
             <css>sschreier-font-color-top-bar-area1</css>
-            <defaultValue>#4a545b</defaultValue>
-            <placeholder>#4a545b</placeholder>
+            <defaultValue>#2b3136</defaultValue>
+            <placeholder>#2b3136</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -1118,8 +1118,8 @@
             <label>hover font color of the content if the area is linked</label>
             <label lang="de-DE">Hover - Schriftfarbe des Inhalts, wenn der Bereich verlinkt ist</label>
             <css>sschreier-hover-font-color-top-bar-area1</css>
-            <defaultValue>#4a545b</defaultValue>
-            <placeholder>#4a545b</placeholder>
+            <defaultValue>#09427c</defaultValue>
+            <placeholder>#09427c</placeholder>
         </input-field>
 
         <input-field type="int">
@@ -1153,7 +1153,7 @@
             <name>contentTextEditorTopBarArea1</name>
             <label>content</label>
             <label lang="de-DE">Inhalt</label>
-            <defaultValue>Schneller Versand</defaultValue>
+            <defaultValue>Fast shipping</defaultValue>
         </component>
 
         <component name="sw-snippet-field">
@@ -1220,8 +1220,8 @@
             <name>linkTitleTopBarArea1</name>
             <label>title of the link (required field when setting a link)</label>
             <label lang="de-DE">Titel des Links (Pflichtfeld beim Setzen eines Links)</label>
-            <defaultValue>Schneller Versand</defaultValue>
-            <placeholder>Schneller Versand</placeholder>
+            <defaultValue>Fast shipping</defaultValue>
+            <placeholder>Fast shipping</placeholder>
         </input-field>
 
         <input-field type="single-select">
@@ -2222,8 +2222,8 @@
             <label>icon color</label>
             <label lang="de-DE">Iconfarbe</label>
             <css>sschreier-icon-color-top-bar-area2</css>
-            <defaultValue>#4a545b</defaultValue>
-            <placeholder>#4a545b</placeholder>
+            <defaultValue>#2b3136</defaultValue>
+            <placeholder>#2b3136</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -2231,8 +2231,8 @@
             <label>hover icon color if the area is linked</label>
             <label lang="de-DE">Hover - Iconfarbe, wenn der Bereich verlinkt ist</label>
             <css>sschreier-hover-icon-color-top-bar-area2</css>
-            <defaultValue>#4a545b</defaultValue>
-            <placeholder>#4a545b</placeholder>
+            <defaultValue>#09427c</defaultValue>
+            <placeholder>#09427c</placeholder>
         </input-field>
 
         <input-field type="int">
@@ -2264,8 +2264,8 @@
             <label>font color of the content</label>
             <label lang="de-DE">Schriftfarbe des Inhalts</label>
             <css>sschreier-font-color-top-bar-area2</css>
-            <defaultValue>#4a545b</defaultValue>
-            <placeholder>#4a545b</placeholder>
+            <defaultValue>#2b3136</defaultValue>
+            <placeholder>#2b3136</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -2273,8 +2273,8 @@
             <label>hover font color of the content if the area is linked</label>
             <label lang="de-DE">Hover - Schriftfarbe des Inhalts, wenn der Bereich verlinkt ist</label>
             <css>sschreier-hover-font-color-top-bar-area2</css>
-            <defaultValue>#4a545b</defaultValue>
-            <placeholder>#4a545b</placeholder>
+            <defaultValue>#09427c</defaultValue>
+            <placeholder>#09427c</placeholder>
         </input-field>
 
         <input-field type="int">
@@ -2308,7 +2308,7 @@
             <name>contentTextEditorTopBarArea2</name>
             <label>content</label>
             <label lang="de-DE">Inhalt</label>
-            <defaultValue>Günstige Versandkosten</defaultValue>
+            <defaultValue>Low shipping costs</defaultValue>
         </component>
 
         <component name="sw-snippet-field">
@@ -2375,8 +2375,8 @@
             <name>linkTitleTopBarArea2</name>
             <label>title of the link (required field when setting a link)</label>
             <label lang="de-DE">Titel des Links (Pflichtfeld beim Setzen eines Links)</label>
-            <defaultValue>Schneller Versand</defaultValue>
-            <placeholder>Schneller Versand</placeholder>
+            <defaultValue>Low shipping costs</defaultValue>
+            <placeholder>Low shipping costs</placeholder>
         </input-field>
 
         <input-field type="single-select">
@@ -3377,8 +3377,8 @@
             <label>icon color</label>
             <label lang="de-DE">Iconfarbe</label>
             <css>sschreier-icon-color-top-bar-area3</css>
-            <defaultValue>#4a545b</defaultValue>
-            <placeholder>#4a545b</placeholder>
+            <defaultValue>#2b3136</defaultValue>
+            <placeholder>#2b3136</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -3386,8 +3386,8 @@
             <label>hover icon color if the area is linked</label>
             <label lang="de-DE">Hover - Iconfarbe, wenn der Bereich verlinkt ist</label>
             <css>sschreier-hover-icon-color-top-bar-area3</css>
-            <defaultValue>#4a545b</defaultValue>
-            <placeholder>#4a545b</placeholder>
+            <defaultValue>#09427c</defaultValue>
+            <placeholder>#09427c</placeholder>
         </input-field>
 
         <input-field type="int">
@@ -3419,8 +3419,8 @@
             <label>font color of the content</label>
             <label lang="de-DE">Schriftfarbe des Inhalts</label>
             <css>sschreier-font-color-top-bar-area3</css>
-            <defaultValue>#4a545b</defaultValue>
-            <placeholder>#4a545b</placeholder>
+            <defaultValue>#2b3136</defaultValue>
+            <placeholder>#2b3136</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -3428,8 +3428,8 @@
             <label>hover font color of the content if the area is linked</label>
             <label lang="de-DE">Hover - Schriftfarbe des Inhalts, wenn der Bereich verlinkt ist</label>
             <css>sschreier-hover-font-color-top-bar-area3</css>
-            <defaultValue>#4a545b</defaultValue>
-            <placeholder>#4a545b</placeholder>
+            <defaultValue>#09427c</defaultValue>
+            <placeholder>#09427c</placeholder>
         </input-field>
 
         <input-field type="int">
@@ -3463,7 +3463,7 @@
             <name>contentTextEditorTopBarArea3</name>
             <label>content</label>
             <label lang="de-DE">Inhalt</label>
-            <defaultValue>30 Tage Rückgaberecht</defaultValue>
+            <defaultValue>30 days return policy</defaultValue>
         </component>
 
         <component name="sw-snippet-field">
@@ -3530,8 +3530,8 @@
             <name>linkTitleTopBarArea3</name>
             <label>title of the link (required field when setting a link)</label>
             <label lang="de-DE">Titel des Links (Pflichtfeld beim Setzen eines Links)</label>
-            <defaultValue>Schneller Versand</defaultValue>
-            <placeholder>Schneller Versand</placeholder>
+            <defaultValue>30 days return policy</defaultValue>
+            <placeholder>30 days return policy</placeholder>
         </input-field>
 
         <input-field type="single-select">
@@ -4532,8 +4532,8 @@
             <label>icon color</label>
             <label lang="de-DE">Iconfarbe</label>
             <css>sschreier-icon-color-top-bar-area4</css>
-            <defaultValue>#4a545b</defaultValue>
-            <placeholder>#4a545b</placeholder>
+            <defaultValue>#2b3136</defaultValue>
+            <placeholder>#2b3136</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -4541,8 +4541,8 @@
             <label>hover icon color if the area is linked</label>
             <label lang="de-DE">Hover - Iconfarbe, wenn der Bereich verlinkt ist</label>
             <css>sschreier-hover-icon-color-top-bar-area4</css>
-            <defaultValue>#4a545b</defaultValue>
-            <placeholder>#4a545b</placeholder>
+            <defaultValue>#09427c</defaultValue>
+            <placeholder>#09427c</placeholder>
         </input-field>
 
         <input-field type="int">
@@ -4574,8 +4574,8 @@
             <label>font color of the content</label>
             <label lang="de-DE">Schriftfarbe des Inhalts</label>
             <css>sschreier-font-color-top-bar-area4</css>
-            <defaultValue>#4a545b</defaultValue>
-            <placeholder>#4a545b</placeholder>
+            <defaultValue>#2b3136</defaultValue>
+            <placeholder>#2b3136</placeholder>
         </input-field>
 
         <input-field type="colorpicker">
@@ -4583,8 +4583,8 @@
             <label>hover font color of the content if the area is linked</label>
             <label lang="de-DE">Hover - Schriftfarbe des Inhalts, wenn der Bereich verlinkt ist</label>
             <css>sschreier-hover-font-color-top-bar-area4</css>
-            <defaultValue>#4a545b</defaultValue>
-            <placeholder>#4a545b</placeholder>
+            <defaultValue>#09427c</defaultValue>
+            <placeholder>#09427c</placeholder>
         </input-field>
 
         <input-field type="int">
@@ -4618,7 +4618,7 @@
             <name>contentTextEditorTopBarArea4</name>
             <label>content</label>
             <label lang="de-DE">Inhalt</label>
-            <defaultValue>Service - Hotline 0123 - 45678</defaultValue>
+            <defaultValue>Service hotline 0123 - 45678</defaultValue>
         </component>
 
         <component name="sw-snippet-field">
@@ -4685,8 +4685,8 @@
             <name>linkTitleTopBarArea4</name>
             <label>title of the link (required field when setting a link)</label>
             <label lang="de-DE">Titel des Links (Pflichtfeld beim Setzen eines Links)</label>
-            <defaultValue>Schneller Versand</defaultValue>
-            <placeholder>Schneller Versand</placeholder>
+            <defaultValue>Service hotline 0123 - 45678</defaultValue>
+            <placeholder>Service hotline 0123 - 45678</placeholder>
         </input-field>
 
         <input-field type="single-select">
