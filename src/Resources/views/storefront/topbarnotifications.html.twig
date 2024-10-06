@@ -9,12 +9,14 @@
 
                                 {% for i in 1..4 %}
                                     {% set showTopBarArea = false %}
+                                    {% set showIconArea = true %}
 
                                     {% if ( i == 1) %}
                                         {% set showTopBarArea = config('SschreierTopbarNotifications.config.showTopBarArea1') %}
 
                                         {% if (showTopBarArea == true) %}
                                             {% set showInViewportTopBarArea = config('SschreierTopbarNotifications.config.showInViewportTopBarArea1') %}
+                                            {% set showIconArea = config('SschreierTopbarNotifications.config.showIconTopBarArea1') %}
                                             {% set iconTypeTopBarArea = config('SschreierTopbarNotifications.config.iconTypeTopBarArea1') %}
                                             {% set iconTopBarArea = config('SschreierTopbarNotifications.config.iconTopBarArea1') %}
                                             {% set contentTypeTopBarArea = config('SschreierTopbarNotifications.config.contentTypeTopBarArea1') %}
@@ -30,6 +32,7 @@
 
                                         {% if (showTopBarArea == true) %}
                                             {% set showInViewportTopBarArea = config('SschreierTopbarNotifications.config.showInViewportTopBarArea2') %}
+                                            {% set showIconArea = config('SschreierTopbarNotifications.config.showIconTopBarArea2') %}
                                             {% set iconTypeTopBarArea = config('SschreierTopbarNotifications.config.iconTypeTopBarArea2') %}
                                             {% set iconTopBarArea = config('SschreierTopbarNotifications.config.iconTopBarArea2') %}
                                             {% set contentTypeTopBarArea = config('SschreierTopbarNotifications.config.contentTypeTopBarArea2') %}
@@ -45,6 +48,7 @@
 
                                         {% if (showTopBarArea == true) %}
                                             {% set showInViewportTopBarArea = config('SschreierTopbarNotifications.config.showInViewportTopBarArea3') %}
+                                            {% set showIconArea = config('SschreierTopbarNotifications.config.showIconTopBarArea3') %}
                                             {% set iconTypeTopBarArea = config('SschreierTopbarNotifications.config.iconTypeTopBarArea3') %}
                                             {% set iconTopBarArea = config('SschreierTopbarNotifications.config.iconTopBarArea3') %}
                                             {% set contentTypeTopBarArea = config('SschreierTopbarNotifications.config.contentTypeTopBarArea3') %}
@@ -60,6 +64,7 @@
 
                                         {% if (showTopBarArea == true) %}
                                             {% set showInViewportTopBarArea = config('SschreierTopbarNotifications.config.showInViewportTopBarArea4') %}
+                                            {% set showIconArea = config('SschreierTopbarNotifications.config.showIconTopBarArea4') %}
                                             {% set iconTypeTopBarArea = config('SschreierTopbarNotifications.config.iconTypeTopBarArea4') %}
                                             {% set iconTopBarArea = config('SschreierTopbarNotifications.config.iconTopBarArea4') %}
                                             {% set contentTypeTopBarArea = config('SschreierTopbarNotifications.config.contentTypeTopBarArea4') %}
@@ -110,375 +115,429 @@
                                                                 {% endblock %}
                                                             {% endif %}
 
-                                                            {% block base_header_inner_topbarnotifications_container_topbar_nav_item_icon %}
-                                                                <span class="top-bar-notification-nav-item-icon">
-                                                                    {% if (iconTypeTopBarArea == "select") %}
-                                                                        {% if (iconTopBarArea == "address") %}
-                                                                            {% sw_icon 'address' %}
-                                                                        {% elseif (iconTopBarArea == "alert") %}
-                                                                            {% sw_icon 'alert' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-360-left") %}
-                                                                            {% sw_icon 'arrow-360-left' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-360-right") %}
-                                                                            {% sw_icon 'arrow-360-right' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-circle-down") %}
-                                                                            {% sw_icon 'arrow-circle-down' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-circle-left") %}
-                                                                            {% sw_icon 'arrow-circle-left' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-circle-right") %}
-                                                                            {% sw_icon 'arrow-circle-right' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-circle-up") %}
-                                                                            {% sw_icon 'arrow-circle-up' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-down") %}
-                                                                            {% sw_icon 'arrow-down' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-head-down") %}
-                                                                            {% sw_icon 'arrow-head-down' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-head-left") %}
-                                                                            {% sw_icon 'arrow-head-left' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-head-right") %}
-                                                                            {% sw_icon 'arrow-head-right' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-head-up") %}
-                                                                            {% sw_icon 'arrow-head-up' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-left") %}
-                                                                            {% sw_icon 'arrow-left' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-right") %}
-                                                                            {% sw_icon 'arrow-right' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-scroll") %}
-                                                                            {% sw_icon 'arrow-scroll' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-simple-long-right") %}
-                                                                            {% sw_icon 'arrow-simple-long-right' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-switch") %}
-                                                                            {% sw_icon 'arrow-switch' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-turn-left") %}
-                                                                            {% sw_icon 'arrow-turn-left' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-turn-right") %}
-                                                                            {% sw_icon 'arrow-turn-right' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-up-down") %}
-                                                                            {% sw_icon 'arrow-up-down' %}
-                                                                        {% elseif (iconTopBarArea == "arrow-up") %}
-                                                                            {% sw_icon 'arrow-up' %}
-                                                                        {% elseif (iconTopBarArea == "avatar-multiple") %}
-                                                                            {% sw_icon 'avatar-multiple' %}
-                                                                        {% elseif (iconTopBarArea == "avatar") %}
-                                                                            {% sw_icon 'avatar' %}
-                                                                        {% elseif (iconTopBarArea == "bag-product") %}
-                                                                            {% sw_icon 'bag-product' %}
-                                                                        {% elseif (iconTopBarArea == "bag") %}
-                                                                            {% sw_icon 'bag' %}
-                                                                        {% elseif (iconTopBarArea == "basket") %}
-                                                                            {% sw_icon 'basket' %}
-                                                                        {% elseif (iconTopBarArea == "beer") %}
-                                                                            {% sw_icon 'beer' %}
-                                                                        {% elseif (iconTopBarArea == "bell-bell") %}
-                                                                            {% sw_icon 'bell-bell' %}
-                                                                        {% elseif (iconTopBarArea == "bell-crossed") %}
-                                                                            {% sw_icon 'bell-crossed' %}
-                                                                        {% elseif (iconTopBarArea == "blocked") %}
-                                                                            {% sw_icon 'blocked' %}
-                                                                        {% elseif (iconTopBarArea == "bookmark") %}
-                                                                            {% sw_icon 'bookmark' %}
-                                                                        {% elseif (iconTopBarArea == "books") %}
-                                                                            {% sw_icon 'books' %}
-                                                                        {% elseif (iconTopBarArea == "briefcase") %}
-                                                                            {% sw_icon 'briefcase' %}
-                                                                        {% elseif (iconTopBarArea == "browser") %}
-                                                                            {% sw_icon 'browser' %}
-                                                                        {% elseif (iconTopBarArea == "bug") %}
-                                                                            {% sw_icon 'bug' %}
-                                                                        {% elseif (iconTopBarArea == "bulk-edit") %}
-                                                                            {% sw_icon 'bulk-edit' %}
-                                                                        {% elseif (iconTopBarArea == "calendar-empty") %}
-                                                                            {% sw_icon 'calendar-empty' %}
-                                                                        {% elseif (iconTopBarArea == "calendar") %}
-                                                                            {% sw_icon 'calendar' %}
-                                                                        {% elseif (iconTopBarArea == "cart") %}
-                                                                            {% sw_icon 'cart' %}
-                                                                        {% elseif (iconTopBarArea == "chart-bar-filled") %}
-                                                                            {% sw_icon 'chart-bar-filled' %}
-                                                                        {% elseif (iconTopBarArea == "chart-bar") %}
-                                                                            {% sw_icon 'chart-bar' %}
-                                                                        {% elseif (iconTopBarArea == "chart-pie") %}
-                                                                            {% sw_icon 'chart-pie' %}
-                                                                        {% elseif (iconTopBarArea == "chart-sales") %}
-                                                                            {% sw_icon 'chart-sales' %}
-                                                                        {% elseif (iconTopBarArea == "chart") %}
-                                                                            {% sw_icon 'chart' %}
-                                                                        {% elseif (iconTopBarArea == "checkmark-block") %}
-                                                                            {% sw_icon 'checkmark-block' %}
-                                                                        {% elseif (iconTopBarArea == "checkmark-circle") %}
-                                                                            {% sw_icon 'checkmark-circle' %}
-                                                                        {% elseif (iconTopBarArea == "checkmark-wide-block") %}
-                                                                            {% sw_icon 'checkmark-wide-block' %}
-                                                                        {% elseif (iconTopBarArea == "checkmark-wide") %}
-                                                                            {% sw_icon 'checkmark-wide' %}
-                                                                        {% elseif (iconTopBarArea == "checkmark") %}
-                                                                            {% sw_icon 'checkmark' %}
-                                                                        {% elseif (iconTopBarArea == "circle-download") %}
-                                                                            {% sw_icon 'circle-download' %}
-                                                                        {% elseif (iconTopBarArea == "circle") %}
-                                                                            {% sw_icon 'circle' %}
-                                                                        {% elseif (iconTopBarArea == "clock") %}
-                                                                            {% sw_icon 'clock' %}
-                                                                        {% elseif (iconTopBarArea == "cloud-download") %}
-                                                                            {% sw_icon 'cloud-download' %}
-                                                                        {% elseif (iconTopBarArea == "cloud-upload") %}
-                                                                            {% sw_icon 'cloud-upload' %}
-                                                                        {% elseif (iconTopBarArea == "cockpit") %}
-                                                                            {% sw_icon 'cockpit' %}
-                                                                        {% elseif (iconTopBarArea == "desktop") %}
-                                                                            {% sw_icon 'desktop' %}
-                                                                        {% elseif (iconTopBarArea == "document-view") %}
-                                                                            {% sw_icon 'document-view' %}
-                                                                        {% elseif (iconTopBarArea == "duplicate") %}
-                                                                            {% sw_icon 'duplicate' %}
-                                                                        {% elseif (iconTopBarArea == "emoji") %}
-                                                                            {% sw_icon 'emoji' %}
-                                                                        {% elseif (iconTopBarArea == "envelope") %}
-                                                                            {% sw_icon 'envelope' %}
-                                                                        {% elseif (iconTopBarArea == "error") %}
-                                                                            {% sw_icon 'error' %}
-                                                                        {% elseif (iconTopBarArea == "external") %}
-                                                                            {% sw_icon 'external' %}
-                                                                        {% elseif (iconTopBarArea == "eye-crossed") %}
-                                                                            {% sw_icon 'eye-crossed' %}
-                                                                        {% elseif (iconTopBarArea == "eye-open") %}
-                                                                            {% sw_icon 'eye-open' %}
-                                                                        {% elseif (iconTopBarArea == "file") %}
-                                                                            {% sw_icon 'file' %}
-                                                                        {% elseif (iconTopBarArea == "flag") %}
-                                                                            {% sw_icon 'flag' %}
-                                                                        {% elseif (iconTopBarArea == "forward") %}
-                                                                            {% sw_icon 'forward' %}
-                                                                        {% elseif (iconTopBarArea == "gamecontroler") %}
-                                                                            {% sw_icon 'gamecontroler' %}
-                                                                        {% elseif (iconTopBarArea == "globe") %}
-                                                                            {% sw_icon 'globe' %}
-                                                                        {% elseif (iconTopBarArea == "gps") %}
-                                                                            {% sw_icon 'gps' %}
-                                                                        {% elseif (iconTopBarArea == "graduate-cap") %}
-                                                                            {% sw_icon 'graduate-cap' %}
-                                                                        {% elseif (iconTopBarArea == "harddisk") %}
-                                                                            {% sw_icon 'harddisk' %}
-                                                                        {% elseif (iconTopBarArea == "headset") %}
-                                                                            {% sw_icon 'headset' %}
-                                                                        {% elseif (iconTopBarArea == "heart") %}
-                                                                            {% sw_icon 'heart' %}
-                                                                        {% elseif (iconTopBarArea == "help") %}
-                                                                            {% sw_icon 'help' %}
-                                                                        {% elseif (iconTopBarArea == "history") %}
-                                                                            {% sw_icon 'history' %}
-                                                                        {% elseif (iconTopBarArea == "home") %}
-                                                                            {% sw_icon 'home' %}
-                                                                        {% elseif (iconTopBarArea == "hourglass") %}
-                                                                            {% sw_icon 'hourglass' %}
-                                                                        {% elseif (iconTopBarArea == "image") %}
-                                                                            {% sw_icon 'image' %}
-                                                                        {% elseif (iconTopBarArea == "inbox") %}
-                                                                            {% sw_icon 'inbox' %}
-                                                                        {% elseif (iconTopBarArea == "info") %}
-                                                                            {% sw_icon 'info' %}
-                                                                        {% elseif (iconTopBarArea == "keyboard") %}
-                                                                            {% sw_icon 'keyboard' %}
-                                                                        {% elseif (iconTopBarArea == "lab-flask") %}
-                                                                            {% sw_icon 'lab-flask' %}
-                                                                        {% elseif (iconTopBarArea == "laptop") %}
-                                                                            {% sw_icon 'laptop' %}
-                                                                        {% elseif (iconTopBarArea == "layers") %}
-                                                                            {% sw_icon 'layers' %}
-                                                                        {% elseif (iconTopBarArea == "lightbulb") %}
-                                                                            {% sw_icon 'lightbulb' %}
-                                                                        {% elseif (iconTopBarArea == "link") %}
-                                                                            {% sw_icon 'link' %}
-                                                                        {% elseif (iconTopBarArea == "list") %}
-                                                                            {% sw_icon 'list' %}
-                                                                        {% elseif (iconTopBarArea == "loading-circle") %}
-                                                                            {% sw_icon 'loading-circle' %}
-                                                                        {% elseif (iconTopBarArea == "loading-star") %}
-                                                                            {% sw_icon 'loading-star' %}
-                                                                        {% elseif (iconTopBarArea == "lock-closed") %}
-                                                                            {% sw_icon 'lock-closed' %}
-                                                                        {% elseif (iconTopBarArea == "lock-fingerprint") %}
-                                                                            {% sw_icon 'lock-fingerprint' %}
-                                                                        {% elseif (iconTopBarArea == "lock-key") %}
-                                                                            {% sw_icon 'lock-key' %}
-                                                                        {% elseif (iconTopBarArea == "lock-open") %}
-                                                                            {% sw_icon 'lock-open' %}
-                                                                        {% elseif (iconTopBarArea == "log-in") %}
-                                                                            {% sw_icon 'log-in' %}
-                                                                        {% elseif (iconTopBarArea == "log-out") %}
-                                                                            {% sw_icon 'log-out' %}
-                                                                        {% elseif (iconTopBarArea == "map-closed") %}
-                                                                            {% sw_icon 'map-closed' %}
-                                                                        {% elseif (iconTopBarArea == "map-open") %}
-                                                                            {% sw_icon 'map-open' %}
-                                                                        {% elseif (iconTopBarArea == "map") %}
-                                                                            {% sw_icon 'map' %}
-                                                                        {% elseif (iconTopBarArea == "marker") %}
-                                                                            {% sw_icon 'marker' %}
-                                                                        {% elseif (iconTopBarArea == "marketing") %}
-                                                                            {% sw_icon 'marketing' %}
-                                                                        {% elseif (iconTopBarArea == "medal") %}
-                                                                            {% sw_icon 'medal' %}
-                                                                        {% elseif (iconTopBarArea == "micophone") %}
-                                                                            {% sw_icon 'micophone' %}
-                                                                        {% elseif (iconTopBarArea == "minus-block") %}
-                                                                            {% sw_icon 'minus-block' %}
-                                                                        {% elseif (iconTopBarArea == "minus-circle") %}
-                                                                            {% sw_icon 'minus-circle' %}
-                                                                        {% elseif (iconTopBarArea == "minus-wide") %}
-                                                                            {% sw_icon 'minus-wide' %}
-                                                                        {% elseif (iconTopBarArea == "minus") %}
-                                                                            {% sw_icon 'minus' %}
-                                                                        {% elseif (iconTopBarArea == "mobile") %}
-                                                                            {% sw_icon 'mobile' %}
-                                                                        {% elseif (iconTopBarArea == "money-card") %}
-                                                                            {% sw_icon 'money-card' %}
-                                                                        {% elseif (iconTopBarArea == "money-cash") %}
-                                                                            {% sw_icon 'money-cash' %}
-                                                                        {% elseif (iconTopBarArea == "money-wallet") %}
-                                                                            {% sw_icon 'money-wallet' %}
-                                                                        {% elseif (iconTopBarArea == "moon") %}
-                                                                            {% sw_icon 'moon' %}
-                                                                        {% elseif (iconTopBarArea == "move-file") %}
-                                                                            {% sw_icon 'move-file' %}
-                                                                        {% elseif (iconTopBarArea == "package-closed") %}
-                                                                            {% sw_icon 'package-closed' %}
-                                                                        {% elseif (iconTopBarArea == "package-gift") %}
-                                                                            {% sw_icon 'package-gift' %}
-                                                                        {% elseif (iconTopBarArea == "package-open") %}
-                                                                            {% sw_icon 'package-open' %}
-                                                                        {% elseif (iconTopBarArea == "paper-pencil-signed") %}
-                                                                            {% sw_icon 'paper-pencil-signed' %}
-                                                                        {% elseif (iconTopBarArea == "paper-pencil") %}
-                                                                            {% sw_icon 'paper-pencil' %}
-                                                                        {% elseif (iconTopBarArea == "paperclip") %}
-                                                                            {% sw_icon 'paperclip' %}
-                                                                        {% elseif (iconTopBarArea == "paperplane") %}
-                                                                            {% sw_icon 'paperplane' %}
-                                                                        {% elseif (iconTopBarArea == "pawn") %}
-                                                                            {% sw_icon 'pawn' %}
-                                                                        {% elseif (iconTopBarArea == "pencil-brush") %}
-                                                                            {% sw_icon 'pencil-brush' %}
-                                                                        {% elseif (iconTopBarArea == "photocamera") %}
-                                                                            {% sw_icon 'photocamera' %}
-                                                                        {% elseif (iconTopBarArea == "plastic-bag") %}
-                                                                            {% sw_icon 'plastic-bag' %}
-                                                                        {% elseif (iconTopBarArea == "plug") %}
-                                                                            {% sw_icon 'plug' %}
-                                                                        {% elseif (iconTopBarArea == "plus-block") %}
-                                                                            {% sw_icon 'plus-block' %}
-                                                                        {% elseif (iconTopBarArea == "plus-circle") %}
-                                                                            {% sw_icon 'plus-circle' %}
-                                                                        {% elseif (iconTopBarArea == "plus-wide") %}
-                                                                            {% sw_icon 'plus-wide' %}
-                                                                        {% elseif (iconTopBarArea == "plus") %}
-                                                                            {% sw_icon 'plus' %}
-                                                                        {% elseif (iconTopBarArea == "printer") %}
-                                                                            {% sw_icon 'printer' %}
-                                                                        {% elseif (iconTopBarArea == "products") %}
-                                                                            {% sw_icon 'products' %}
-                                                                        {% elseif (iconTopBarArea == "pulse") %}
-                                                                            {% sw_icon 'pulse' %}
-                                                                        {% elseif (iconTopBarArea == "pushpin") %}
-                                                                            {% sw_icon 'pushpin' %}
-                                                                        {% elseif (iconTopBarArea == "puzzle-piece") %}
-                                                                            {% sw_icon 'puzzle-piece' %}
-                                                                        {% elseif (iconTopBarArea == "quickjump") %}
-                                                                            {% sw_icon 'quickjump' %}
-                                                                        {% elseif (iconTopBarArea == "replace") %}
-                                                                            {% sw_icon 'replace' %}
-                                                                        {% elseif (iconTopBarArea == "reply") %}
-                                                                            {% sw_icon 'reply' %}
-                                                                        {% elseif (iconTopBarArea == "rocket") %}
-                                                                            {% sw_icon 'rocket' %}
-                                                                        {% elseif (iconTopBarArea == "ruler-pencil") %}
-                                                                            {% sw_icon 'ruler-pencil' %}
-                                                                        {% elseif (iconTopBarArea == "save") %}
-                                                                            {% sw_icon 'save' %}
-                                                                        {% elseif (iconTopBarArea == "screen-full") %}
-                                                                            {% sw_icon 'screen-full' %}
-                                                                        {% elseif (iconTopBarArea == "screen-minimize") %}
-                                                                            {% sw_icon 'screen-minimize' %}
-                                                                        {% elseif (iconTopBarArea == "search") %}
-                                                                            {% sw_icon 'search' %}
-                                                                        {% elseif (iconTopBarArea == "server") %}
-                                                                            {% sw_icon 'server' %}
-                                                                        {% elseif (iconTopBarArea == "settings") %}
-                                                                            {% sw_icon 'settings' %}
-                                                                        {% elseif (iconTopBarArea == "share") %}
-                                                                            {% sw_icon 'share' %}
-                                                                        {% elseif (iconTopBarArea == "shield") %}
-                                                                            {% sw_icon 'shield' %}
-                                                                        {% elseif (iconTopBarArea == "shop") %}
-                                                                            {% sw_icon 'shop' %}
-                                                                        {% elseif (iconTopBarArea == "sofa") %}
-                                                                            {% sw_icon 'sofa' %}
-                                                                        {% elseif (iconTopBarArea == "speech-bubble") %}
-                                                                            {% sw_icon 'speech-bubble' %}
-                                                                        {% elseif (iconTopBarArea == "speech-bubbles") %}
-                                                                            {% sw_icon 'speech-bubbles' %}
-                                                                        {% elseif (iconTopBarArea == "stack-block") %}
-                                                                            {% sw_icon 'stack-block' %}
-                                                                        {% elseif (iconTopBarArea == "stack-circle") %}
-                                                                            {% sw_icon 'stack-circle' %}
-                                                                        {% elseif (iconTopBarArea == "stack") %}
-                                                                            {% sw_icon 'stack' %}
-                                                                        {% elseif (iconTopBarArea == "star") %}
-                                                                            {% sw_icon 'star' %}
-                                                                        {% elseif (iconTopBarArea == "sun") %}
-                                                                            {% sw_icon 'sun' %}
-                                                                        {% elseif (iconTopBarArea == "tablet") %}
-                                                                            {% sw_icon 'tablet' %}
-                                                                        {% elseif (iconTopBarArea == "tags") %}
-                                                                            {% sw_icon 'tags' %}
-                                                                        {% elseif (iconTopBarArea == "target-big") %}
-                                                                            {% sw_icon 'target-big' %}
-                                                                        {% elseif (iconTopBarArea == "target-with-block") %}
-                                                                            {% sw_icon 'target-with-block' %}
-                                                                        {% elseif (iconTopBarArea == "terminal") %}
-                                                                            {% sw_icon 'terminal' %}
-                                                                        {% elseif (iconTopBarArea == "thumb-down") %}
-                                                                            {% sw_icon 'thumb-down' %}
-                                                                        {% elseif (iconTopBarArea == "thumb-up") %}
-                                                                            {% sw_icon 'thumb-up' %}
-                                                                        {% elseif (iconTopBarArea == "tools") %}
-                                                                            {% sw_icon 'tools' %}
-                                                                        {% elseif (iconTopBarArea == "traffic-pawn") %}
-                                                                            {% sw_icon 'traffic-pawn' %}
-                                                                        {% elseif (iconTopBarArea == "trash") %}
-                                                                            {% sw_icon 'trash' %}
-                                                                        {% elseif (iconTopBarArea == "tray-down") %}
-                                                                            {% sw_icon 'tray-down' %}
-                                                                        {% elseif (iconTopBarArea == "tray-up") %}
-                                                                            {% sw_icon 'tray-up' %}
-                                                                        {% elseif (iconTopBarArea == "trophy") %}
-                                                                            {% sw_icon 'trophy' %}
-                                                                        {% elseif (iconTopBarArea == "video-camera") %}
-                                                                            {% sw_icon 'video-camera' %}
-                                                                        {% elseif (iconTopBarArea == "warning") %}
-                                                                            {% sw_icon 'warning' %}
-                                                                        {% elseif (iconTopBarArea == "x-block") %}
-                                                                            {% sw_icon 'x-block' %}
-                                                                        {% elseif (iconTopBarArea == "x-circle") %}
-                                                                            {% sw_icon 'x-circle' %}
-                                                                        {% elseif (iconTopBarArea == "x-wide") %}
-                                                                            {% sw_icon 'x-wide' %}
-                                                                        {% elseif (iconTopBarArea == "x") %}
-                                                                            {% sw_icon 'x' %}
+                                                            {% if (showIconArea == true) %}
+                                                                {% block base_header_inner_topbarnotifications_container_topbar_nav_item_icon %}
+                                                                    <span class="top-bar-notification-nav-item-icon">
+                                                                        {% if (iconTypeTopBarArea == "select") %}
+                                                                            {% if (iconTopBarArea == "address") %}
+                                                                                {% sw_icon 'address' %}
+                                                                            {% elseif (iconTopBarArea == "alert") %}
+                                                                                {% sw_icon 'alert' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-360-left") %}
+                                                                                {% sw_icon 'arrow-360-left' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-360-right") %}
+                                                                                {% sw_icon 'arrow-360-right' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-circle-down") %}
+                                                                                {% sw_icon 'arrow-circle-down' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-circle-left") %}
+                                                                                {% sw_icon 'arrow-circle-left' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-circle-right") %}
+                                                                                {% sw_icon 'arrow-circle-right' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-circle-up") %}
+                                                                                {% sw_icon 'arrow-circle-up' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-down") %}
+                                                                                {% sw_icon 'arrow-down' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-head-down") %}
+                                                                                {% sw_icon 'arrow-head-down' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-head-left") %}
+                                                                                {% sw_icon 'arrow-head-left' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-head-right") %}
+                                                                                {% sw_icon 'arrow-head-right' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-head-up") %}
+                                                                                {% sw_icon 'arrow-head-up' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-left") %}
+                                                                                {% sw_icon 'arrow-left' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-right") %}
+                                                                                {% sw_icon 'arrow-right' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-scroll") %}
+                                                                                {% sw_icon 'arrow-scroll' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-simple-long-right") %}
+                                                                                {% sw_icon 'arrow-simple-long-right' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-switch") %}
+                                                                                {% sw_icon 'arrow-switch' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-turn-left") %}
+                                                                                {% sw_icon 'arrow-turn-left' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-turn-right") %}
+                                                                                {% sw_icon 'arrow-turn-right' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-up-down") %}
+                                                                                {% sw_icon 'arrow-up-down' %}
+                                                                            {% elseif (iconTopBarArea == "arrow-up") %}
+                                                                                {% sw_icon 'arrow-up' %}
+                                                                            {% elseif (iconTopBarArea == "augmented") %}
+                                                                                {% sw_icon 'augmented' %}
+                                                                            {% elseif (iconTopBarArea == "avatar-multiple") %}
+                                                                                {% sw_icon 'avatar-multiple' %}
+                                                                            {% elseif (iconTopBarArea == "avatar") %}
+                                                                                {% sw_icon 'avatar' %}
+                                                                            {% elseif (iconTopBarArea == "bag-product") %}
+                                                                                {% sw_icon 'bag-product' %}
+                                                                            {% elseif (iconTopBarArea == "bag") %}
+                                                                                {% sw_icon 'bag' %}
+                                                                            {% elseif (iconTopBarArea == "basket") %}
+                                                                                {% sw_icon 'basket' %}
+                                                                            {% elseif (iconTopBarArea == "beer") %}
+                                                                                {% sw_icon 'beer' %}
+                                                                            {% elseif (iconTopBarArea == "bell-bell") %}
+                                                                                {% sw_icon 'bell-bell' %}
+                                                                            {% elseif (iconTopBarArea == "bell-crossed") %}
+                                                                                {% sw_icon 'bell-crossed' %}
+                                                                            {% elseif (iconTopBarArea == "blocked") %}
+                                                                                {% sw_icon 'blocked' %}
+                                                                            {% elseif (iconTopBarArea == "bookmark") %}
+                                                                                {% sw_icon 'bookmark' %}
+                                                                            {% elseif (iconTopBarArea == "books") %}
+                                                                                {% sw_icon 'books' %}
+                                                                            {% elseif (iconTopBarArea == "briefcase") %}
+                                                                                {% sw_icon 'briefcase' %}
+                                                                            {% elseif (iconTopBarArea == "browser") %}
+                                                                                {% sw_icon 'browser' %}
+                                                                            {% elseif (iconTopBarArea == "bug") %}
+                                                                                {% sw_icon 'bug' %}
+                                                                            {% elseif (iconTopBarArea == "bulk-edit") %}
+                                                                                {% sw_icon 'bulk-edit' %}
+                                                                            {% elseif (iconTopBarArea == "calendar-empty") %}
+                                                                                {% sw_icon 'calendar-empty' %}
+                                                                            {% elseif (iconTopBarArea == "calendar") %}
+                                                                                {% sw_icon 'calendar' %}
+                                                                            {% elseif (iconTopBarArea == "cart") %}
+                                                                                {% sw_icon 'cart' %}
+                                                                            {% elseif (iconTopBarArea == "chart-bar-filled") %}
+                                                                                {% sw_icon 'chart-bar-filled' %}
+                                                                            {% elseif (iconTopBarArea == "chart-bar") %}
+                                                                                {% sw_icon 'chart-bar' %}
+                                                                            {% elseif (iconTopBarArea == "chart-pie") %}
+                                                                                {% sw_icon 'chart-pie' %}
+                                                                            {% elseif (iconTopBarArea == "chart-sales") %}
+                                                                                {% sw_icon 'chart-sales' %}
+                                                                            {% elseif (iconTopBarArea == "chart") %}
+                                                                                {% sw_icon 'chart' %}
+                                                                            {% elseif (iconTopBarArea == "checkmark-block") %}
+                                                                                {% sw_icon 'checkmark-block' %}
+                                                                            {% elseif (iconTopBarArea == "checkmark-circle") %}
+                                                                                {% sw_icon 'checkmark-circle' %}
+                                                                            {% elseif (iconTopBarArea == "checkmark-wide-block") %}
+                                                                                {% sw_icon 'checkmark-wide-block' %}
+                                                                            {% elseif (iconTopBarArea == "checkmark-wide") %}
+                                                                                {% sw_icon 'checkmark-wide' %}
+                                                                            {% elseif (iconTopBarArea == "checkmark") %}
+                                                                                {% sw_icon 'checkmark' %}
+                                                                            {% elseif (iconTopBarArea == "circle-download") %}
+                                                                                {% sw_icon 'circle-download' %}
+                                                                            {% elseif (iconTopBarArea == "circle-upload") %}
+                                                                                {% sw_icon 'circle-upload' %}
+                                                                            {% elseif (iconTopBarArea == "circle") %}
+                                                                                {% sw_icon 'circle' %}
+                                                                            {% elseif (iconTopBarArea == "clock") %}
+                                                                                {% sw_icon 'clock' %}
+                                                                            {% elseif (iconTopBarArea == "cloud-download") %}
+                                                                                {% sw_icon 'cloud-download' %}
+                                                                            {% elseif (iconTopBarArea == "cloud-upload") %}
+                                                                                {% sw_icon 'cloud-upload' %}
+                                                                            {% elseif (iconTopBarArea == "cockpit") %}
+                                                                                {% sw_icon 'cockpit' %}
+                                                                            {% elseif (iconTopBarArea == "code") %}
+                                                                                {% sw_icon 'code' %}
+                                                                            {% elseif (iconTopBarArea == "colorpicker") %}
+                                                                                {% sw_icon 'colorpicker' %}
+                                                                            {% elseif (iconTopBarArea == "content") %}
+                                                                                {% sw_icon 'content' %}
+                                                                            {% elseif (iconTopBarArea == "dashboard") %}
+                                                                                {% sw_icon 'dashboard' %}
+                                                                            {% elseif (iconTopBarArea == "database") %}
+                                                                                {% sw_icon 'database' %}
+                                                                            {% elseif (iconTopBarArea == "debug") %}
+                                                                                {% sw_icon 'debug' %}
+                                                                            {% elseif (iconTopBarArea == "desktop") %}
+                                                                                {% sw_icon 'desktop' %}
+                                                                            {% elseif (iconTopBarArea == "document-view") %}
+                                                                                {% sw_icon 'document-view' %}
+                                                                            {% elseif (iconTopBarArea == "duplicate") %}
+                                                                                {% sw_icon 'duplicate' %}
+                                                                            {% elseif (iconTopBarArea == "emoji") %}
+                                                                                {% sw_icon 'emoji' %}
+                                                                            {% elseif (iconTopBarArea == "envelope") %}
+                                                                                {% sw_icon 'envelope' %}
+                                                                            {% elseif (iconTopBarArea == "error") %}
+                                                                                {% sw_icon 'error' %}
+                                                                            {% elseif (iconTopBarArea == "euro") %}
+                                                                                {% sw_icon 'euro' %}
+                                                                            {% elseif (iconTopBarArea == "external") %}
+                                                                                {% sw_icon 'external' %}
+                                                                            {% elseif (iconTopBarArea == "eye-crossed") %}
+                                                                                {% sw_icon 'eye-crossed' %}
+                                                                            {% elseif (iconTopBarArea == "eye-open") %}
+                                                                                {% sw_icon 'eye-open' %}
+                                                                            {% elseif (iconTopBarArea == "file") %}
+                                                                                {% sw_icon 'file' %}
+                                                                            {% elseif (iconTopBarArea == "filter") %}
+                                                                                {% sw_icon 'filter' %}
+                                                                            {% elseif (iconTopBarArea == "flag") %}
+                                                                                {% sw_icon 'flag' %}
+                                                                            {% elseif (iconTopBarArea == "forward") %}
+                                                                                {% sw_icon 'forward' %}
+                                                                            {% elseif (iconTopBarArea == "gamecontroler") %}
+                                                                                {% sw_icon 'gamecontroler' %}
+                                                                            {% elseif (iconTopBarArea == "globe") %}
+                                                                                {% sw_icon 'globe' %}
+                                                                            {% elseif (iconTopBarArea == "gps") %}
+                                                                                {% sw_icon 'gps' %}
+                                                                            {% elseif (iconTopBarArea == "graduate-cap") %}
+                                                                                {% sw_icon 'graduate-cap' %}
+                                                                            {% elseif (iconTopBarArea == "harddisk") %}
+                                                                                {% sw_icon 'harddisk' %}
+                                                                            {% elseif (iconTopBarArea == "headset") %}
+                                                                                {% sw_icon 'headset' %}
+                                                                            {% elseif (iconTopBarArea == "heart") %}
+                                                                                {% sw_icon 'heart' %}
+                                                                            {% elseif (iconTopBarArea == "heart-fill") %}
+                                                                                {% sw_icon 'heart-fill' %}
+                                                                            {% elseif (iconTopBarArea == "help") %}
+                                                                                {% sw_icon 'help' %}
+                                                                            {% elseif (iconTopBarArea == "history") %}
+                                                                                {% sw_icon 'history' %}
+                                                                            {% elseif (iconTopBarArea == "home") %}
+                                                                                {% sw_icon 'home' %}
+                                                                            {% elseif (iconTopBarArea == "hourglass") %}
+                                                                                {% sw_icon 'hourglass' %}
+                                                                            {% elseif (iconTopBarArea == "image") %}
+                                                                                {% sw_icon 'image' %}
+                                                                            {% elseif (iconTopBarArea == "inbox") %}
+                                                                                {% sw_icon 'inbox' %}
+                                                                            {% elseif (iconTopBarArea == "infinity") %}
+                                                                                {% sw_icon 'infinity' %}
+                                                                            {% elseif (iconTopBarArea == "info") %}
+                                                                                {% sw_icon 'info' %}
+                                                                            {% elseif (iconTopBarArea == "keyboard") %}
+                                                                                {% sw_icon 'keyboard' %}
+                                                                            {% elseif (iconTopBarArea == "lab-flask") %}
+                                                                                {% sw_icon 'lab-flask' %}
+                                                                            {% elseif (iconTopBarArea == "laptop") %}
+                                                                                {% sw_icon 'laptop' %}
+                                                                            {% elseif (iconTopBarArea == "layers") %}
+                                                                                {% sw_icon 'layers' %}
+                                                                            {% elseif (iconTopBarArea == "lightbulb") %}
+                                                                                {% sw_icon 'lightbulb' %}
+                                                                            {% elseif (iconTopBarArea == "link") %}
+                                                                                {% sw_icon 'link' %}
+                                                                            {% elseif (iconTopBarArea == "list") %}
+                                                                                {% sw_icon 'list' %}
+                                                                            {% elseif (iconTopBarArea == "loading-circle") %}
+                                                                                {% sw_icon 'loading-circle' %}
+                                                                            {% elseif (iconTopBarArea == "loading-star") %}
+                                                                                {% sw_icon 'loading-star' %}
+                                                                            {% elseif (iconTopBarArea == "lock-closed") %}
+                                                                                {% sw_icon 'lock-closed' %}
+                                                                            {% elseif (iconTopBarArea == "lock-fingerprint") %}
+                                                                                {% sw_icon 'lock-fingerprint' %}
+                                                                            {% elseif (iconTopBarArea == "lock-key") %}
+                                                                                {% sw_icon 'lock-key' %}
+                                                                            {% elseif (iconTopBarArea == "lock-open") %}
+                                                                                {% sw_icon 'lock-open' %}
+                                                                            {% elseif (iconTopBarArea == "log-in") %}
+                                                                                {% sw_icon 'log-in' %}
+                                                                            {% elseif (iconTopBarArea == "log-out") %}
+                                                                                {% sw_icon 'log-out' %}
+                                                                            {% elseif (iconTopBarArea == "map-closed") %}
+                                                                                {% sw_icon 'map-closed' %}
+                                                                            {% elseif (iconTopBarArea == "map-open") %}
+                                                                                {% sw_icon 'map-open' %}
+                                                                            {% elseif (iconTopBarArea == "map") %}
+                                                                                {% sw_icon 'map' %}
+                                                                            {% elseif (iconTopBarArea == "marker") %}
+                                                                                {% sw_icon 'marker' %}
+                                                                            {% elseif (iconTopBarArea == "marketing") %}
+                                                                                {% sw_icon 'marketing' %}
+                                                                            {% elseif (iconTopBarArea == "medal") %}
+                                                                                {% sw_icon 'medal' %}
+                                                                            {% elseif (iconTopBarArea == "micophone") %}
+                                                                                {% sw_icon 'micophone' %}
+                                                                            {% elseif (iconTopBarArea == "minus-block") %}
+                                                                                {% sw_icon 'minus-block' %}
+                                                                            {% elseif (iconTopBarArea == "minus-circle") %}
+                                                                                {% sw_icon 'minus-circle' %}
+                                                                            {% elseif (iconTopBarArea == "minus-wide") %}
+                                                                                {% sw_icon 'minus-wide' %}
+                                                                            {% elseif (iconTopBarArea == "minus") %}
+                                                                                {% sw_icon 'minus' %}
+                                                                            {% elseif (iconTopBarArea == "mobile") %}
+                                                                                {% sw_icon 'mobile' %}
+                                                                            {% elseif (iconTopBarArea == "money-card") %}
+                                                                                {% sw_icon 'money-card' %}
+                                                                            {% elseif (iconTopBarArea == "money-cash") %}
+                                                                                {% sw_icon 'money-cash' %}
+                                                                            {% elseif (iconTopBarArea == "money-wallet") %}
+                                                                                {% sw_icon 'money-wallet' %}
+                                                                            {% elseif (iconTopBarArea == "more-horizontal") %}
+                                                                                {% sw_icon 'more-horizontal' %}
+                                                                            {% elseif (iconTopBarArea == "more-vertical") %}
+                                                                                {% sw_icon 'more-vertical' %}
+                                                                            {% elseif (iconTopBarArea == "moon") %}
+                                                                                {% sw_icon 'moon' %}
+                                                                            {% elseif (iconTopBarArea == "move-file") %}
+                                                                                {% sw_icon 'move-file' %}
+                                                                            {% elseif (iconTopBarArea == "package-closed") %}
+                                                                                {% sw_icon 'package-closed' %}
+                                                                            {% elseif (iconTopBarArea == "package-gift") %}
+                                                                                {% sw_icon 'package-gift' %}
+                                                                            {% elseif (iconTopBarArea == "package-open") %}
+                                                                                {% sw_icon 'package-open' %}
+                                                                            {% elseif (iconTopBarArea == "paper-pencil-signed") %}
+                                                                                {% sw_icon 'paper-pencil-signed' %}
+                                                                            {% elseif (iconTopBarArea == "paper-pencil") %}
+                                                                                {% sw_icon 'paper-pencil' %}
+                                                                            {% elseif (iconTopBarArea == "paperclip") %}
+                                                                                {% sw_icon 'paperclip' %}
+                                                                            {% elseif (iconTopBarArea == "paperplane") %}
+                                                                                {% sw_icon 'paperplane' %}
+                                                                            {% elseif (iconTopBarArea == "pawn") %}
+                                                                                {% sw_icon 'pawn' %}
+                                                                            {% elseif (iconTopBarArea == "pencil-brush") %}
+                                                                                {% sw_icon 'pencil-brush' %}
+                                                                            {% elseif (iconTopBarArea == "phone") %}
+                                                                                {% sw_icon 'phone' %}
+                                                                            {% elseif (iconTopBarArea == "photocamera") %}
+                                                                                {% sw_icon 'photocamera' %}
+                                                                            {% elseif (iconTopBarArea == "plastic-bag") %}
+                                                                                {% sw_icon 'plastic-bag' %}
+                                                                            {% elseif (iconTopBarArea == "plug") %}
+                                                                                {% sw_icon 'plug' %}
+                                                                            {% elseif (iconTopBarArea == "plus-block") %}
+                                                                                {% sw_icon 'plus-block' %}
+                                                                            {% elseif (iconTopBarArea == "plus-circle") %}
+                                                                                {% sw_icon 'plus-circle' %}
+                                                                            {% elseif (iconTopBarArea == "plus-wide") %}
+                                                                                {% sw_icon 'plus-wide' %}
+                                                                            {% elseif (iconTopBarArea == "plus") %}
+                                                                                {% sw_icon 'plus' %}
+                                                                            {% elseif (iconTopBarArea == "printer") %}
+                                                                                {% sw_icon 'printer' %}
+                                                                            {% elseif (iconTopBarArea == "products") %}
+                                                                                {% sw_icon 'products' %}
+                                                                            {% elseif (iconTopBarArea == "pulse") %}
+                                                                                {% sw_icon 'pulse' %}
+                                                                            {% elseif (iconTopBarArea == "pushpin") %}
+                                                                                {% sw_icon 'pushpin' %}
+                                                                            {% elseif (iconTopBarArea == "puzzle-piece") %}
+                                                                                {% sw_icon 'puzzle-piece' %}
+                                                                            {% elseif (iconTopBarArea == "quickjump") %}
+                                                                                {% sw_icon 'quickjump' %}
+                                                                            {% elseif (iconTopBarArea == "replace") %}
+                                                                                {% sw_icon 'replace' %}
+                                                                            {% elseif (iconTopBarArea == "reply") %}
+                                                                                {% sw_icon 'reply' %}
+                                                                            {% elseif (iconTopBarArea == "rocket") %}
+                                                                                {% sw_icon 'rocket' %}
+                                                                            {% elseif (iconTopBarArea == "ruler-pencil") %}
+                                                                                {% sw_icon 'ruler-pencil' %}
+                                                                            {% elseif (iconTopBarArea == "save") %}
+                                                                                {% sw_icon 'save' %}
+                                                                            {% elseif (iconTopBarArea == "screen-full") %}
+                                                                                {% sw_icon 'screen-full' %}
+                                                                            {% elseif (iconTopBarArea == "screen-minimize") %}
+                                                                                {% sw_icon 'screen-minimize' %}
+                                                                            {% elseif (iconTopBarArea == "search") %}
+                                                                                {% sw_icon 'search' %}
+                                                                            {% elseif (iconTopBarArea == "server") %}
+                                                                                {% sw_icon 'server' %}
+                                                                            {% elseif (iconTopBarArea == "settings") %}
+                                                                                {% sw_icon 'settings' %}
+                                                                            {% elseif (iconTopBarArea == "share") %}
+                                                                                {% sw_icon 'share' %}
+                                                                            {% elseif (iconTopBarArea == "shield") %}
+                                                                                {% sw_icon 'shield' %}
+                                                                            {% elseif (iconTopBarArea == "shop") %}
+                                                                                {% sw_icon 'shop' %}
+                                                                            {% elseif (iconTopBarArea == "sidebar-close") %}
+                                                                                {% sw_icon 'sidebar-close' %}
+                                                                            {% elseif (iconTopBarArea == "sidebar-open") %}
+                                                                                {% sw_icon 'sidebar-open' %}
+                                                                            {% elseif (iconTopBarArea == "sliders") %}
+                                                                                {% sw_icon 'sliders' %}
+                                                                            {% elseif (iconTopBarArea == "sliders-horizontal") %}
+                                                                                {% sw_icon 'sliders-horizontal' %}
+                                                                            {% elseif (iconTopBarArea == "sofa") %}
+                                                                                {% sw_icon 'sofa' %}
+                                                                            {% elseif (iconTopBarArea == "sort-down") %}
+                                                                                {% sw_icon 'sort-down' %}
+                                                                            {% elseif (iconTopBarArea == "sort-up") %}
+                                                                                {% sw_icon 'sort-up' %}
+                                                                            {% elseif (iconTopBarArea == "sparkles") %}
+                                                                                {% sw_icon 'sparkles' %}
+                                                                            {% elseif (iconTopBarArea == "speech-bubble") %}
+                                                                                {% sw_icon 'speech-bubble' %}
+                                                                            {% elseif (iconTopBarArea == "speech-bubbles") %}
+                                                                                {% sw_icon 'speech-bubbles' %}
+                                                                            {% elseif (iconTopBarArea == "square") %}
+                                                                                {% sw_icon 'square' %}
+                                                                            {% elseif (iconTopBarArea == "stack-block") %}
+                                                                                {% sw_icon 'stack-block' %}
+                                                                            {% elseif (iconTopBarArea == "stack-circle") %}
+                                                                                {% sw_icon 'stack-circle' %}
+                                                                            {% elseif (iconTopBarArea == "stack") %}
+                                                                                {% sw_icon 'stack' %}
+                                                                            {% elseif (iconTopBarArea == "star") %}
+                                                                                {% sw_icon 'star' %}
+                                                                            {% elseif (iconTopBarArea == "sun") %}
+                                                                                {% sw_icon 'sun' %}
+                                                                            {% elseif (iconTopBarArea == "tablet") %}
+                                                                                {% sw_icon 'tablet' %}
+                                                                            {% elseif (iconTopBarArea == "tags") %}
+                                                                                {% sw_icon 'tags' %}
+                                                                            {% elseif (iconTopBarArea == "target-big") %}
+                                                                                {% sw_icon 'target-big' %}
+                                                                            {% elseif (iconTopBarArea == "target-with-block") %}
+                                                                                {% sw_icon 'target-with-block' %}
+                                                                            {% elseif (iconTopBarArea == "terminal") %}
+                                                                                {% sw_icon 'terminal' %}
+                                                                            {% elseif (iconTopBarArea == "text-table") %}
+                                                                                {% sw_icon 'text-table' %}
+                                                                            {% elseif (iconTopBarArea == "thumb-down") %}
+                                                                                {% sw_icon 'thumb-down' %}
+                                                                            {% elseif (iconTopBarArea == "thumb-up") %}
+                                                                                {% sw_icon 'thumb-up' %}
+                                                                            {% elseif (iconTopBarArea == "tools") %}
+                                                                                {% sw_icon 'tools' %}
+                                                                            {% elseif (iconTopBarArea == "traffic-pawn") %}
+                                                                                {% sw_icon 'traffic-pawn' %}
+                                                                            {% elseif (iconTopBarArea == "trash") %}
+                                                                                {% sw_icon 'trash' %}
+                                                                            {% elseif (iconTopBarArea == "tray-down") %}
+                                                                                {% sw_icon 'tray-down' %}
+                                                                            {% elseif (iconTopBarArea == "tray-up") %}
+                                                                                {% sw_icon 'tray-up' %}
+                                                                            {% elseif (iconTopBarArea == "triangle") %}
+                                                                                {% sw_icon 'triangle' %}
+                                                                            {% elseif (iconTopBarArea == "trophy") %}
+                                                                                {% sw_icon 'trophy' %}
+                                                                            {% elseif (iconTopBarArea == "truck") %}
+                                                                                {% sw_icon 'truck' %}
+                                                                            {% elseif (iconTopBarArea == "video-camera") %}
+                                                                                {% sw_icon 'video-camera' %}
+                                                                            {% elseif (iconTopBarArea == "warning") %}
+                                                                                {% sw_icon 'warning' %}
+                                                                            {% elseif (iconTopBarArea == "x-block") %}
+                                                                                {% sw_icon 'x-block' %}
+                                                                            {% elseif (iconTopBarArea == "x-circle") %}
+                                                                                {% sw_icon 'x-circle' %}
+                                                                            {% elseif (iconTopBarArea == "x-wide") %}
+                                                                                {% sw_icon 'x-wide' %}
+                                                                            {% elseif (iconTopBarArea == "x") %}
+                                                                                {% sw_icon 'x' %}
+                                                                            {% endif %}
+                                                                        {% elseif (iconTypeTopBarArea == "snippet") %}
+                                                                            {% if ( i == 1) %}
+                                                                                {{ "sschreier.topbarnotifications.IconTopBarArea1"|trans|raw }}
+                                                                            {% elseif ( i == 2) %}
+                                                                                {{ "sschreier.topbarnotifications.IconTopBarArea2"|trans|raw }}
+                                                                            {% elseif ( i == 3) %}
+                                                                                {{ "sschreier.topbarnotifications.IconTopBarArea3"|trans|raw }}
+                                                                            {% elseif ( i == 4) %}
+                                                                                {{ "sschreier.topbarnotifications.IconTopBarArea4"|trans|raw }}
+                                                                            {% endif %}
                                                                         {% endif %}
-                                                                    {% elseif (iconTypeTopBarArea == "snippet") %}
-                                                                        {% if ( i == 1) %}
-                                                                            {{ "sschreier.topbarnotifications.IconTopBarArea1"|trans|raw }}
-                                                                        {% elseif ( i == 2) %}
-                                                                            {{ "sschreier.topbarnotifications.IconTopBarArea2"|trans|raw }}
-                                                                        {% elseif ( i == 3) %}
-                                                                            {{ "sschreier.topbarnotifications.IconTopBarArea3"|trans|raw }}
-                                                                        {% elseif ( i == 4) %}
-                                                                            {{ "sschreier.topbarnotifications.IconTopBarArea4"|trans|raw }}
-                                                                        {% endif %}
-                                                                    {% endif %}
-                                                                </span>
-                                                            {% endblock %}
+                                                                    </span>
+                                                                {% endblock %}
+                                                            {% endif %}
 
                                                             {% if (positionContentTopBarArea == "iconleft") %}
                                                                 {% block base_header_inner_topbarnotifications_container_topbar_nav_item_text_after %}

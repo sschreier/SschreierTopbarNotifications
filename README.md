@@ -13,8 +13,9 @@ A shopware 6 extension for a bar for information and notification texts or messa
 ## Possible Configurations for each of the possible four areas of the bar
  - show the area
  - select the viewports in which the area should be shown
+ - select, if the icon should be shown
  - select, if the icon should obtain from the select field or a snippet
- - select the icon from the select field (which you can find here: https://github.com/shopware/platform/tree/master/src/Storefront/Resources/app/storefront/dist/assets/icon/default )
+ - select the icon from the select field (which you can find here: https://github.com/shopware/shopware/tree/trunk/src/Storefront/Resources/app/storefront/dist/assets/icon/default or https://developer.shopware.com/resources/meteor-icon-kit/)
  - set the icon via snippet
  - set the icon color and hover icon color (*1)
  - set the icon width and height in pixels (*1)

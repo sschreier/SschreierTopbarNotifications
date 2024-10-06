@@ -138,6 +138,13 @@
             <label lang="de-DE">Auflösungen, in denen der Bereich angezeigt werden soll</label>
         </input-field>
 
+        <input-field type="bool">
+            <name>showIconTopBarArea1</name>
+            <label>show icon</label>
+            <label lang="de-DE">Icon anzeigen</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+
         <input-field type="single-select">
             <name>iconTypeTopBarArea1</name>
             <options>
@@ -269,6 +276,11 @@
                     <id>arrow-up</id>
                     <name>arrow-up</name>
                     <name lang="de-DE">arrow-up</name>
+                </option>
+                <option>
+                    <id>augmented</id>
+                    <name>augmented</name>
+                    <name lang="de-DE">augmented</name>
                 </option>
                 <option>
                     <id>avatar-multiple</id>
@@ -416,6 +428,11 @@
                     <name lang="de-DE">circle-download</name>
                 </option>
                 <option>
+                    <id>circle-upload</id>
+                    <name>circle-upload</name>
+                    <name lang="de-DE">circle-upload</name>
+                </option>
+                <option>
                     <id>circle</id>
                     <name>circle</name>
                     <name lang="de-DE">circle</name>
@@ -439,6 +456,36 @@
                     <id>cockpit</id>
                     <name>cockpit</name>
                     <name lang="de-DE">cockpit</name>
+                </option>
+                <option>
+                    <id>code</id>
+                    <name>code</name>
+                    <name lang="de-DE">code</name>
+                </option>
+                <option>
+                    <id>colorpicker</id>
+                    <name>colorpicker</name>
+                    <name lang="de-DE">colorpicker</name>
+                </option>
+                <option>
+                    <id>content</id>
+                    <name>content</name>
+                    <name lang="de-DE">content</name>
+                </option>
+                <option>
+                    <id>dashboard</id>
+                    <name>dashboard</name>
+                    <name lang="de-DE">dashboard</name>
+                </option>
+                <option>
+                    <id>database</id>
+                    <name>database</name>
+                    <name lang="de-DE">database</name>
+                </option>
+                <option>
+                    <id>debug</id>
+                    <name>debug</name>
+                    <name lang="de-DE">debug</name>
                 </option>
                 <option>
                     <id>desktop</id>
@@ -471,6 +518,11 @@
                     <name lang="de-DE">error</name>
                 </option>
                 <option>
+                    <id>euro</id>
+                    <name>euro</name>
+                    <name lang="de-DE">euro</name>
+                </option>
+                <option>
                     <id>external</id>
                     <name>external</name>
                     <name lang="de-DE">external</name>
@@ -489,6 +541,11 @@
                     <id>file</id>
                     <name>file</name>
                     <name lang="de-DE">file</name>
+                </option>
+                <option>
+                    <id>filter</id>
+                    <name>filter</name>
+                    <name lang="de-DE">filter</name>
                 </option>
                 <option>
                     <id>flag</id>
@@ -536,6 +593,11 @@
                     <name lang="de-DE">heart</name>
                 </option>
                 <option>
+                    <id>heart-fill</id>
+                    <name>heart-fill</name>
+                    <name lang="de-DE">heart-fill</name>
+                </option>
+                <option>
                     <id>help</id>
                     <name>help</name>
                     <name lang="de-DE">help</name>
@@ -564,6 +626,11 @@
                     <id>inbox</id>
                     <name>inbox</name>
                     <name lang="de-DE">inbox</name>
+                </option>
+                <option>
+                    <id>infinity</id>
+                    <name>infinity</name>
+                    <name lang="de-DE">infinity</name>
                 </option>
                 <option>
                     <id>info</id>
@@ -721,6 +788,16 @@
                     <name lang="de-DE">money-wallet</name>
                 </option>
                 <option>
+                    <id>more-horizontal</id>
+                    <name>more-horizontal</name>
+                    <name lang="de-DE">more-horizontal</name>
+                </option>
+                <option>
+                    <id>more-vertical</id>
+                    <name>more-vertical</name>
+                    <name lang="de-DE">more-vertical</name>
+                </option>
+                <option>
                     <id>moon</id>
                     <name>moon</name>
                     <name lang="de-DE">moon</name>
@@ -779,6 +856,11 @@
                     <id>pencil-brush</id>
                     <name>pencil-brush</name>
                     <name lang="de-DE">pencil-brush</name>
+                </option>
+                <option>
+                    <id>phone</id>
+                    <name>phone</name>
+                    <name lang="de-DE">phone</name>
                 </option>
                 <option>
                     <id>photocamera</id>
@@ -911,9 +993,44 @@
                     <name lang="de-DE">shop</name>
                 </option>
                 <option>
+                    <id>sidebar-close</id>
+                    <name>sidebar-close</name>
+                    <name lang="de-DE">sidebar-close</name>
+                </option>
+                <option>
+                    <id>sidebar-open</id>
+                    <name>sidebar-open</name>
+                    <name lang="de-DE">sidebar-open</name>
+                </option>
+                <option>
+                    <id>sliders</id>
+                    <name>sliders</name>
+                    <name lang="de-DE">sliders</name>
+                </option>
+                <option>
+                    <id>sliders-horizontal</id>
+                    <name>sliders-horizontal</name>
+                    <name lang="de-DE">sliders-horizontal</name>
+                </option>
+                <option>
                     <id>sofa</id>
                     <name>sofa</name>
                     <name lang="de-DE">sofa</name>
+                </option>
+                <option>
+                    <id>sort-down</id>
+                    <name>sort-down</name>
+                    <name lang="de-DE">sort-down</name>
+                </option>
+                <option>
+                    <id>sort-up</id>
+                    <name>sort-up</name>
+                    <name lang="de-DE">sort-up</name>
+                </option>
+                <option>
+                    <id>sparkles</id>
+                    <name>sparkles</name>
+                    <name lang="de-DE">sparkles</name>
                 </option>
                 <option>
                     <id>speech-bubble</id>
@@ -924,6 +1041,11 @@
                     <id>speech-bubbles</id>
                     <name>speech-bubbles</name>
                     <name lang="de-DE">speech-bubbles</name>
+                </option>
+                <option>
+                    <id>square</id>
+                    <name>square</name>
+                    <name lang="de-DE">square</name>
                 </option>
                 <option>
                     <id>stack-block</id>
@@ -976,6 +1098,11 @@
                     <name lang="de-DE">terminal</name>
                 </option>
                 <option>
+                    <id>text-table</id>
+                    <name>text-table</name>
+                    <name lang="de-DE">text-table</name>
+                </option>
+                <option>
                     <id>thumb-down</id>
                     <name>thumb-down</name>
                     <name lang="de-DE">thumb-down</name>
@@ -1011,9 +1138,19 @@
                     <name lang="de-DE">tray-up</name>
                 </option>
                 <option>
+                    <id>triangle</id>
+                    <name>triangle</name>
+                    <name lang="de-DE">triangle</name>
+                </option>
+                <option>
                     <id>trophy</id>
                     <name>trophy</name>
                     <name lang="de-DE">trophy</name>
+                </option>
+                <option>
+                    <id>truck</id>
+                    <name>truck</name>
+                    <name lang="de-DE">truck</name>
                 </option>
                 <option>
                     <id>video-camera</id>
@@ -1293,6 +1430,13 @@
             <label lang="de-DE">Auflösungen, in denen der Bereich angezeigt werden soll</label>
         </input-field>
 
+        <input-field type="bool">
+            <name>showIconTopBarArea2</name>
+            <label>show icon</label>
+            <label lang="de-DE">Icon anzeigen</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+
         <input-field type="single-select">
             <name>iconTypeTopBarArea2</name>
             <options>
@@ -1424,6 +1568,11 @@
                     <id>arrow-up</id>
                     <name>arrow-up</name>
                     <name lang="de-DE">arrow-up</name>
+                </option>
+                <option>
+                    <id>augmented</id>
+                    <name>augmented</name>
+                    <name lang="de-DE">augmented</name>
                 </option>
                 <option>
                     <id>avatar-multiple</id>
@@ -1571,6 +1720,11 @@
                     <name lang="de-DE">circle-download</name>
                 </option>
                 <option>
+                    <id>circle-upload</id>
+                    <name>circle-upload</name>
+                    <name lang="de-DE">circle-upload</name>
+                </option>
+                <option>
                     <id>circle</id>
                     <name>circle</name>
                     <name lang="de-DE">circle</name>
@@ -1594,6 +1748,36 @@
                     <id>cockpit</id>
                     <name>cockpit</name>
                     <name lang="de-DE">cockpit</name>
+                </option>
+                <option>
+                    <id>code</id>
+                    <name>code</name>
+                    <name lang="de-DE">code</name>
+                </option>
+                <option>
+                    <id>colorpicker</id>
+                    <name>colorpicker</name>
+                    <name lang="de-DE">colorpicker</name>
+                </option>
+                <option>
+                    <id>content</id>
+                    <name>content</name>
+                    <name lang="de-DE">content</name>
+                </option>
+                <option>
+                    <id>dashboard</id>
+                    <name>dashboard</name>
+                    <name lang="de-DE">dashboard</name>
+                </option>
+                <option>
+                    <id>database</id>
+                    <name>database</name>
+                    <name lang="de-DE">database</name>
+                </option>
+                <option>
+                    <id>debug</id>
+                    <name>debug</name>
+                    <name lang="de-DE">debug</name>
                 </option>
                 <option>
                     <id>desktop</id>
@@ -1626,6 +1810,11 @@
                     <name lang="de-DE">error</name>
                 </option>
                 <option>
+                    <id>euro</id>
+                    <name>euro</name>
+                    <name lang="de-DE">euro</name>
+                </option>
+                <option>
                     <id>external</id>
                     <name>external</name>
                     <name lang="de-DE">external</name>
@@ -1644,6 +1833,11 @@
                     <id>file</id>
                     <name>file</name>
                     <name lang="de-DE">file</name>
+                </option>
+                <option>
+                    <id>filter</id>
+                    <name>filter</name>
+                    <name lang="de-DE">filter</name>
                 </option>
                 <option>
                     <id>flag</id>
@@ -1691,6 +1885,11 @@
                     <name lang="de-DE">heart</name>
                 </option>
                 <option>
+                    <id>heart-fill</id>
+                    <name>heart-fill</name>
+                    <name lang="de-DE">heart-fill</name>
+                </option>
+                <option>
                     <id>help</id>
                     <name>help</name>
                     <name lang="de-DE">help</name>
@@ -1719,6 +1918,11 @@
                     <id>inbox</id>
                     <name>inbox</name>
                     <name lang="de-DE">inbox</name>
+                </option>
+                <option>
+                    <id>infinity</id>
+                    <name>infinity</name>
+                    <name lang="de-DE">infinity</name>
                 </option>
                 <option>
                     <id>info</id>
@@ -1876,6 +2080,16 @@
                     <name lang="de-DE">money-wallet</name>
                 </option>
                 <option>
+                    <id>more-horizontal</id>
+                    <name>more-horizontal</name>
+                    <name lang="de-DE">more-horizontal</name>
+                </option>
+                <option>
+                    <id>more-vertical</id>
+                    <name>more-vertical</name>
+                    <name lang="de-DE">more-vertical</name>
+                </option>
+                <option>
                     <id>moon</id>
                     <name>moon</name>
                     <name lang="de-DE">moon</name>
@@ -1934,6 +2148,11 @@
                     <id>pencil-brush</id>
                     <name>pencil-brush</name>
                     <name lang="de-DE">pencil-brush</name>
+                </option>
+                <option>
+                    <id>phone</id>
+                    <name>phone</name>
+                    <name lang="de-DE">phone</name>
                 </option>
                 <option>
                     <id>photocamera</id>
@@ -2066,9 +2285,44 @@
                     <name lang="de-DE">shop</name>
                 </option>
                 <option>
+                    <id>sidebar-close</id>
+                    <name>sidebar-close</name>
+                    <name lang="de-DE">sidebar-close</name>
+                </option>
+                <option>
+                    <id>sidebar-open</id>
+                    <name>sidebar-open</name>
+                    <name lang="de-DE">sidebar-open</name>
+                </option>
+                <option>
+                    <id>sliders</id>
+                    <name>sliders</name>
+                    <name lang="de-DE">sliders</name>
+                </option>
+                <option>
+                    <id>sliders-horizontal</id>
+                    <name>sliders-horizontal</name>
+                    <name lang="de-DE">sliders-horizontal</name>
+                </option>
+                <option>
                     <id>sofa</id>
                     <name>sofa</name>
                     <name lang="de-DE">sofa</name>
+                </option>
+                <option>
+                    <id>sort-down</id>
+                    <name>sort-down</name>
+                    <name lang="de-DE">sort-down</name>
+                </option>
+                <option>
+                    <id>sort-up</id>
+                    <name>sort-up</name>
+                    <name lang="de-DE">sort-up</name>
+                </option>
+                <option>
+                    <id>sparkles</id>
+                    <name>sparkles</name>
+                    <name lang="de-DE">sparkles</name>
                 </option>
                 <option>
                     <id>speech-bubble</id>
@@ -2079,6 +2333,11 @@
                     <id>speech-bubbles</id>
                     <name>speech-bubbles</name>
                     <name lang="de-DE">speech-bubbles</name>
+                </option>
+                <option>
+                    <id>square</id>
+                    <name>square</name>
+                    <name lang="de-DE">square</name>
                 </option>
                 <option>
                     <id>stack-block</id>
@@ -2131,6 +2390,11 @@
                     <name lang="de-DE">terminal</name>
                 </option>
                 <option>
+                    <id>text-table</id>
+                    <name>text-table</name>
+                    <name lang="de-DE">text-table</name>
+                </option>
+                <option>
                     <id>thumb-down</id>
                     <name>thumb-down</name>
                     <name lang="de-DE">thumb-down</name>
@@ -2166,9 +2430,19 @@
                     <name lang="de-DE">tray-up</name>
                 </option>
                 <option>
+                    <id>triangle</id>
+                    <name>triangle</name>
+                    <name lang="de-DE">triangle</name>
+                </option>
+                <option>
                     <id>trophy</id>
                     <name>trophy</name>
                     <name lang="de-DE">trophy</name>
+                </option>
+                <option>
+                    <id>truck</id>
+                    <name>truck</name>
+                    <name lang="de-DE">truck</name>
                 </option>
                 <option>
                     <id>video-camera</id>
@@ -2203,7 +2477,7 @@
             </options>
             <label>icon</label>
             <label lang="de-DE">Icon</label>
-            <defaultValue>package-open</defaultValue>
+            <defaultValue>truck</defaultValue>
             <helpText>for a preview of the icons, see https://component-library.shopware.com/icons/</helpText>
             <helpText lang="de-DE">Vorschau der Icons siehe https://component-library.shopware.com/icons/</helpText>
         </input-field>
@@ -2448,6 +2722,13 @@
             <label lang="de-DE">Auflösungen, in denen der Bereich angezeigt werden soll</label>
         </input-field>
 
+        <input-field type="bool">
+            <name>showIconTopBarArea3</name>
+            <label>show icon</label>
+            <label lang="de-DE">Icon anzeigen</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+
         <input-field type="single-select">
             <name>iconTypeTopBarArea3</name>
             <options>
@@ -2579,6 +2860,11 @@
                     <id>arrow-up</id>
                     <name>arrow-up</name>
                     <name lang="de-DE">arrow-up</name>
+                </option>
+                <option>
+                    <id>augmented</id>
+                    <name>augmented</name>
+                    <name lang="de-DE">augmented</name>
                 </option>
                 <option>
                     <id>avatar-multiple</id>
@@ -2726,6 +3012,11 @@
                     <name lang="de-DE">circle-download</name>
                 </option>
                 <option>
+                    <id>circle-upload</id>
+                    <name>circle-upload</name>
+                    <name lang="de-DE">circle-upload</name>
+                </option>
+                <option>
                     <id>circle</id>
                     <name>circle</name>
                     <name lang="de-DE">circle</name>
@@ -2749,6 +3040,36 @@
                     <id>cockpit</id>
                     <name>cockpit</name>
                     <name lang="de-DE">cockpit</name>
+                </option>
+                <option>
+                    <id>code</id>
+                    <name>code</name>
+                    <name lang="de-DE">code</name>
+                </option>
+                <option>
+                    <id>colorpicker</id>
+                    <name>colorpicker</name>
+                    <name lang="de-DE">colorpicker</name>
+                </option>
+                <option>
+                    <id>content</id>
+                    <name>content</name>
+                    <name lang="de-DE">content</name>
+                </option>
+                <option>
+                    <id>dashboard</id>
+                    <name>dashboard</name>
+                    <name lang="de-DE">dashboard</name>
+                </option>
+                <option>
+                    <id>database</id>
+                    <name>database</name>
+                    <name lang="de-DE">database</name>
+                </option>
+                <option>
+                    <id>debug</id>
+                    <name>debug</name>
+                    <name lang="de-DE">debug</name>
                 </option>
                 <option>
                     <id>desktop</id>
@@ -2781,6 +3102,11 @@
                     <name lang="de-DE">error</name>
                 </option>
                 <option>
+                    <id>euro</id>
+                    <name>euro</name>
+                    <name lang="de-DE">euro</name>
+                </option>
+                <option>
                     <id>external</id>
                     <name>external</name>
                     <name lang="de-DE">external</name>
@@ -2799,6 +3125,11 @@
                     <id>file</id>
                     <name>file</name>
                     <name lang="de-DE">file</name>
+                </option>
+                <option>
+                    <id>filter</id>
+                    <name>filter</name>
+                    <name lang="de-DE">filter</name>
                 </option>
                 <option>
                     <id>flag</id>
@@ -2846,6 +3177,11 @@
                     <name lang="de-DE">heart</name>
                 </option>
                 <option>
+                    <id>heart-fill</id>
+                    <name>heart-fill</name>
+                    <name lang="de-DE">heart-fill</name>
+                </option>
+                <option>
                     <id>help</id>
                     <name>help</name>
                     <name lang="de-DE">help</name>
@@ -2874,6 +3210,11 @@
                     <id>inbox</id>
                     <name>inbox</name>
                     <name lang="de-DE">inbox</name>
+                </option>
+                <option>
+                    <id>infinity</id>
+                    <name>infinity</name>
+                    <name lang="de-DE">infinity</name>
                 </option>
                 <option>
                     <id>info</id>
@@ -3031,6 +3372,16 @@
                     <name lang="de-DE">money-wallet</name>
                 </option>
                 <option>
+                    <id>more-horizontal</id>
+                    <name>more-horizontal</name>
+                    <name lang="de-DE">more-horizontal</name>
+                </option>
+                <option>
+                    <id>more-vertical</id>
+                    <name>more-vertical</name>
+                    <name lang="de-DE">more-vertical</name>
+                </option>
+                <option>
                     <id>moon</id>
                     <name>moon</name>
                     <name lang="de-DE">moon</name>
@@ -3089,6 +3440,11 @@
                     <id>pencil-brush</id>
                     <name>pencil-brush</name>
                     <name lang="de-DE">pencil-brush</name>
+                </option>
+                <option>
+                    <id>phone</id>
+                    <name>phone</name>
+                    <name lang="de-DE">phone</name>
                 </option>
                 <option>
                     <id>photocamera</id>
@@ -3221,9 +3577,44 @@
                     <name lang="de-DE">shop</name>
                 </option>
                 <option>
+                    <id>sidebar-close</id>
+                    <name>sidebar-close</name>
+                    <name lang="de-DE">sidebar-close</name>
+                </option>
+                <option>
+                    <id>sidebar-open</id>
+                    <name>sidebar-open</name>
+                    <name lang="de-DE">sidebar-open</name>
+                </option>
+                <option>
+                    <id>sliders</id>
+                    <name>sliders</name>
+                    <name lang="de-DE">sliders</name>
+                </option>
+                <option>
+                    <id>sliders-horizontal</id>
+                    <name>sliders-horizontal</name>
+                    <name lang="de-DE">sliders-horizontal</name>
+                </option>
+                <option>
                     <id>sofa</id>
                     <name>sofa</name>
                     <name lang="de-DE">sofa</name>
+                </option>
+                <option>
+                    <id>sort-down</id>
+                    <name>sort-down</name>
+                    <name lang="de-DE">sort-down</name>
+                </option>
+                <option>
+                    <id>sort-up</id>
+                    <name>sort-up</name>
+                    <name lang="de-DE">sort-up</name>
+                </option>
+                <option>
+                    <id>sparkles</id>
+                    <name>sparkles</name>
+                    <name lang="de-DE">sparkles</name>
                 </option>
                 <option>
                     <id>speech-bubble</id>
@@ -3234,6 +3625,11 @@
                     <id>speech-bubbles</id>
                     <name>speech-bubbles</name>
                     <name lang="de-DE">speech-bubbles</name>
+                </option>
+                <option>
+                    <id>square</id>
+                    <name>square</name>
+                    <name lang="de-DE">square</name>
                 </option>
                 <option>
                     <id>stack-block</id>
@@ -3286,6 +3682,11 @@
                     <name lang="de-DE">terminal</name>
                 </option>
                 <option>
+                    <id>text-table</id>
+                    <name>text-table</name>
+                    <name lang="de-DE">text-table</name>
+                </option>
+                <option>
                     <id>thumb-down</id>
                     <name>thumb-down</name>
                     <name lang="de-DE">thumb-down</name>
@@ -3321,9 +3722,19 @@
                     <name lang="de-DE">tray-up</name>
                 </option>
                 <option>
+                    <id>triangle</id>
+                    <name>triangle</name>
+                    <name lang="de-DE">triangle</name>
+                </option>
+                <option>
                     <id>trophy</id>
                     <name>trophy</name>
                     <name lang="de-DE">trophy</name>
+                </option>
+                <option>
+                    <id>truck</id>
+                    <name>truck</name>
+                    <name lang="de-DE">truck</name>
                 </option>
                 <option>
                     <id>video-camera</id>
@@ -3603,6 +4014,13 @@
             <label lang="de-DE">Auflösungen, in denen der Bereich angezeigt werden soll</label>
         </input-field>
 
+        <input-field type="bool">
+            <name>showIconTopBarArea4</name>
+            <label>show icon</label>
+            <label lang="de-DE">Icon anzeigen</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+
         <input-field type="single-select">
             <name>iconTypeTopBarArea4</name>
             <options>
@@ -3734,6 +4152,11 @@
                     <id>arrow-up</id>
                     <name>arrow-up</name>
                     <name lang="de-DE">arrow-up</name>
+                </option>
+                <option>
+                    <id>augmented</id>
+                    <name>augmented</name>
+                    <name lang="de-DE">augmented</name>
                 </option>
                 <option>
                     <id>avatar-multiple</id>
@@ -3881,6 +4304,11 @@
                     <name lang="de-DE">circle-download</name>
                 </option>
                 <option>
+                    <id>circle-upload</id>
+                    <name>circle-upload</name>
+                    <name lang="de-DE">circle-upload</name>
+                </option>
+                <option>
                     <id>circle</id>
                     <name>circle</name>
                     <name lang="de-DE">circle</name>
@@ -3904,6 +4332,36 @@
                     <id>cockpit</id>
                     <name>cockpit</name>
                     <name lang="de-DE">cockpit</name>
+                </option>
+                <option>
+                    <id>code</id>
+                    <name>code</name>
+                    <name lang="de-DE">code</name>
+                </option>
+                <option>
+                    <id>colorpicker</id>
+                    <name>colorpicker</name>
+                    <name lang="de-DE">colorpicker</name>
+                </option>
+                <option>
+                    <id>content</id>
+                    <name>content</name>
+                    <name lang="de-DE">content</name>
+                </option>
+                <option>
+                    <id>dashboard</id>
+                    <name>dashboard</name>
+                    <name lang="de-DE">dashboard</name>
+                </option>
+                <option>
+                    <id>database</id>
+                    <name>database</name>
+                    <name lang="de-DE">database</name>
+                </option>
+                <option>
+                    <id>debug</id>
+                    <name>debug</name>
+                    <name lang="de-DE">debug</name>
                 </option>
                 <option>
                     <id>desktop</id>
@@ -3936,6 +4394,11 @@
                     <name lang="de-DE">error</name>
                 </option>
                 <option>
+                    <id>euro</id>
+                    <name>euro</name>
+                    <name lang="de-DE">euro</name>
+                </option>
+                <option>
                     <id>external</id>
                     <name>external</name>
                     <name lang="de-DE">external</name>
@@ -3954,6 +4417,11 @@
                     <id>file</id>
                     <name>file</name>
                     <name lang="de-DE">file</name>
+                </option>
+                <option>
+                    <id>filter</id>
+                    <name>filter</name>
+                    <name lang="de-DE">filter</name>
                 </option>
                 <option>
                     <id>flag</id>
@@ -4001,6 +4469,11 @@
                     <name lang="de-DE">heart</name>
                 </option>
                 <option>
+                    <id>heart-fill</id>
+                    <name>heart-fill</name>
+                    <name lang="de-DE">heart-fill</name>
+                </option>
+                <option>
                     <id>help</id>
                     <name>help</name>
                     <name lang="de-DE">help</name>
@@ -4029,6 +4502,11 @@
                     <id>inbox</id>
                     <name>inbox</name>
                     <name lang="de-DE">inbox</name>
+                </option>
+                <option>
+                    <id>infinity</id>
+                    <name>infinity</name>
+                    <name lang="de-DE">infinity</name>
                 </option>
                 <option>
                     <id>info</id>
@@ -4186,6 +4664,16 @@
                     <name lang="de-DE">money-wallet</name>
                 </option>
                 <option>
+                    <id>more-horizontal</id>
+                    <name>more-horizontal</name>
+                    <name lang="de-DE">more-horizontal</name>
+                </option>
+                <option>
+                    <id>more-vertical</id>
+                    <name>more-vertical</name>
+                    <name lang="de-DE">more-vertical</name>
+                </option>
+                <option>
                     <id>moon</id>
                     <name>moon</name>
                     <name lang="de-DE">moon</name>
@@ -4244,6 +4732,11 @@
                     <id>pencil-brush</id>
                     <name>pencil-brush</name>
                     <name lang="de-DE">pencil-brush</name>
+                </option>
+                <option>
+                    <id>phone</id>
+                    <name>phone</name>
+                    <name lang="de-DE">phone</name>
                 </option>
                 <option>
                     <id>photocamera</id>
@@ -4376,9 +4869,44 @@
                     <name lang="de-DE">shop</name>
                 </option>
                 <option>
+                    <id>sidebar-close</id>
+                    <name>sidebar-close</name>
+                    <name lang="de-DE">sidebar-close</name>
+                </option>
+                <option>
+                    <id>sidebar-open</id>
+                    <name>sidebar-open</name>
+                    <name lang="de-DE">sidebar-open</name>
+                </option>
+                <option>
+                    <id>sliders</id>
+                    <name>sliders</name>
+                    <name lang="de-DE">sliders</name>
+                </option>
+                <option>
+                    <id>sliders-horizontal</id>
+                    <name>sliders-horizontal</name>
+                    <name lang="de-DE">sliders-horizontal</name>
+                </option>
+                <option>
                     <id>sofa</id>
                     <name>sofa</name>
                     <name lang="de-DE">sofa</name>
+                </option>
+                <option>
+                    <id>sort-down</id>
+                    <name>sort-down</name>
+                    <name lang="de-DE">sort-down</name>
+                </option>
+                <option>
+                    <id>sort-up</id>
+                    <name>sort-up</name>
+                    <name lang="de-DE">sort-up</name>
+                </option>
+                <option>
+                    <id>sparkles</id>
+                    <name>sparkles</name>
+                    <name lang="de-DE">sparkles</name>
                 </option>
                 <option>
                     <id>speech-bubble</id>
@@ -4389,6 +4917,11 @@
                     <id>speech-bubbles</id>
                     <name>speech-bubbles</name>
                     <name lang="de-DE">speech-bubbles</name>
+                </option>
+                <option>
+                    <id>square</id>
+                    <name>square</name>
+                    <name lang="de-DE">square</name>
                 </option>
                 <option>
                     <id>stack-block</id>
@@ -4441,6 +4974,11 @@
                     <name lang="de-DE">terminal</name>
                 </option>
                 <option>
+                    <id>text-table</id>
+                    <name>text-table</name>
+                    <name lang="de-DE">text-table</name>
+                </option>
+                <option>
                     <id>thumb-down</id>
                     <name>thumb-down</name>
                     <name lang="de-DE">thumb-down</name>
@@ -4476,9 +5014,19 @@
                     <name lang="de-DE">tray-up</name>
                 </option>
                 <option>
+                    <id>triangle</id>
+                    <name>triangle</name>
+                    <name lang="de-DE">triangle</name>
+                </option>
+                <option>
                     <id>trophy</id>
                     <name>trophy</name>
                     <name lang="de-DE">trophy</name>
+                </option>
+                <option>
+                    <id>truck</id>
+                    <name>truck</name>
+                    <name lang="de-DE">truck</name>
                 </option>
                 <option>
                     <id>video-camera</id>
