@@ -1,7 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Sschreier\TopbarNotifications\Subscriber;
+/*
+ * (c) Sebastian Schreier <info@sebastianschreier.de>
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Sschreier\TopbarNotifications\Storefront\Subscriber;
 
 use Shopware\Core\System\SystemConfig\SystemConfigService;
 use Shopware\Storefront\Theme\Event\ThemeCompilerEnrichScssVariablesEvent;
