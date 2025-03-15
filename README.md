@@ -1,6 +1,6 @@
-# bar for information and notification texts or messages for Shopware 6
+# An extension for a bar for information and notification texts or messages for Shopware 6
 
-A shopware 6 extension for a bar for information and notification texts or messages which can contain up to 4 areas. It can be displayed either in the top bar or in the footer bar or also above or below the breadcrumb navigation.
+An extension for a bar for information and notification texts or messages which can contain up to 4 areas. It can be displayed either in the top bar or in the footer bar or also above or below the breadcrumb navigation.
 
 ## Possible Configurations for the bar
  - show the content in a top or footer bar or above or below the breadcrumb navigation
@@ -51,7 +51,7 @@ After changing settings specifically for the appearance of the areas (*1), the t
 3. Click on the button "Save"
 
 ## How to install the extension
-### via console (recommended)
+### via zip and console (recommended)
 1. Download the latest _SschreierTopbarNotifications-master.zip_.
 2. Unzip the zip file and rename the folder to _SschreierTopbarNotifications_. 
 3. Move the folder to the project folder _custom/plugins/_ .
@@ -74,7 +74,15 @@ bin/console plugin:install --activate SschreierTopbarNotifications
 ],
 ```
 
-2. Connect to the console via ssh and install the plugin source code via the command 
+2. Connect to the console via ssh and install the plugin via the command
+```
+composer require sschreier/sschreiertopbarnotifications
+bin/console plugin:refresh
+bin/console plugin:install --activate SschreierTopbarNotifications
+```
+
+### via https://packagist.org
+- Connect to the console via ssh and install the plugin via the command
 ```
 composer require sschreier/sschreiertopbarnotifications
 bin/console plugin:refresh
