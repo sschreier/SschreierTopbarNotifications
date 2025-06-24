@@ -1,0 +1,13 @@
+{% sw_extends '@Storefront/storefront/layout/footer.html.twig' %}
+
+{% block base_footer %}
+    {% block base_footer_topbarnotifications_before %}
+        {% if config('SschreierTopbarNotifications.config.showContentIn') == "footerbar" %}
+            {% sw_include '@SschreierTopbarNotifications/storefront/topbarnotifications.html.twig' %}
+        {% endif %}
+    {% endblock %}
+
+    {{ parent() }}
+
+    {% block base_footer_topbarnotifications_after %}{% endblock %}
+{% endblock %}
