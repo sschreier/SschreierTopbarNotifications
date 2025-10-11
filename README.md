@@ -107,48 +107,48 @@ bin/console plugin:install --activate SschreierTopbarNotifications
 
 ### top bar with four areas
 
-![top bar with four areas](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image1.jpg)
+![top bar with four areas](https://www.web-solutions-dresden.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image1.jpg)
 
 ### top bar with four areas, first area is linked with a modal box
 
-![top bar with four areas, first area is linked with a modal box](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image2.jpg)
+![top bar with four areas, first area is linked with a modal box](https://www.web-solutions-dresden.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image2.jpg)
 
 ### top bar with four areas in a smaller viewport
 
-![top bar with four areas in a smaller viewport](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image3.jpg)
+![top bar with four areas in a smaller viewport](https://www.web-solutions-dresden.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image3.jpg)
 
 ### top bar with only one area
 
-![top bar with only one area](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image4.jpg)
+![top bar with only one area](https://www.web-solutions-dresden.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image4.jpg)
 
 ### footer bar with four areas
 
-![footer bar with four areas](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image9.jpg)
+![footer bar with four areas](https://www.web-solutions-dresden.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image9.jpg)
 
 ### bar with only one area above the breadcrumb navigation
 
-![bar with only one area above the breadcrumb navigation](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image11.jpg)
+![bar with only one area above the breadcrumb navigation](https://www.web-solutions-dresden.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image11.jpg)
 
 ### bar with only one area below the breadcrumb navigation
 
-![bar with only one area below the breadcrumb navigation](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image12.jpg)
+![bar with only one area below the breadcrumb navigation](https://www.web-solutions-dresden.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image12.jpg)
 
 ### extension configuration - top bar part 1
 
-![extension configuration - top bar part 1](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image5.jpg)
+![extension configuration - top bar part 1](https://www.web-solutions-dresden.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image5.jpg)
 
 ### extension configuration - top bar part 2
 
-![extension configuration - top bar part 2](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image6.jpg)
+![extension configuration - top bar part 2](https://www.web-solutions-dresden.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image6.jpg)
 
 ### extension configuration - area 1 part 1
 
-![extension configuration - area 1 part 1](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image7.jpg)
+![extension configuration - area 1 part 1](https://www.web-solutions-dresden.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image7.jpg)
 
 ### extension configuration - area 1 part 2
 
-![extension configuration - area 1 part 2](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image8.jpg)
+![extension configuration - area 1 part 2](https://www.web-solutions-dresden.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image8.jpg)
 
 ### extension configuration - area 1 part 3
 
-![extension configuration - area 1 part 3](https://www.sebastianschreier.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image10.jpg)
+![extension configuration - area 1 part 3](https://www.web-solutions-dresden.de/plugins/sschreierTopbarnotifications/sschreierTopbarnotifications-Image10.jpg)
