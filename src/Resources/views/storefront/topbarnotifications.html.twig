@@ -4,7 +4,7 @@
             {% block base_header_inner_topbarnotifications_container_topbar %}
                 <div class="top-bar top-bar-notification d-lg-block">
                     {% block base_header_inner_topbarnotifications_container_topbar_nav %}
-                        <nav class="top-bar-notification-nav{% if config('SschreierTopbarNotifications.config.fiftyPercentWidthInSmTopBarAreas') == true %} sm-width-50{% endif %}">
+                        <div class="top-bar-notification-nav{% if config('SschreierTopbarNotifications.config.fiftyPercentWidthInSmTopBarAreas') == true %} sm-width-50{% endif %}" role="list">
                             {% block base_header_inner_topbarnotifications_container_topbar_nav_for %}
 
                                 {% for i in 1..4 %}
@@ -79,9 +79,9 @@
 
                                     {% if (showTopBarArea == true) %}
                                         {% block base_header_inner_topbarnotifications_container_topbar_nav_item_container_link %}
-                                            {% if (linkTopBarArea != "") %}<a {% if (linkTargetTopBarArea == "modalbox") %}data-ajax-modal="true" data-modal-class="top-bar-notification-modal" data-url="{% if (linkTargetTopBarArea == "modalbox") %}{{ path('frontend.cms.page', { id:  linkTopBarArea }) }}{% else %}{{ linkTopBarArea }}{% endif %}" {% endif %}href="{% if (linkTargetTopBarArea == "modalbox") %}{{ path('frontend.cms.page', { id:  linkTopBarArea }) }}{% else %}{{ linkTopBarArea }}{% endif %}"{% if (linkTitleTopBarArea != "") %} title="{{ linkTitleTopBarArea }}"{% endif %} class="top-bar-notification-nav-item-link d-none {% for showInViewportTopBarAreaArray in showInViewportTopBarArea %}{{ "d-only-" ~ showInViewportTopBarAreaArray ~ "-flex " }}{% endfor %}"{% if (linkTargetTopBarArea == "blank") %} target="_blank" rel="noopener"{% endif %}>{% endif %}
+                                            {% if (linkTopBarArea != "") %}<a {% if (linkTargetTopBarArea == "modalbox") %}data-ajax-modal="true" data-modal-class="top-bar-notification-modal" data-url="{% if (linkTargetTopBarArea == "modalbox") %}{{ path('frontend.cms.page', { id:  linkTopBarArea }) }}{% else %}{{ linkTopBarArea }}{% endif %}" {% endif %}href="{% if (linkTargetTopBarArea == "modalbox") %}{{ path('frontend.cms.page', { id:  linkTopBarArea }) }}{% else %}{{ linkTopBarArea }}{% endif %}"{% if (linkTitleTopBarArea != "") %} title="{{ linkTitleTopBarArea }}"{% endif %} class="top-bar-notification-nav-item-link d-none-topbar {% for showInViewportTopBarAreaArray in showInViewportTopBarArea %}{{ "d-only-" ~ showInViewportTopBarAreaArray ~ "-flex " }}{% endfor %}"{% if (linkTargetTopBarArea == "blank") %} target="_blank" rel="noopener noreferrer"{% endif %} role="listitem">{% endif %}
                                                 {% block base_header_inner_topbarnotifications_container_topbar_nav_item_container %}
-                                                    <div class="top-bar-notification-nav-item-container {% if (linkTopBarArea == "") %}d-none {% for showInViewportTopBarAreaArray in showInViewportTopBarArea %}{{ "d-only-" ~ showInViewportTopBarAreaArray ~ "-flex " }}{% endfor %}{% endif %}">
+                                                    <div class="top-bar-notification-nav-item-container {% if (linkTopBarArea == "") %}d-none-topbar {% for showInViewportTopBarAreaArray in showInViewportTopBarArea %}{{ "d-only-" ~ showInViewportTopBarAreaArray ~ "-flex " }}{% endfor %}{% endif %}"{% if (linkTopBarArea == "") %} role="listitem"{% endif %}>
                                                         <div class="top-bar-notification-nav-item-inner-container top-bar-notification-nav-item-container-{{ i }} {{ orientationTopBarArea }}">
                                                             {% if (positionContentTopBarArea == "iconright") %}
                                                                 {% block base_header_inner_topbarnotifications_container_topbar_nav_item_text_before %}
@@ -579,7 +579,7 @@
                                 {% endfor %}
 
                             {% endblock %}
-                        </nav>
+                        </div>
                     {% endblock %}
                 </div>
             {% endblock %}
